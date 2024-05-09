@@ -1,0 +1,33 @@
+title: ResStock
+description: ResStock Documentation
+# theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
+url: https://github.com/NREL/ResStock.github.io
+logo: "/assets/images/logo.jpg"
+favicon_ico: "/assets/images/favicon.ico"
+search_enabled: true
+aux_links:
+  "ResStock on GitHub":
+    - "https://github.com/NREL/resstock"
+aux_links_new_tab: true
+footer_content: "ResStock, Copyright (c) 2016-2019, Alliance for Sustainable Energy, LLC. All rights reserved."
+color_scheme: general
+callouts:
+  warning:
+    title: Warning
+    color: red
+  publication:
+    color: blue
+    opacity: 0.1
+  relatedwork:
+    color: yellow
+    opacity: 0.1
+  othermedia:
+    color: grey-dk
+    opacity: 0.1
+
+# Google Analytics Tracking (optional)
+# Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
+ga_tracking: G-D7EWHC7BS0
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
+
