@@ -1,6 +1,6 @@
 title: ResStock
 description: ResStock Documentation
-# theme: just-the-docs
+theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
 url: https://github.com/NREL/ResStock.github.io
 logo: "/assets/images/logo.jpg"
@@ -10,7 +10,7 @@ aux_links:
   "ResStock on GitHub":
     - "https://github.com/NREL/resstock"
 aux_links_new_tab: true
-footer_content: "ResStock, Copyright (c) 2016-2019, Alliance for Sustainable Energy, LLC. All rights reserved."
+footer_content: "ResStock, Copyright (c) 2016-2024, Alliance for Sustainable Energy, LLC. All rights reserved."
 color_scheme: general
 callouts:
   warning:
