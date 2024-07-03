@@ -32,8 +32,9 @@ These documents provide explanations focusing on how and why of the ResStock dat
 
 <!-- 
 - Quota Based Sampling and the Implications
-- One Row of Data Is Not One Real House 
 -->
+- [One Row of Data Is Not One Real House]({{ site.baseurl }}{% link docs/resources/explanations/One_Row_Data_House.md %})
+
 - [Geographic Fields and Codes]({{ site.baseurl }}{% link docs/resources/explanations/Geographic_Fields_and_Codes.md %})
 
 <!--- Why Individual ResStock Measures Should Not Be Combined
