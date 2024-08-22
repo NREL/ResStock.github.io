@@ -18,6 +18,6 @@ In the top row and top left figure, there are two samples used in the timeseries
 
 The ResStock team also did a convergence analysis to show why at least 1,000 samples was optimal. Convergence analysis looks at different quantities of interest and estimating them using different amounts of samples. Quantities of analysis in this test were things like average annual site electricity use, peak magnitude, and more. It is around 1,000 samples that all of the tested quantities of analysis have about 15% uncertainty or less. The figure showing the convergence analysis is below.
 
-![](../../../assets/images/convergence-plot.PNG)
+![](../../../assets/images/convergence-plot.png)
 
 All data has uncertainty, but trying to limit the uncertainty or amount of error is critical, espectially when drawing conclusions or making decisions. If there are not enough samples in an analysis, the ResStock team recommends grouping other nearby geographies together ot increase the sample size and decrease the uncertainty. Talking about uncertainty in data is critical, so see [this training video](https://www.youtube.com/watch?v=h9EYP1FdxRI&list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS&index=14) which walks through how to calculate the rror. Other sections of this documentation will go through how to check the number of samples that are used in the Data Viewer.
