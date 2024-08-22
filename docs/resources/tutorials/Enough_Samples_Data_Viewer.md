@@ -19,7 +19,7 @@ For this example, we're doing a city-based filter, but the same procedure applie
 
 On the [ResStock datasets page](https://resstock.nrel.gov/datasets), scroll down to End Use Savings Shapes 2022.1 Release. Notice that the fourth column has Data Viewer Links by state. Click on the first line option which is "by state".
 
-![](/assets/images/resstock_home_page.jpg)
+![](../../../assets/images/resstock_home_page.jpg)
 
 A separate tab will appear that will ask you to log in. Create a free account and then log in. At first, there will be a map of the United States. From here, you can select a state.
 
@@ -27,7 +27,7 @@ The Data Viewer shows three types of information: 1) bar charts, 2) timeseries, 
 
 ![](/assets/images/type_state.png)
 
-**Step 1: type Colorado into the Type a Locaation Box**
+**Step 1: type Colorado into the Type a Location Box**
 Now, you can see that bar charts, timeseries, and histograms are all available to analyze.
 
 ![](/assets/images/bar_timeseries_histogram_colorado.png)
