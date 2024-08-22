@@ -19,24 +19,18 @@ For this example, we're doing a city-based filter, but the same procedure applie
 
 On the [ResStock datasets page](https://resstock.nrel.gov/datasets), scroll down to End Use Savings Shapes 2022.1 Release. Notice that the fourth column has Data Viewer Links by state. Click on the first line option which is "by state".
 
-#1
-
 ![](../../../assets/images/resstock-home-page.png)
-
-#2
-
-![](/assets/images/resstock_home_page.jpg)
 
 A separate tab will appear that will ask you to log in. Create a free account and then log in. At first, there will be a map of the United States. From here, you can select a state.
 
 The Data Viewer shows three types of information: 1) bar charts, 2) timeseries, and 3) histograms. For this example, we will be using Colorado as the starting point.
 
-![](/assets/images/type_state.png)
+![](../../../assets/images/type-state.png)
 
 **Step 1: type Colorado into the Type a Location Box**
 Now, you can see that bar charts, timeseries, and histograms are all available to analyze.
 
-![](/assets/images/bar_timeseries_histogram_colorado.png)
+![](../../../assets/images/bar-timeseries-histogram-colorado.png)
 
 For this example, our analysis question is: How much annual energy could be saved if all dwelling units in Littleton, Colorado had Upgrade 1: Basic Enclosure Package applied?
 
@@ -46,11 +40,9 @@ To make sure we have 1,000 samples, we will first look at Histograms which tell 
 
 **Step 2: Click Explore Histograms**
 
-![](/assets/images/click_explore_histograms.png)
-
 This is what the homepage of Explore Histograms looks like.
 
-![](/assets/images/click_explore_histograms.png)
+![](../../../assets/images/click-explore-histograms.png)
 
 Notice at the top there are dropdown menus to choose fuel types, upgrade name, and ouput metric for the histogram. In this case, we are looking at all fuel types and only dwelling units eligible for the Basic Enclosure upgrade, the output metric is annual energy consumption, and it is for the whole state of Colorado. The bottom of the screen displays the histogram with annual energy consumption [Wh] on the x-axis and # (number) of dwelling units on the y-axis.
 
@@ -60,12 +52,12 @@ Now, we have results for the impact of the upgrade package for the whole state o
 
 Click on the "+Add Filters" button in the middle-left of the screen.
 
-![](/assets/images/explore_add_filters.png)
+![](../../../assets/images/explore-add-filters.png)
 
 **Step 4: Filter to Littleton**
 Click "City", and then choose CO, Littleton from the alphabetical list. Once you choose CO, Littleton it should appear as a check in the upper right corner. Then, click Save Filters.
 
-![](/assets/images/choose_littleton.png)
+![](../../../assets/images/choose-littleton.png)
 
 After clicking "Save Filters", an orange button pops up on the right that says the results are out of date. This means that the displayed histogram does not yet incorporate our filter.
 
@@ -73,18 +65,18 @@ After clicking "Save Filters", an orange button pops up on the right that says t
 
 Click "Results Out of Date, Click to Reload Results" to make sure our filters are appropriately applied.
 
-![](/assets/images/update_results_littleton.png)
+![](../../../assets/images/update-results-littleton.png)
 
 Now, the number of dwelling units has gone from 1.2 million dwelling units in the first column to about 2,000 dwelling units.
 
-![](/assets/images/2000_y_axis_littleton.PNG)
+![](../../../assets/images/2000-y-axis-littleton.png)
 
 This is how you can tell the filter has been applied.
 
 **Step 6: Verify Dwelling Unit Count**
 Add together the number of dwelling units from each column to check if there are 242,000 dwelling units. Hover your mouse over each column to see how many dwelling units there are in each column.
 
-![](/assets/images/hover_dwelling_unit_count.PNG)
+![](../../../assets/images/hover-dwelling-unit-count.png)
 
 Hovering over each of the columns gives you the below values and the total: _1,937 + 4,358 + 4,358 + 3,874 + 3,148 + 1,211 + 1,695 + 484 = 21,065_
 
@@ -99,7 +91,7 @@ In this case, we use personal experience combined with the mapping to select cit
 **Step 8: Add In Another City**
 We start by adding in  Englewood, to see if that gives us sufficient dwelling units. The City filter should already be pulled up from step 7. Choose CO, Englewood from this list. Now, there should be two cities with check marks at the top. Choose Save Filters and remember to click the Results Out of Date, Click to Reload Results button to make sure our filter is applied.
 
-![](/assets/images/hover_dwelling_unit_count.PNG)
+![](../../../assets/images/add-englewood.png)
 
 **Step 9: Recalculate Dwelling Units**
 Like Step 6, add together the number of dwelling units to check if there are 242,000 dwelling units. With these two cities chosen, there are 36,803 dwelling units. We have almost doubled the number of dwelling units, but we are still not close to the recommended 242,000 dwelling units.
@@ -112,9 +104,9 @@ Now that the area has been defined, we look at annual energy savings if these dw
 **Step 11: Pull Up Bar Charts**
 Hit the back button on your browser, and click _Explore Bar Charts_.
 
-![](/assets/images/explore_bar_charts.png)
+![](../../../assets/images/explore-bar-charts.png)
 
-![](/assets/images/base_bar_chart.png)
+![](../../../assets/images/base-bar-chart.png)
 
 On the Bar Charts page, the top section is similar to Histograms with fuel type, upgrade, output, location, and filter button. The middle section is the legend which color codes end uses. Hovering your mouse over one end use will highlight it on the below two graphs.
 
@@ -125,7 +117,7 @@ The example right now is for all of Colorado, but our main question is how much 
 **Step 12: Down Select To Our Sample Area**
 Add in the location filters that we determined with the Histogram charts in step 10. Use the _Add Filters_ button and the orange update results buttons just as we have in similar steps. Your screen should look like the below charts.
 
-![](/assets/images/bar_chart_cities_added.png)
+![](../../../assets/images/bar-chart-cities-added.png)
 
 **Step 13: Determine Energy Savings for Littleton**
 Determine what the annual energy savings are for just Littleton by normalizing the results. The results shown in the histograms currently represent the savings from 271,671 units in different geographic locations, but Littleton only has 21,065 dwelling units eligible for the basic enclosure upgrade (from Step 6). The Baseline energy consumption (i.e., the energy before an upgrade) is approximately 7.75 TWh and the Basic enclosure energy consumption is approximately 6.5 TWh for all 271,671 dwelling  units in the expanded sample. You can scale the sample to the target geography using the following calculation:
