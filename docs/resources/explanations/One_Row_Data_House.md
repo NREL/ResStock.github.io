@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Geographic Fields and Codes
+title: One Row of Data is Not One Real House
 parent: resources
 nav_order: 3
 ---
