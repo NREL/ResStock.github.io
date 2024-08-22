@@ -44,7 +44,7 @@ To make sure we have 1,000 samples, we will first look at Histograms which tell 
 
 This is what the homepage of Explore Histograms looks like.
 
-![](/assets/images/explore_histograms.png)
+![](/assets/images/click_explore_histograms.png)
 
 Notice at the top there are dropdown menus to choose fuel types, upgrade name, and ouput metric for the histogram. In this case, we are looking at all fuel types and only dwelling units eligible for the Basic Enclosure upgrade, the output metric is annual energy consumption, and it is for the whole state of Colorado. The bottom of the screen displays the histogram with annual energy consumption [Wh] on the x-axis and # (number) of dwelling units on the y-axis.
 
