@@ -19,7 +19,13 @@ For this example, we're doing a city-based filter, but the same procedure applie
 
 On the [ResStock datasets page](https://resstock.nrel.gov/datasets), scroll down to End Use Savings Shapes 2022.1 Release. Notice that the fourth column has Data Viewer Links by state. Click on the first line option which is "by state".
 
-![](../../../assets/images/resstock_home_page.jpg)
+#1
+
+![](../../../assets/images/resstock-home-page.png)
+
+#2
+
+![](/assets/images/resstock_home_page.jpg)
 
 A separate tab will appear that will ask you to log in. Create a free account and then log in. At first, there will be a map of the United States. From here, you can select a state.
 
