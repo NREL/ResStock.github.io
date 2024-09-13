@@ -11,7 +11,7 @@ nav_order: 1
 
 ## What is ResStock
 
-The U.S. residnetial building sector stock energy model, ResStock<sup>TM</sup>, is a highly granular, bottom-up model that uses multiple data sources, statistical sampling methods, and advanced building energy simulations of the residential building stock across the contiguous United States.
+The U.S. residential building sector stock energy model, ResStock<sup>TM</sup>, is a highly granular, bottom-up model that uses multiple data sources, statistical sampling methods, and advanced building energy simulations of the residential building stock across the contiguous United States.
 
 ResStock asks and answers two main types of questions: 1) How is energy used in the U.S. housing stock? and 2) What are the impacts of modifying the housing stock with different technologies?
 
