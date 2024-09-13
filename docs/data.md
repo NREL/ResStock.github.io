@@ -78,12 +78,12 @@ The ResStock release directory structure of the data lake is summarized in the t
 ### ResStock Data Viewer
 The ResStock Data Viewer exists to quickly filter, slice, combine, visualize, and download results in custom ways. This platform is available at [resstock.nrel.gov/datasets](https://resstock.nrel.gov/datasets), and the Data Viewer link for each dataset is listed when available. Multiple geographic views of the datasets on the data viewer have been created: by state, by Census region, and by PUMA.
 
-![](../../../assets/images/data-viewer-home-page.png)
+![](../../../assets/images/data-viewer-home-page - Copy.png)
 
 ### ResStock Dashboards
 ResStock dashboards exist to give a more comprehensive overview of results in different ways, from housing characteristics, specific housing upgrade scenarios, or even focusing in on a specific topic like heat pumps. This platform is available at [public.tableau.com/app/profile/nrel.buildingstock/vizzes](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes). Multiple geographic views of the datasets on the dashboards have been created: by state, by Building America Climate Zone, and by AHSRAE / IECC Climate Zone.
 
-![](../../../assets/images/tableau-home.png)
+![](../../../assets/images/tableau_home_Copy.png)
 
 ### OEDI Directory Structure and Contents
 
@@ -140,7 +140,7 @@ The third level of “out.” includes the end uses.
 
 Finally, units are denoted by a “.” with the unit following.
 
-| **First Level ** |   |   |
+| **First Level** |   |   |
 | **Prefix or name** | **Description** | **Example** |
 | bldg_id | unique id of the building model | 673 |
 | upgrade | unique id number of the upgrade | 1.01 |
@@ -168,6 +168,7 @@ Finally, units are denoted by a “.” with the unit following.
 | upgrade.[hvac system has offset] | if the HVAC system has an<br> offset and if true what is<br> the offset | OF |
 
 | **Additional levels** |   |   |
+| **Prefix or name** | **Description** | **Example** |
 | out.[fuel type].[end use] | end uses_heating, cooling, water heating, etc. | out.electricity.range_oven.energy_consumption.kWh |
 | out.emissions.[fuel type].[emissions scenario] | emissions by fuel type and emissions scenario | out.emissions.propane.lrmer_low_re_cost_2030_boxavg.co2e_kg |
 | out.bills.[fuel type].usd.savings | energy bill savings based on fuel type | out.bills.electricity.usd.savings |
