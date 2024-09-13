@@ -166,3 +166,10 @@ Finally, units are denoted by a “.” with the unit following.
 | out.unmet_hours | number of hours the HVAC system<br> could not meet load | out.unmet_hours.cooling.hour |
 | upgrade.hvac_[system efficiency] | HVAC system efficiency | upgrade.hvac_cooling_efficiency |
 | upgrade.[hvac system has offset] | if the HVAC system has an<br> offset and if true what is<br> the offset | OF |
+
+| **Additional levels** |   |   |
+| out.[fuel type].[end use] | end uses_heating, cooling, water heating, etc. | out.electricity.range_oven.energy_consumption.kWh |
+| out.emissions.[fuel type].[emissions scenario] | emissions by fuel type and emissions scenario | out.emissions.propane.lrmer_low_re_cost_2030_boxavg.co2e_kg |
+| out.bills.[fuel type].usd.savings | energy bill savings based on fuel type | out.bills.electricity.usd.savings |
+| **Units** |   |   |
+| ...foo | "." denotes the start of the unit name | .co2e_kg |
