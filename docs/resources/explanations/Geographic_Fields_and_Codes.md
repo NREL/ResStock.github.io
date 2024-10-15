@@ -6,7 +6,7 @@ nav_order: 4
 ---
 
 # Geographic Fields and Codes
-ResStock provides many geographic fields to allow for a variety of analysis. Many of the geographic codes are self explanatory, like the name of the county, but there are some that are not as user friendly. Sometimes these codes can represent counties, census tracts, and Public Microdata Areas (PUMAs). **ResStock uses the National Historical GIS (NHGIS) GISJOIN standard codes for 2010 counties, 2010 PUMAs, and 2010 Census Tracts. 2020 geographic codes are not available at this time.** That means that all 2020 geographic codes must be converted to 2010 codes.
+ResStock provides many geographic fields to allow for a variety of analysis. Many of the geographic codes are self explanatory, like the name of the county, but there are some that are not as user friendly. Sometimes these codes can represent counties, census tracts, and Public Microdata Areas (PUMAs). **ResStock uses the National Historical GIS (NHGIS) GISJOIN standard codes for 2010 counties, 2010 PUMAs, and 2010 Census Tracts. 2020 geographic codes are not available at this time.** That means that all 2020 geographic codes must be converted to 2010 codes before using ResStock.
 
  These are based on Federal Information Processing System (FIPS) codes. Example names of columns that include these geographic codes include in.county or in.county_and_puma. They can even be seen in the [Data Viewer](https://resstock.nrel.gov/dataviewer?datasetName=vizstock_resstock_amy2018_2024_release_2_by_state_vu) when trying to filter by PUMA. It starts with a G and then has seven or eight numbers after it. Below is an example.
 
