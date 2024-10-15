@@ -78,12 +78,12 @@ The ResStock release directory structure of the data lake is summarized in the t
 ### ResStock Data Viewer
 The ResStock Data Viewer exists to quickly filter, slice, combine, visualize, and download results in custom ways. This platform is available at [resstock.nrel.gov/datasets](https://resstock.nrel.gov/datasets), and the Data Viewer link for each dataset is listed when available. Multiple geographic views of the datasets on the data viewer have been created: by state, by Census region, and by PUMA.
 
-![](../../../assets/images/data-viewer-home-page - Copy.png)
+![](../../../assets/images/data-viewer-home-page.png)
 
 ### ResStock Dashboards
 ResStock dashboards exist to give a more comprehensive overview of results in different ways, from housing characteristics, specific housing upgrade scenarios, or even focusing in on a specific topic like heat pumps. This platform is available at [public.tableau.com/app/profile/nrel.buildingstock/vizzes](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes). Multiple geographic views of the datasets on the dashboards have been created: by state, by Building America Climate Zone, and by AHSRAE / IECC Climate Zone.
 
-![](../../../assets/images/tableau_home_Copy.png)
+![](../../../assets/images/tableau-home.png)
 
 ### OEDI Directory Structure and Contents
 
