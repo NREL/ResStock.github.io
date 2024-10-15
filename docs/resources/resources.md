@@ -30,10 +30,8 @@ This section provides a collection of step-by-step guides for using a ResStock d
 ## Explanations
 These documents provide explanations focusing on how and why of the ResStock datasets. This section does not provide explicit advice on how to achieve a specific outcome, but rather focuses on helping users understand specific and important aspects of the datasets. Feel free to [email us](mailto:resstock@nrel.gov) with additional questions or ideas for documentation.
 - [Considerations for ResStock Calibration and Validation]({{ site.baseurl }}{% link docs/resources/explanations/Considerations_for_ResStock_Calibration_and_Validation.md %})
-
-<!-- 
-- Quota Based Sampling and the Implications
--->
+ 
+- [Quota Based Sampling and the Implications]({{ site.baseurl }}{% link docs/resources/explanations/Quota_Based_Sampling.md %})
 
 - [One Row of Data Is Not One Real House]({{ site.baseurl }}{% link docs/resources/explanations/One_Row_Data_House.md %})
 
