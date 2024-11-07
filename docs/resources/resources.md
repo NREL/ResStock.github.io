@@ -17,14 +17,14 @@ This section provides lessons for understanding certain capabilities and functio
 <!-- 
 - Timeseries Impact of Applying an Upgrade
 - Online Resources
+-->
 
 ## How-to Guides
 This section provides a collection of step-by-step guides for using a ResStock dataset to answer a given question.
+- [Analyze Your Housing Stock and Different What if Scenarios Using Excel]({{ site.baseurl }}{% link docs/resources/how-to-guides/Housing_Stock_Excel_Questions.md %})
+<!--
 - Sampling and Reweighting in ResStock
 - Run a Custom Emissions Scenario
-- How to Augment ResStock Data with Local Data
-- Perform a Basic Residential Building Stock Analysis
-- Understand Annual Energy Use by Building Type for a City
 -->
 
 ## Explanations
@@ -37,9 +37,9 @@ These documents provide explanations focusing on how and why of the ResStock dat
 
 - [Geographic Fields and Codes]({{ site.baseurl }}{% link docs/resources/explanations/Geographic_Fields_and_Codes.md %})
 
-<!--- Why Individual ResStock Measures Should Not Be Combined
-- Emissions -->
+<!--- - Emissions -->
 - [Why At Least 1,000 Samples is Recommended]({{ site.baseurl }}{% link docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.md %})
 
+- [Why Individual ResStock Measures Should Not Be Combined]({{ site.baseurl }}{% link docs/resources/explanations/Individual_Measures_Not_Combined.md %})
 <!-- - Combining Data from Different Datasets
 - Limitations and Known Issues -->
