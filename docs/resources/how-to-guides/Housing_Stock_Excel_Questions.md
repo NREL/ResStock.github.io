@@ -187,4 +187,4 @@ Finally, to answer our last question, the savings from natural gas bills. Simila
 
 The annual natural gas bill savings for all of the single family homes that were upgraded was modeled to be $1,483,849.
 
-Now you have seen examples of how to use PivotTable and answer potential questions about how an upgrade would impact a portion of the housing stock. In general, these are just a few questions that can be answered using the baseline housing results and the upgrade results. If you have more questions about how ResStock could be used for your residential building stock analysis, check out our [Contact]({{ site.baseurl }}{% link docs/resources/contact.md %}) page.
+Now you have seen examples of how to use PivotTable and answer potential questions about how an upgrade would impact a portion of the housing stock. In general, these are just a few questions that can be answered using the baseline housing results and the upgrade results. If you have more questions about how ResStock could be used for your residential building stock analysis, check out our [Contact]({{ site.baseurl }}{% link docs/contact.md %}) page.
