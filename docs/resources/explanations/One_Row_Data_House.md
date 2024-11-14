@@ -6,7 +6,7 @@ nav_order: 3
 ---
 
 ## One Row of Data is Not One Real House
-When working with raw ResStock data, it may be easy to assume that each line of data or each file represents one real U.S. house. However, this is not the case. Instead, each row of data in a ResStock metadata file has one sampled dwelling unit that represents a segment of the housing stock with the same characteristics. A row of data is just representative and cannot be tracked or linked to an actual building or address.
+When working with raw ResStock data, it is easy to assume that each line of data or each file represents one real U.S. house. However, this is not the case. Instead, each row of data in a ResStock metadata file has one sampled dwelling unit that represents a segment of the housing stock with the same characteristics. A row of data is just representative and cannot be tracked or linked to an actual building or address.
 
 For example, in the illustrative table below with a subset of ResStock metadata, the first few columns are labeled *bldg_id* and *weight*.
 
