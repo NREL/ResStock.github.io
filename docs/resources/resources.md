@@ -26,16 +26,17 @@ This section provides a collection of step-by-step guides for using a ResStock d
 
 ## Explanations
 These documents provide explanations focusing on how and why of the ResStock datasets. This section does not provide explicit advice on how to achieve a specific outcome, but rather focuses on helping users understand specific and important aspects of the datasets. Feel free to [email us](mailto:resstock@nrel.gov) with additional questions or ideas for documentation.
+
+### General
 - [Considerations for ResStock Calibration and Validation]({{ site.baseurl }}{% link docs/resources/explanations/Considerations_for_ResStock_Calibration_and_Validation.md %})
- 
 - [Quota Based Sampling and the Implications]({{ site.baseurl }}{% link docs/resources/explanations/Quota_Based_Sampling.md %})
-
 - [One Row of Data Is Not One Real House]({{ site.baseurl }}{% link docs/resources/explanations/One_Row_Data_House.md %})
-
 - [Geographic Fields and Codes]({{ site.baseurl }}{% link docs/resources/explanations/Geographic_Fields_and_Codes.md %})
-
 <!--- - Emissions -->
 - [Why At Least 1,000 Samples is Recommended]({{ site.baseurl }}{% link docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.md %})
-
 - [Why Individual ResStock Measures Should Not Be Combined]({{ site.baseurl }}{% link docs/resources/explanations/Individual_Measures_Not_Combined.md %})
 <!-- - Combining Data from Different Datasets - Limitations and Known Issues -->
+
+### ResStock Limitations and Known Issues
+- [ResStock 2024 Release 2 Electricity and Energy Bills]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%})
+- [Wall Type Issue, Especially in Maine]({{ site.baseurl }}{% link docs/resources/explanations/Issue_Wall_Type_Especially_Maine.md%})

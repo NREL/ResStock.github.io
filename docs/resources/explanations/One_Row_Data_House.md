@@ -1,7 +1,7 @@
 ---
 layout: default
 title: One Row of Data is Not One Real House
-parent: resources
+parent: Resources
 nav_order: 3
 ---
 

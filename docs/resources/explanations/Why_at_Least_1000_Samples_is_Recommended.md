@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Why At Least 1,000 Samples is Recommended
-parent: resources
+parent: Resources
 nav_order: 7
 ---
 
