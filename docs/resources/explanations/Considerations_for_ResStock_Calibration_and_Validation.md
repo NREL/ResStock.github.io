@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Considerations for ResStock Calibration and Validation
-parent: resources
+parent: Resources
 nav_order: 1
 ---
 

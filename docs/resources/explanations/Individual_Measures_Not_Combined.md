@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Why Individual ResStock Measures Should Not Be Combined
-parent: resources
+parent: Resources
 nav_order: 6
 ---
 

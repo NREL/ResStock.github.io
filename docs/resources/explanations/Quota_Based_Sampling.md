@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Quota Based Sampling and teh Implications
-parent: resources
+parent: Resources
 nav_order: 2
 ---
 
