@@ -5,18 +5,14 @@ nav_order: 5
 has_children: false
 has_toc: false
 ---
-# GitHub Reposititories Related to ResStock
+# GitHub Repositories Related to ResStock
 These repositories are publicly available to use, but we are not able to provide technical support or documentation for running ResStock at this time. We strongly suggest and support using the public datasets. The data outputs from the initial ResStock release can be found by visiting the Data page.
 
 ## ResStock Repository
-This repository contains the source code used to build and execute ResStock models, including upgrade scenarios. The ResStock model is under active calibration and development, which is publicly visible on [this repository](https://github.com/NREL/resstock).
+The [ResStock repository](https://github.com/NREL/resstock) contains the source code for building and executing ResStock models, including upgrade scenarios.
 
-## OpenStudio-Standards Repository
-ResStock relies heavily on [openstudio-standards](https://github.com/NREL/openstudio-standards), a Ruby Gem library that extends the OpenStudio SDK. It has four main use-cases:
-1.	Provide higher level methods to help BEM users and developers to create OpenStudio models from existing geometry, or programmatically generated geometry
-2.	Create typical building models in OpenStudio format
-3.	Create a code baseline model from a proposed model
-4.	Check a model against a code/standard.
+## OpenStudio-HPXML Repository
+ResStock relies heavily on [OpenStudio-HPXML](https://github.com/NREL/OpenStudio-HPXML), which provides a method for simulating residential buildings with OpenStudio and EnergyPlus. OpenStudio-HPXML uses a series of OpenStudio measures to generate an EnergyPlus model for each sample based on the building and occupant characteristics defined by ResStock. In many cases, ResStock relies upon the OpenStudio-HPXML default arguments and calculations.
 
 ## Buildstock Batch Repository
 Execution of the ResStock workflow is managed through the [buildstockbatch repository](https://github.com/nrel/buildstockbatch), a shared asset of ResStock and ComStock. It is specifically developed to scale to execution of tens of millions of simulations through multiple infrastructure providers.
