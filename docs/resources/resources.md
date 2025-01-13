@@ -30,7 +30,7 @@ These documents provide explanations focusing on how and why of the ResStock dat
 ### General
 - [Considerations for ResStock Calibration and Validation]({{ site.baseurl }}{% link docs/resources/explanations/Considerations_for_ResStock_Calibration_and_Validation.md %})
 - [Quota-Based Sampling and Implications]({{ site.baseurl }}{% link docs/resources/explanations/Quota_Based_Sampling.md %})
-- [One Row of Data is Not One Real House]({{ site.baseurl }}{% link docs/resources/explanations/One_Row_Data_House.md %})
+- [One Row of Data Is Not One Real House]({{ site.baseurl }}{% link docs/resources/explanations/One_Row_Data_House.md %})
 - [Geographic Fields and Codes]({{ site.baseurl }}{% link docs/resources/explanations/Geographic_Fields_and_Codes.md %})
 <!--- - Emissions -->
 - [Why At Least 1,000 Samples is Recommended]({{ site.baseurl }}{% link docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.md %})
