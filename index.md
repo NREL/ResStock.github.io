@@ -24,6 +24,8 @@ This document serves as a guide and resource for the methodology and assumptions
 ### Access the Dataset
 Visit the [Datsets page](https://resstock.nrel.gov/datasets) for access to the published datasets and details about the ways to access them.
 
+Read our [technical reference documentation](https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf) for model inputs and assumptions.
+
 ## What does ResStock do
 As the demand for decarbonization initiatives expands across the country, the need for energy modeling does as well. ResStock meets this need as a national residential building energy stock model. It enables a new approach to large-scale residential energy analysis across the U.S. by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Renewable Energy Laboratory (NREL).
 
