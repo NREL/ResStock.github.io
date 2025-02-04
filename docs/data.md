@@ -6,7 +6,7 @@ has_children: false
 has_toc: false
 ---
 # Data
-Given the complexity and computational intensity of ResStock, the best pathway for professionals and researchers to use ResStock successfully is use pre-created results, rather than running ResStock themselves. This section provides information about accessing ResStock results and links to published datasets.
+Given the complexity and computational intensity of ResStock, the best pathway for professionals and researchers to use ResStock successfully is to use pre-created results, rather than running ResStock themselves. This section provides information about accessing ResStock results and links to published datasets.
 
 ## Published Datasets
 These datasets explore the annual and timeseries energy consumption of the U.S. residential building stock at the end-use level.
@@ -41,13 +41,14 @@ ResStock dataset releases are summarized in the following table with links for a
 *The electricity bills and energy bills are incorrectly calculated in this dataset. This especially impacts electricity bill and energy bill savings results. Please see [here]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%}) for additional information.
 
 ## Data Access Platforms, Structure, and Content
-ResStock data releases are collections of datasets include energy use across technology (e.g., air-conditioning, refrigerators, lighting, etc.) and fuel type that represents the United States housing stock. Data include either 550,000 or 2,200,000 models that if scaled up, cover all residential energy use in the U.S. housing sector. Data releases also include “what-if” scenarios of technology adoption. The output of each energy model is one year of energy consumption either summed for the whole year or at 15-minute intervals.
-Dealing with the raw output data from a national ResStock dataset requires skills for dealing with large files and large number of files, that might make interpretation inaccessible for many users. To support many use cases, aggregate load profiles (i.e. timeseries energy use added together from multiple models) for the following geographic resolutions  are published for ResStock releases:
+ResStock data releases are collections of datasets that include energy use across technology (e.g., air-conditioning, refrigerators, lighting) and fuel type that represent the United States housing stock. Data include either 550,000 or 2,200,000 models that if scaled up cover all residential energy use in the U.S. housing sector. Data releases also include “what-if” scenarios of technology adoption. The output of each energy model is one year of energy consumption, either summed for the whole year or at 15-minute intervals.
+
+Dealing with the raw output data from a national ResStock dataset requires skills for dealing with large files and large numbers of files, that might make interpretation inaccessible for many users. To support many use cases, aggregate load profiles (i.e. timeseries energy use added together from multiple models) for the following geographic resolutions  are published for ResStock releases:
 - 17 ASHRAE/International Energy Conservation Code (IECC) climate zones
-- 8 U.S. Department of Energy Building America Climate zones
-- 2,300 + U.S. Census Public Microdata Areas
-- 3,100+ U.S. Counties
-- 48 States (continental U.S. only)
+- 8 U.S. Department of Energy Building America climate zones
+- 2,300 + U.S. Census Public Use Microdata Areas
+- 3,100+ U.S. counties
+- 48 states (continental United States only)
 
 ### Data Access Platforms
 The following table summarizes the various ways to access and use ResStock data. Scroll right to see all of the options.
@@ -70,12 +71,12 @@ The dataset has been formatted in multiple ways to meet the needs of different u
 - **Dashboards**: In-depth web-based interactive data viewer with customizable aggregations for exploring annual results and sometimes supplemental metrics (e.g., upgrade costs).
 - **Full Database**: Full raw model results. Big data skills required.
 
-Aggregate ResStock datasets can be accessed via the [Open Energy Initiative (OpenEI) Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2F), the [ResStock Data Viewer](https://resstock.nrel.gov/datasets), and the [ResStock dashboards](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes). Each data release can have multiple datasets for different weather years. Within the weather years, all dataset releases include 2018 and a “TMY3” weather year – which is a “typical meteorological year”. These weather files attempt to avoid capturing any year’s unusual weather pattern by compiling the most representative historic weather for a location. TMY3 timeseries energy data should not be used for larger geographies, i.e., one or more counties. In compiling the typical / representative weather TMY3 weather files pull historic weather from different years (e.g., January 2005, February 2002, March 1995, etc.). A key issue is that adjacent counties might pull their historic weather from different months, so regional weather patterns will not be aligned in aggregate timeseries results. Aggregate annual energy results can be used together since it will smooth out weather differences.
+Aggregate ResStock datasets can be accessed via the [Open Energy Initiative (OpenEI) Data Lake](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2F), the [ResStock Data Viewer](https://resstock.nrel.gov/datasets), and the [ResStock dashboards](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes). Each data release can have multiple datasets for different weather years. Within the weather years, all dataset releases include 2018 and a “TMY3” weather year, which is a “typical meteorological year”. These weather files attempt to avoid capturing any year’s unusual weather pattern by compiling the most representative historical weather for a location. TMY3 timeseries energy data should not be used for larger geographies, i.e., one or more counties. In compiling the typical/representative weather TMY3 weather files pull months of historical weather from different years (e.g., January 2005, February 2002, March 1995). A key issue is that adjacent counties might pull their historical weather from different years, so regional weather patterns will not be aligned in aggregate timeseries results. Aggregate annual energy results can be used together because they will smooth out weather differences.
 
-Please note, that there are separate public datasets available for residential and commercial building stocks. If you are interested in commercial buildings, please check out our sibling tool [ComStock](https://comstock.nrel.gov/).
+Note that there are separate public datasets available for residential and commercial building stocks. If you are interested in commercial buildings, please check out our sibling tool [ComStock](https://comstock.nrel.gov/).
 
-### OEDI Data Lake
-OpenEI is an energy information portal and is developed and maintained by the National Renewable Energy Laboratory (NREL) with funding and support from the U.S. Department of Energy and a network of international partners & sponsors. The OpenEI data lake contains comprehensive aggregate data for ResStock releases. This includes metadata and timeseries energy consumption results (baseline and upgrades, if applicable), individual building energy models, weather files, geographic information, and data dictionaries.
+### Open Energy Data Initiative (OEDI) Data Lake
+OpenEI, or OEDI, is an energy information portal developed and maintained by NREL with funding and support from the U.S. Department of Energy and a network of international partners and sponsors. The OpenEI data lake contains comprehensive aggregate data for ResStock releases. This includes metadata and timeseries energy consumption results (baseline and upgrades, if applicable), individual building energy models, weather files, geographic information, and data dictionaries.
 
 The ResStock release directory structure of the data lake is summarized in the table below.
 
@@ -85,7 +86,7 @@ The ResStock Data Viewer exists to quickly filter, slice, combine, visualize, an
 ![](../../../assets/images/data-viewer-home-page.png)
 
 ### ResStock Dashboards
-ResStock dashboards exist to give a more comprehensive overview of results in different ways, from housing characteristics, specific housing upgrade scenarios, or even focusing in on a specific topic like heat pumps. This platform is available at [public.tableau.com/app/profile/nrel.buildingstock/vizzes](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes). Multiple geographic views of the datasets on the dashboards have been created: by state, by Building America Climate Zone, and by AHSRAE / IECC Climate Zone.
+ResStock dashboards exist to give a more comprehensive overview of results in different ways, from housing characteristics, specific housing upgrade scenarios, or even focusing on a specific topic like heat pumps. This platform is available at [public.tableau.com/app/profile/nrel.buildingstock/vizzes](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes). Multiple geographic views of the datasets on the dashboards have been created: by state, by Building America Climate Zone, and by AHSRAE/IECC Climate Zone.
 
 ![](../../../assets/images/tableau-home.png)
 
@@ -93,7 +94,7 @@ ResStock dashboards exist to give a more comprehensive overview of results in di
 
 | **Name** | **Contents** |
 | building_energy_models | Building energy models, in OpenStudio format, that were run to<br> create the dataset. |
-| geographic_information | Information on various geographies used in the dataset<br> provided for convenience. Includes map files showing the<br> shapes of the geographies (states, PUMAs) used for<br> partitioning and  lookup table mapping between census tracts<br> and various other geographies. |
+| geographic_information | Information on various geographies used in the dataset<br> provided for convenience. Includes map files showing the<br> shapes of the geographies (states, PUMAs) used for<br> partitioning and lookup table mapping between census tracts<br> and various other geographies. |
 | metadata | Building characteristics (age, area, HVAC system type, etc.) for<br> each of the building energy models run to create the timeseries<br> and annual data. Descriptions of the characteristics are<br> included in the data_dictionary.tsv and enumeration_dictionary.tsv. |
 | metadata_and_annual_results | Building characteristics (age, area, HVAC system type, etc.) for<br> each of the building energy models run and annual results for<br> the data. |
 | timeseries_aggregates | Aggregate end-use load profiles by building type and geography<br> that can be opened and analyzed in Excel, Python, or other<br> common data analysis tools. Aggregated at different<br> geographies. |
@@ -115,20 +116,20 @@ Example 2: \<dataset type\>_\<weather data\>\_release\_\<release number\>
 
 Example 2: resstock_amy2018_release_2
 
-1. dataset type
+1. Dataset type
     - resstock = residential building stock
     - comstock = commercial building stock
 
-2. weather data
+2. Weather data
     - amy2018 = actual meteorological year 2018 (2018 weather data from NOAA ISD, NSRDB, and MesoWest)
     - tmy3 = typical meteorological year from 1991-2005 (see [this publication](https://www.nrel.gov/docs/fy08osti/43156.pdf) for details )
 
-3. year of publication
+3. Year of publication
     - 2024 = dataset was published in 2024
     - 2022 = dataset was published in 2022
     - etc.
 
-4. release
+4. Release
     - release_1 = first release of the dataset during the year of publication
     - release_2 = second release of the dataset during the year of publication
     - etc.
