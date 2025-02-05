@@ -4,7 +4,7 @@ title: Getting Started
 nav_order: 1
 ---
 
-# Getting Started with ResStock
+# Getting Started With ResStock
 {: .fw-500 }
 
 ![](/assets/images/city-skyline-istock-1155981768.jpg)
@@ -26,8 +26,8 @@ Visit the [Datsets page](https://resstock.nrel.gov/datasets) for access to the p
 
 Read our [technical reference documentation](https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf) for model inputs and assumptions.
 
-## What does ResStock do
-As the demand for decarbonization initiatives expands across the country, the need for energy modeling does as well. ResStock meets this need as a national residential building energy stock model. It enables a new approach to large-scale residential energy analysis across the U.S. by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Renewable Energy Laboratory (NREL).
+## What Does ResStock Do?
+As the demand for decarbonization initiatives expands across the country, so does the need for energy modeling. ResStock meets this need as a national residential building energy stock model. It enables a new approach to large-scale residential energy analysis across the United States. by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Renewable Energy Laboratory (NREL).
 
 ResStock is more than just a basic modeling tool for analyzing energy efficiency and consumption in residential buildings. It integreates a variety of features and capabilities that make it a comprehensive analytical platform. Here's a broader description of it's functionalities:
 
@@ -43,53 +43,52 @@ ResStock is more than just a basic modeling tool for analyzing energy efficiency
 
 In summary, ResStock could be aptly described as an **advanced energy analysis platform** that combines elements of simulation, policy analysis, decision support, research facilitation, and educational outreach. These elements are all focused on enhancing residential energy efficiency and understanding energy consumption patterns.
 
-ResStock helps states, municipalities, utilities, and manufacturers understand the make-up of their area's housing stock; identify the energy, emissions, or economic impacts of energy efficiency or electrification measures; and explore the impact of new technologies such as cold-climate heat pumps for both customers and the grid.
+ResStock helps states, municipalities, utilities, and manufacturers understand the make-up of their area's housing stock; identifying the energy, emissions, or economic impacts of energy efficiency or electrification measures; and exploring the impact of new technologies such as cold-climate heat pumps for both customers and the grid.
 
-In the pursuit of understanding when and where energy consumption occurs, ResStock can be tailored to answer the core questions many people have (explained in the next section). The results are available in multiple different formats and resolutions:
+In the pursuit of understanding when and where energy consumption occurs, ResStock can be tailored to answer the core questions many people have (explained in the next section). The results are available in multiple formats and resolutions:
 
 | Format | Resolution |
 | --- | --- |
 | Spatial | U.S., census division, climate zone, state, county, balancing authority, ISO/RTO, and Public Use Microdata Areas (PUMAs)|
 | Temporal | 15 minutes to annual aggregations |
-| Sectoral | All U.S. housing by Census and RECS classifications |
+| Sectoral | All U.S. housing by Census and Residential Energy Consumption Survey (RECS) classifications |
 
 To achieve clean energy objectives and enhance the alignment of building stock with the evolving power grid, a detailed analysis method is essential. This method must be able to evaluate the location, timing, and methods through which clusters of buildings use energy and identify potential energy savings. This tool is designed to aid professoinals and researchers engaged in advancing these initiatives.
 
-## What Questions Can and Cannot be Answered with ResStock
+## What Questions Can and Cannot Be Answered With ResStock?
 These are the type of questions that can be answered via data processing, distillation, and visualization of this dataset. This is not a complete list.
 
-_Questions that can be answered:_
+_Questions that can be answered with ResStock:_
 1. Housing makeup and current snapshot of energy consumption
 
-    a. How many homes are heated by electricity versus gas? How leaky or well insulated are these homes?
+    - How many homes are heated by electricity versus gas? How leaky or well insulated are these homes?
 
-    b. How are low-income and renter-occupied housing different from other housing units?
+    - How are low-income and renter-occupied housing units different from other housing units?
 
-    c. What are the largest opportunities for energy efficiency and electrification?
+    - What are the largest opportunities for energy efficiency and electrification?
 
 2. Technology potentials and what-if scenarios
 
-    a. What is the range of savings per household if X, Y, or Z are implemented? What are the total expected savings for a program or community with X, Y, or Z?
+    - What is the range of savings per household if X, Y, or Z are implemented? What are the total expected savings for a program or community with X, Y, or Z?
 
-    b. What are the energy, carbon, and utility bill impacts of a home envelope upgrade versus a heat pump upgrade?
+    - What are the energy, carbon, and utility bill impacts of a home envelope upgrade versus a heat pump upgrade?
 
 3. Addressable questions with timeseries and customization?
 
-    a. Does residential electrification shift a region from summer peaking to winter peaking?
+    - Does residential electrification shift a region from summer peaking to winter peaking?
 
-    b. What is the total change in peak demand from energy efficiency?
+    - What is the total change in peak demand from energy efficiency?
     
-    c. How do higher efficiency equipment or envelope improvements affect the change in peak demand?
+    - How do higher efficiency equipment or envelope improvements affect the change in peak demand?
 
-These are the types of questions that ResStock data alone cannot answer.
-
-_Questions that cannot be answered:_
+_Questions that cannot be answered by ResStock alone:_
 1. What is the potential for rooftop or community solar?
 2. How many homes qualify for the Weatherization Assistance Program or other specific policies?
 3. How might different income groups leverage financing mechanisms for their home upgrades?
 4. What is the cost of installing a heat pump?
 5. What is the electrification potential for a specific home address?
 
-## How to use ResStock
-ResStock provides access to results through many different forms, including a web data viewer, dashboards, and raw data available for download.
-ResStock leverages and is deeply indepted to DOE's open source buidling energy modeling ecosystem of [Open Studio<sup>R</sup>](https://openstudio.net/) and [Energy Plus<sup>R</sup>](https://energyplus.net/). 
+## How To Use ResStock
+ResStock provides access to results through many different forms, including a web data viewer, dashboards, and raw data available for download. Explanations, how-to guides, and tutorials are available in teh Resources section of the ResStock website to assist using the data for common use cases
+
+ResStock leverages and is deeply indebted to DOE's open source building energy modeling ecosystem of [Open Studio®](https://openstudio.net/) and [Energy Plus®](https://energyplus.net/). 
