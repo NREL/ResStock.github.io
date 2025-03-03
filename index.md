@@ -27,7 +27,7 @@ Visit the [Datsets page](https://resstock.nrel.gov/datasets) for access to the p
 Read our [technical reference documentation](https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf) for model inputs and assumptions.
 
 ## What Does ResStock Do?
-As the demand for decarbonization initiatives expands across the country, so does the need for energy modeling. ResStock meets this need as a national residential building energy stock model. It enables a new approach to large-scale residential energy analysis across the United States. by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Renewable Energy Laboratory (NREL).
+ResStock enables a new approach to large-scale residential energy analysis across the United States. by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Renewable Energy Laboratory (NREL).
 
 ResStock is more than just a basic modeling tool for analyzing energy efficiency and consumption in residential buildings. It integreates a variety of features and capabilities that make it a comprehensive analytical platform. Here's a broader description of it's functionalities:
 
@@ -65,28 +65,28 @@ _Questions that can be answered with ResStock:_
 
     - How are low-income and renter-occupied housing units different from other housing units?
 
-    - What are the largest opportunities for energy efficiency and electrification?
+    - What are the largest opportunities for energy efficiency?
 
 2. Technology potentials and what-if scenarios
 
-    - What is the range of savings per household if X, Y, or Z are implemented? What are the total expected savings for a program or community with X, Y, or Z?
+    - What is the range of energy consumption and utility bill savings per household if X, Y, or Z are implemented? What are the total expected savings for a program or community with X, Y, or Z?
 
-    - What are the energy, carbon, and utility bill impacts of a home envelope upgrade versus a heat pump upgrade?
+    - What are the energy consumption and utility bill impacts of a home envelope upgrade versus an HVAC equipment upgrade?
 
 3. Addressable questions with timeseries and customization?
 
-    - Does residential electrification shift a region from summer peaking to winter peaking?
+    - What types of retrofits would shift a given region from summer peaking to winter peaking?
 
     - What is the total change in peak demand from energy efficiency?
     
-    - How do higher efficiency equipment or envelope improvements affect the change in peak demand?
+    - How do higher efficiency equipment or envelope improvements affect peak demand?
 
 _Questions that cannot be answered by ResStock alone:_
 1. What is the potential for rooftop or community solar?
 2. How many homes qualify for the Weatherization Assistance Program or other specific policies?
 3. How might different income groups leverage financing mechanisms for their home upgrades?
 4. What is the cost of installing a heat pump?
-5. What is the electrification potential for a specific home address?
+5. What is the energy savings potential for a specific home address?
 
 ## How To Use ResStock
 ResStock provides access to results through many different forms, including a web data viewer, dashboards, and raw data available for download. Explanations, how-to guides, and tutorials are available in teh Resources section of the ResStock website to assist using the data for common use cases
