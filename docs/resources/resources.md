@@ -35,6 +35,8 @@ These documents provide explanations focusing on how and why of the ResStock dat
 <!--- - Emissions -->
 - [Why At Least 1,000 Samples is Recommended]({{ site.baseurl }}{% link docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.md %})
 - [Why Individual ResStock Measures Should Not Be Combined]({{ site.baseurl }}{% link docs/resources/explanations/Individual_Measures_Not_Combined.md %})
+- [Building Types Not Represented in ResStock]({{ site.baseurl }}{% link docs/resources/explanations/Building_Types.md %})
+- [PV System Assignment and Distributions]({{ site.baseurl }}{% link docs/resources/explanations/PV_System_Assignment_and_Distributions.md %})
 <!-- - Combining Data from Different Datasets - Limitations and Known Issues -->
 
 ### ResStock Limitations and Known Issues

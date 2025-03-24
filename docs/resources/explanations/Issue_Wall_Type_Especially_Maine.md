@@ -2,7 +2,7 @@
 layout: default
 title: Wall Type Issue, Especially in Maine
 parent: Resources
-nav_order: 7
+nav_order: 10
 ---
 
 # Issue Report: Wall Type Issue, Especially in Maine
