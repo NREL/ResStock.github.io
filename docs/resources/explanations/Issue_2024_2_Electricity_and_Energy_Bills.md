@@ -2,7 +2,7 @@
 layout: default
 title: ResStock 2024 Release 2 Electricity and Energy Bills
 parent: Resources
-nav_order: 7
+nav_order: 9
 ---
 
 # Issue Report: ResStock 2024 Release 2 Electricity and Energy Bills
