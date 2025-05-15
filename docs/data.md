@@ -8,6 +8,8 @@ has_toc: false
 # Data
 Given the complexity and computational intensity of ResStock, the best pathway for professionals and researchers to use ResStock successfully is to use pre-created results, rather than running ResStock themselves. This section provides information about accessing ResStock results and links to published datasets.
 
+The most up to date technical reference documentation for ResStock is available [here](https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf). Below is technical documentation for each dataset, but the previous link more fully explains current assumptions and methodologies, and should be used in junction with the documentaiton for each dataset release.
+
 ## Published Datasets
 These datasets explore the annual and timeseries energy consumption of the U.S. residential building stock at the end-use level.
 Access the webinar recording, webinar slides, and the technical documentation for each dataset as they are available:
