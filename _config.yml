@@ -1,9 +1,9 @@
 title: ResStock
 description: ResStock Documentation
-#theme: just-the-docs
+# theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
 url: https://github.com/NREL/ResStock.github.io
-logo: "/assets/images/logo.jpg"
+logo: "/assets/images/logo.svg"
 favicon_ico: "/assets/images/favicon.ico"
 search_enabled: true
 aux_links:
