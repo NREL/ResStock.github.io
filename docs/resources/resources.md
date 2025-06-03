@@ -42,6 +42,7 @@ These documents provide explanations focusing on how and why of the ResStock dat
 ### ResStock Limitations and Known Issues
 - [ResStock 2024 Release 2 Electricity and Energy Bills]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%})
 - [Wall Type Issue, Especially in Maine]({{ site.baseurl }}{% link docs/resources/explanations/Issue_Wall_Type_Especially_Maine.md%})
+-   [ResStock 2024 Release 2 Measure Applicability]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Measure_Applicability.md%})
 
 ## Training Videos<span class="label label-blue">NEW</span>
 Webinars, presentations, and guidance on the ComStock and ResStock datasets—including training videos on accessing the datasets, using the Data Viewer, and more—are available on [NREL’s Building Stock Analysis YouTube channel](https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS). See below for a sample of available videos. For the full collection, visit the YouTube channel.

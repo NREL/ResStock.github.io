@@ -20,7 +20,9 @@ Access the webinar recording, webinar slides, and the technical documentation fo
 
 ResStock dataset releases are summarized in the following table with links for accessing the aggregate results. Scroll to the right for information on all of the datasets.
 
-**<span style="color:red">Dataset Alert:</span>** The electricity bills and energy bills are incorrectly calculated in 2024.2 datasets. This especially impacts electricity bill and energy bill savings results. Please see [here]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%}) for additional information.
+**<span style="color:red">Dataset Alerts:</span>**
+-   The electricity bills and energy bills are incorrectly calculated in 2024.2 datasets. This especially impacts electricity bill and energy bill savings results. Please see the [known issue report]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%}) for additional information.
+-   Certain models in the ResStock 2024.2 dataset do not have the dual-fuel measures applied despite the documentation stating that they do. Please see the [known issue report]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Measure_Applicability.md%}) for more details.
 
 |   | **<span style="color:red">2024.2</span>** | **<span style="color:red">2024.2</span>** | **2024.1** | **2022.1** | **2022.1** | **2022.1** | **2021.1** | **2021.1** |
 | **Weather Year** | AMY 2018 | TMY3 | TMY3 | AMY 2018 | AMY 2012 | TMY3 | AMY 2018 | TMY3 |
