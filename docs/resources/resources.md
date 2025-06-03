@@ -53,7 +53,7 @@ Webinars, presentations, and guidance on the ComStock and ResStock datasets—in
 -   [Loading End-Use Saving Shapes Data into AWS Athena](https://www.youtube.com/watch?v=qSR1MFpSiro)
 
 ## Tableau Dashboards<span class="label label-blue">NEW</span>
-The [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes) offers interactive visualizations derived from the public ComStock datasets. These visualizations provide insights into building characteristics, energy consumption patterns, and the potential impacts of energy efficiency measures across various building types and geographic regions. See below for a sample of available dashboards. Additional dashboards will be posted to the ComStock Tableau Public page as they become available.
+The [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes) offers interactive visualizations derived from the public ResStock datasets. These visualizations provide insights into building characteristics, energy consumption patterns, and the potential impacts of energy efficiency measures across various building types and geographic regions. See below for a sample of available dashboards. Additional dashboards will be posted to the ResStock Tableau Public page as they become available.
 
 -   [Utility Bill Impact Dashboard](https://public.tableau.com/app/profile/nrel.buildingstock/viz/UtilityBillImpactDashboard/Home)
 -   [State Level Residential Building Stock and Energy Efficiency & Electrification Packages Analysis](https://public.tableau.com/app/profile/nrel.buildingstock/viz/StateLevelResidentialBuildingStockandEnergyEfficiencyElectrificationPackagesAnalysis/Introduction)
