@@ -42,3 +42,21 @@ These documents provide explanations focusing on how and why of the ResStock dat
 ### ResStock Limitations and Known Issues
 - [ResStock 2024 Release 2 Electricity and Energy Bills]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%})
 - [Wall Type Issue, Especially in Maine]({{ site.baseurl }}{% link docs/resources/explanations/Issue_Wall_Type_Especially_Maine.md%})
+
+## Training Videos<span class="label label-blue">NEW</span>
+Webinars, presentations, and guidance on the ComStock and ResStock datasets—including training videos on accessing the datasets, using the Data Viewer, and more—are available on [NREL’s Building Stock Analysis YouTube channel](https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS). See below for a sample of available videos. For the full collection, visit the YouTube channel.
+
+-   [NREL Data on Home Energy Savings Potential for States and Communities](https://www.youtube.com/watch?v=2J5yESxR-qM)
+-   [ResStock End Use Saving Shapes State Dashboard Training – State level housing details & results](https://www.youtube.com/watch?v=vtYMO0782Rc)
+-   [ResStock End Use Savings Shapes Round 1 Training 1 – Introduction](https://www.youtube.com/watch?v=JcHOV45yEy4)
+-   [End-Use Load Profiles Dataset Access Demonstration](https://www.youtube.com/watch?v=iS7KeVQ0Bvs)
+-   [Loading End-Use Saving Shapes Data into AWS Athena](https://www.youtube.com/watch?v=qSR1MFpSiro)
+
+## Tableau Dashboards<span class="label label-blue">NEW</span>
+The [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes) offers interactive visualizations derived from the public ComStock datasets. These visualizations provide insights into building characteristics, energy consumption patterns, and the potential impacts of energy efficiency measures across various building types and geographic regions. See below for a sample of available dashboards. Additional dashboards will be posted to the ComStock Tableau Public page as they become available.
+
+-   [Utility Bill Impact Dashboard](https://public.tableau.com/app/profile/nrel.buildingstock/viz/UtilityBillImpactDashboard/Home)
+-   [State Level Residential Building Stock and Energy Efficiency & Electrification Packages Analysis](https://public.tableau.com/app/profile/nrel.buildingstock/viz/StateLevelResidentialBuildingStockandEnergyEfficiencyElectrificationPackagesAnalysis/Introduction)
+-   [ResStock Segmentation Dashboard](https://public.tableau.com/app/profile/nrel.buildingstock/viz/res_segmentation_dashboard_co2/Dashboard1)
+
+For ComStock Tableau dashboards, please visit the [ComStock Tableau Public page](https://public.tableau.com/app/profile/comstock.nrel/vizzes).
