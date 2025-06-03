@@ -49,15 +49,16 @@ Webinars, presentations, and guidance on the ComStock and ResStock datasets—in
 
 -   [NREL Data on Home Energy Savings Potential for States and Communities](https://www.youtube.com/watch?v=2J5yESxR-qM)
 -   [ResStock End Use Saving Shapes State Dashboard Training – State level housing details & results](https://www.youtube.com/watch?v=vtYMO0782Rc)
--   [ResStock End Use Savings Shapes Round 1 Training 1 – Introduction](https://www.youtube.com/watch?v=JcHOV45yEy4)
 -   [End-Use Load Profiles Dataset Access Demonstration](https://www.youtube.com/watch?v=iS7KeVQ0Bvs)
 -   [Loading End-Use Saving Shapes Data into AWS Athena](https://www.youtube.com/watch?v=qSR1MFpSiro)
+-   [BuildStockQuery Training Series](https://www.youtube.com/watch?v=jmmAHsOZAp8)
 
 ## Tableau Dashboards<span class="label label-blue">NEW</span>
-The [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes) offers interactive visualizations derived from the public ResStock datasets. These visualizations provide insights into building characteristics, energy consumption patterns, and the potential impacts of energy efficiency measures across various building types and geographic regions. See below for a sample of available dashboards. Additional dashboards will be posted to the ResStock Tableau Public page as they become available.
+The [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes) offers interactive visualizations based on ResStock datasets. These visualizations provide insights into building characteristics, energy consumption patterns, and the potential impacts of energy efficiency measures across various building types and geographic regions. See below for a sample of available dashboards. Additional dashboards will be posted to the ResStock Tableau Public page as they become available.
 
--   [Utility Bill Impact Dashboard](https://public.tableau.com/app/profile/nrel.buildingstock/viz/UtilityBillImpactDashboard/Home)
--   [State Level Residential Building Stock and Energy Efficiency & Electrification Packages Analysis](https://public.tableau.com/app/profile/nrel.buildingstock/viz/StateLevelResidentialBuildingStockandEnergyEfficiencyElectrificationPackagesAnalysis/Introduction)
--   [ResStock Segmentation Dashboard](https://public.tableau.com/app/profile/nrel.buildingstock/viz/res_segmentation_dashboard_co2/Dashboard1)
+-   [Utility Bill Impact Dashboard](https://public.tableau.com/app/profile/nrel.buildingstock/viz/UtilityBillImpactDashboard/Home) (2024)
+-   Heat Pumps for All: [Best Packages](https://public.tableau.com/app/profile/nrel.buildingstock/viz/Heatpumpsforall-Bestpackages/FigS5_DistributionsofhighestunsubsidizedNPV) (2024), [Economic Data](https://public.tableau.com/app/profile/nrel.buildingstock/viz/Heatpumpsforall-Economicdata/Coverpage) (2023), [GHG Emissions](https://public.tableau.com/app/profile/nrel.buildingstock/viz/Heatpumpsforall-GHGemissions/Statemaps) (2023)
+-   [State Level Residential Building Stock and Energy Efficiency & Electrification Packages Analysis](https://public.tableau.com/app/profile/nrel.buildingstock/viz/StateLevelResidentialBuildingStockandEnergyEfficiencyElectrificationPackagesAnalysis/Introduction) (2023)
+-   [US Building Typology Segmentation Residential](https://public.tableau.com/app/profile/nrel.buildingstock/viz/USBuildingTypologyResidential/Segments) (2021)
 
 For ComStock Tableau dashboards, please visit the [ComStock Tableau Public page](https://public.tableau.com/app/profile/comstock.nrel/vizzes).
