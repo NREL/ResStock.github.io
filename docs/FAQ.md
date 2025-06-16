@@ -93,25 +93,16 @@ Below are some frequently asked questions (FAQ) about ResStock and ComStock. The
     <summary>What software can I use to open the .parquet files?</summary>
     <p>Parquet files can be read using programming languages such as Python, using the pyarrow package. For other options, see <a href="https://arrow.apache.org/docs/index.html">https://arrow.apache.org/docs/index.html</a>. There are a few third-party graphical tools for viewing parquet files, but we have not tested them and the third-party support is limited.
 
-    See below for example Python code to convert parquet file to csv.
-
-        import pandas as pd
-
-        import os
-
-        folder_path = 'C:/Users/username/Documents/EUSS/Results’
-
-        file_name = ‘813-2’
-
-        suffix = '.parquet'
-
-        file = pd.read_parquet(os.path.join(folder_path, file_name+suffix))
-
-        new_suffix = '.csv'
-
-        file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
-
-    </p>
+    See below for example Python code to convert parquet file to csv. </p>
+    <pre><code>import pandas as pd
+import os
+folder_path = 'C:/Users/username/Documents/EUSS/Results'
+file_name = '813-2'
+suffix = '.parquet'
+file = pd.read_parquet(os.path.join(folder_path, file_name+suffix))
+new_suffix = '.csv'
+file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
+    </code></pre>
 </details>
 
 <details>
