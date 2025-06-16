@@ -19,7 +19,7 @@ Below are some frequently asked questions (FAQ) about ResStock and ComStock. The
 
 <details>
     <summary>What do the codes used to describe "county_id" and other geographic fields mean?</summary>
-    <p>ComStock and ResStock use the National Historical GIS (NHGIS) GISJOIN standard codes for county, census PUMA, and census tract, which are based on Federal Information Processing System (FIPS) codes. The datasets use the 2010 version of the GISJOIN codes--2020 are not available at this time. For more information about the geospatial fields available in the datasets, see this explanation for ComStock, and this explanation for ResStock.
+    <p>ComStock and ResStock use the National Historical GIS (NHGIS) GISJOIN standard codes for county, census PUMA, and census tract, which are based on Federal Information Processing System (FIPS) codes. The datasets use the 2010 version of the GISJOIN codes--2020 are not available at this time. For more information about the geospatial fields available in the datasets, see <a href="https://nrel.github.io/ComStock.github.io/docs/resources/explanations/reference_geographic_codes.html">this explanation</a> for ComStock, and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">this explanatation</a> for ResStock.
     
     In most ComStock and ResStock datasets, county name is available in addition to the GISJOIN county code. For both tools, the column in the metadata_and_annual_results files on OEDI is called "in.county_name". 
     </p>
@@ -94,14 +94,23 @@ Below are some frequently asked questions (FAQ) about ResStock and ComStock. The
     <p>Parquet files can be read using programming languages such as Python, using the pyarrow package. For other options, see <a href="https://arrow.apache.org/docs/index.html">https://arrow.apache.org/docs/index.html</a>. There are a few third-party graphical tools for viewing parquet files, but we have not tested them and the third-party support is limited.
 
     See below for example Python code to convert parquet file to csv.
+
         import pandas as pd
+
         import os
+
         folder_path = 'C:/Users/username/Documents/EUSS/Results’
+
         file_name = ‘813-2’
+
         suffix = '.parquet'
+
         file = pd.read_parquet(os.path.join(folder_path, file_name+suffix))
+
         new_suffix = '.csv'
+
         file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
+
     </p>
 </details>
 
@@ -141,22 +150,17 @@ Below are some frequently asked questions (FAQ) about ResStock and ComStock. The
 
 <details>
     <summary>Where is there documentation on what technologies are available in the upgrade measures?</summary>
-    <p></p>
-</details>
-
-<details>
-    <summary>Where is there documentation on what technologies are available in the upgrade measures?</summary>
     <p>The <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> links to each dataset and the dataset technical documentation which covers the technologies and upgrades that are available. </p>
 </details>
 
 <details>
     <summary>Does ResStock model rooftop solar PV?</summary>
-    <p>Yes, ResStock does model rooftop solar PV. See more details on rooftop PV, assumptions, and limitations on <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/PV_System_Assignment_and_Distributions.html">this explanation</a>.We recommend using <a href="https://pvwatts.nrel.gov/">PVWatts</a>  [PVWatts](https://pvwatts.nrel.gov/) or <a href="https://reopt.nrel.gov/tool">ReOPT</a> to evaluate PV for a more comprehensive analysis. </p>
+    <p>Yes, ResStock does model rooftop solar PV. See more details on rooftop PV, assumptions, and limitations on <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/PV_System_Assignment_and_Distributions.html">this explanation</a>.We recommend using <a href="https://pvwatts.nrel.gov/">PVWatts</a> or <a href="https://reopt.nrel.gov/tool">ReOPT</a> to evaluate PV for a more comprehensive analysis. </p>
 </details>
 
 <details>
     <summary>Are there electric vehicle (EV) charging profiles in the dataset?</summary>
-    <p>No, ResStock does not currently model EV charging in the dataset, however this feature is in development. For modeling aggregate EV load profiles for a city or state, we suggest using EVI-Pro Lite: https://afdc.energy.gov/evi-pro-lite/load-profile. Measured charging profile data for individual homes can be found in the <a href="https://neea.org/data/nw-end-use-load-research-project/energy-metering-study-data">NEEA HEMS Data</a>  NEEA HEMS data and <a href="https://www.pecanstreet.org/dataport/">Pecan Street Dataport</a>. Email us at <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a> if you have suggestions for other EV charging data sources.</p>
+    <p>No, ResStock does not currently model EV charging in the dataset, however this feature is in development. For modeling aggregate EV load profiles for a city or state, we suggest using <a href="https://afdc.energy.gov/evi-pro-lite/load-profile">EVI-Pro Lite</a>. Measured charging profile data for individual homes can be found in the <a href="https://neea.org/data/nw-end-use-load-research-project/energy-metering-study-data">NEEA HEMS Data</a>  NEEA HEMS data and <a href="https://www.pecanstreet.org/dataport/">Pecan Street Dataport</a>. Email us at <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a> if you have suggestions for other EV charging data sources.</p>
 </details>
 
 <details>
@@ -203,8 +207,6 @@ Below are some frequently asked questions (FAQ) about ResStock and ComStock. The
     <summary>I want to analyze only part of a package, not the whole package. Can I compare samples that did not get this part of the upgrade, with samples that got the full upgrade to analyze the impact?</summary>
     <p>Yes you can, but there are a few caveats to be aware of. For example, if looking at one envelope package that includes air sealing, insulation, and duct sealing, downselecting to models without the wall insulation measure applied is creating a biased sample, since the package applies wall insulation only to uninsulated wood stud walls. Using this method, you are removing some of the poorest performing buildings. Take a look at the samples to see how many samples you would be removing with this approach, and then consider if it is reasonable.</p>
 </details>
-
-<a href="">X</a>
 
 <details>
     <summary>Does ResStock consider duct sizing impacts with any HVAC upgrades?</summary>
