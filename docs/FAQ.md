@@ -8,9 +8,41 @@ has_toc: false
 # Frequently Asked Questions
 {: .fw-500}
 
-Below are some frequently asked questions (FAQ) about ResStock and ComStock. The questions are divided into general questions about ResStock and ComStock, specific questions about ResStock, and then questions about how to use the Data Viewer. If you have another question, please email our team at [ResStock@nrel.gov](mailto:ResStock@nrel.gov) and we can get back to you.
+Below are some frequently asked questions (FAQ) about ResStock. The questions are divided into ResStock essentials, datasets and data access, the data viewer, analysis, and then finally a modeling methods, assumptions, and documentation section. If you have another question, please email our team at [ResStock@nrel.gov](mailto:ResStock@nrel.gov).
 
-## General Questions about ResStock and ComStock
+## ResStock Essentials
+
+<details>
+    <summary>Is ResStock credible?</summary>
+    <p>Yes. The models underwent extensive calibration as part of the End Use Load Profiles (EULP) project where we compared model load profiles to AMI data from around the country, and updated baseline model schedules, power densities, among other things using various data sources. Reference the <a href="https://www.nrel.gov/docs/fy22osti/80889.pdf">EULP final report</a> for more details. The EULP project concluded in 2021.
+
+    For details about how to determine whether the models are appropriate for a specific analysis, reference <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Considerations_for_ResStock_Calibration_and_Validation.html">this explanation</a>.</p>
+</details>
+
+<details>
+    <summary>Which dataset release should I use?</summary>
+    <p>We recommend using the latest data release whenever possible. However, older datasets still provide valuable information and can be used if newer datasets are not appropriate for a specific use. We do not recommend a comparison of upgrade measures across different dataset releases due to the changes and improvements made in each dataset release. Each new dataset release includes its own set of upgrade measures, some of which are repeats, and improvements made to the baseline model and modeling methodology. See the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> for a list of available datasets and access links, as well as technical documentation for the ResStock tool.</p>
+</details>
+
+<details>
+    <summary>What are weights in ResStock and how are they used?</summary>
+    <p>Weights in ResStock represent the number of real buildings in the U.S. building stock that a ResStock model represents. Each ResStock dataset release has a different weighting factor for the building models. As seen in <a href="https://www.nrel.gov/docs/fy22osti/80889.pdf">this paper</a>, our model or sample weights are constructed using U.S. EIA 2009 RECS microdata. Use the weights by multiplying the column of interest by the weight. Some results columns already have the weight applied. These have the word “weighted” in the name.</p>
+</details>
+
+<details>
+    <summary> What building types does ResStock model?</summary>
+    <p>ResStock models most types of housing including single-family, multifamily, and manufactured or mobile homes. See <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Building_Types.html">this explanation</a> for more detail on what is not modeled.</p>
+</details>
+
+<details>
+    <summary>How many profiles or models should be used, and how does the number used affect uncertainty of results?</summary>
+    <p>We recommend estimating the standard error using the standard deviation divided by the square root of the number of samples (i.e. profiles or models) and using the results to inform the appropriate minimum sample size for a particular analysis. As a conservative reference, using at least 1,000 samples  will maintain 15% or lower sampling discrepancy for many common quantities of interest, as described in the <a href="https://docs.nrel.gov/docs/fy22osti/80889.pdf">End-Use Load Profiles methodology report section 5.1.3</a>.
+
+    See <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.html">this explanation</a>  this explanation which has more details and also points to other ResStock references about how to increase the number of samples and calculate the uncertainty.
+    </p>
+</details>
+
+## Datasets and Data Access
 
 <details>
     <summary>How do I access the dataset?</summary>
@@ -24,25 +56,6 @@ Below are some frequently asked questions (FAQ) about ResStock and ComStock. The
     In most ComStock and ResStock datasets, county name is available in addition to the GISJOIN county code. For both tools, the column in the metadata_and_annual_results files on OEDI is called "in.county_name". 
     </p>
 </details>
-
-<details>
-    <summary>Can I run ComStock and ResStock myself?</summary>
-    <p>The code required to run ComStock and ResStock is available on our public GitHub repositories: <a href="https://github.com/NREL/ComStock">https://github.com/NREL/ComStock</a> ; <a href="https://github.com/NREL/ResStock">https://github.com/NREL/ResStock</a>. Other related code repositories are provided on the For Developers page for <a href="https://nrel.github.io/ComStock.github.io/docs/for_developers/for_developers.html">ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/developers.html">ResStock</a>.
-    
-    While these resources are available, ComStock and ResStock are complex modeling tools and there is no documentation for running the model other than what exists in the codebase, and we are not able to support running the models at this time. We generally do not recommend running the model unless you have a deep understanding of the methodology and objectives. Please email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a> or <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a>  if you have suggestions for improvements or specific needs.
-    </p>
-</details>
-
-<details>
-    <summary>I am interested in an upgrade measure combination that is not currently available as an upgrade package in the public datasets. Can I combine results from the individual measures?</summary>
-    <p>Our general guidance is to NOT combine measure results. There are interactions between most upgrade measures that affect the amount of savings and make results of multiple measures together misleading.
-    
-    See an explanation and examples on this topic, for <a href="https://nrel.github.io/ComStock.github.io/docs/resources/explanations/combining_measure_results.html">ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Individual_Measures_Not_Combined.html">ResStock</a>.
-    
-    Please email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a> or <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a> if you have questions about combining specific measures.
-    </p>
-</details>
-
 
 <details>
     <summary>I am trying to match buildings between releases, but noticed the building IDs do not match between them.</summary>
@@ -110,78 +123,9 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     <p>The timestamp indicates the end of each 15-minute interval. So "12:15" represents the energy use between 12:00 and 12:15.</p>
 </details>
 
-## ResStock questions
-
-<details>
-    <summary>Where can I find information about input data sources, modeling methodology, and assumptions?</summary>
-    <p>ResStock reference documentation is available in the Published Datasets section of the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a>. This includes baseline and upgrade measure information. We generally publish an updated version with every dataset release.</p>
-</details>
-
-<details>
-    <summary>Is ResStock credible?</summary>
-    <p>Yes. The models underwent extensive calibration as part of the End Use Load Profiles (EULP) project where we compared model load profiles to AMI data from around the country, and updated baseline model schedules, power densities, among other things using various data sources. Reference the <a href="https://www.nrel.gov/docs/fy22osti/80889.pdf">EULP final report</a> for more details. The EULP project concluded in 2021.
-
-    For details about how to determine whether the models are appropriate for a specific analysis, reference <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Considerations_for_ResStock_Calibration_and_Validation.html">this explanation</a>.</p>
-</details>
-
-<details>
-    <summary>Which dataset release should I use?</summary>
-    <p>We recommend using the latest data release whenever possible. However, older datasets still provide valuable information and can be used if newer datasets are not appropriate for a specific use. We do not recommend a comparison of upgrade measures across different dataset releases due to the changes and improvements made in each dataset release. Each new dataset release includes its own set of upgrade measures, some of which are repeats, and improvements made to the baseline model and modeling methodology. See the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> for a list of available datasets and access links, as well as technical documentation for the ResStock tool.</p>
-</details>
-
-<details>
-    <summary>What are weights in ResStock and how are they used?</summary>
-    <p>Weights in ResStock represent the number of real buildings in the U.S. building stock that a ResStock model represents. Each ResStock dataset release has a different weighting factor for the building models. As seen in <a href="https://www.nrel.gov/docs/fy22osti/80889.pdf">this paper</a>, our model or sample weights are constructed using U.S. EIA 2009 RECS microdata. Use the weights by multiplying the column of interest by the weight. Some results columns already have the weight applied. These have the word “weighted” in the name.</p>
-</details>
-
-<details>
-    <summary> What building types does ResStock model?</summary>
-    <p>ResStock models most types of housing including single-family, multifamily, and manufactured or mobile homes. See <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Building_Types.html">this explanation</a> for more detail on what is not modeled.</p>
-</details>
-
-<details>
-    <summary>Where is there documentation on what technologies are available in the upgrade measures?</summary>
-    <p>The <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> links to each dataset and the dataset technical documentation which covers the technologies and upgrades that are available. </p>
-</details>
-
-<details>
-    <summary>Does ResStock model rooftop solar PV?</summary>
-    <p>Yes, ResStock does model rooftop solar PV. See more details on rooftop PV, assumptions, and limitations on <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/PV_System_Assignment_and_Distributions.html">this explanation</a>.We recommend using <a href="https://pvwatts.nrel.gov/">PVWatts</a> or <a href="https://reopt.nrel.gov/tool">ReOPT</a> to evaluate PV for a more comprehensive analysis. </p>
-</details>
-
-<details>
-    <summary>Are there electric vehicle (EV) charging profiles in the dataset?</summary>
-    <p>No, ResStock does not currently model EV charging in the dataset, however this feature is in development. For modeling aggregate EV load profiles for a city or state, we suggest using <a href="https://afdc.energy.gov/evi-pro-lite/load-profile">EVI-Pro Lite</a>. Measured charging profile data for individual homes can be found in the <a href="https://neea.org/data/nw-end-use-load-research-project/energy-metering-study-data">NEEA HEMS Data</a>  NEEA HEMS data and <a href="https://www.pecanstreet.org/dataport/">Pecan Street Dataport</a>. Email us at <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a> if you have suggestions for other EV charging data sources.</p>
-</details>
-
-<details>
-    <summary>How many profiles or models should be used, and how does the number used affect uncertainty of results?</summary>
-    <p>We recommend estimating the standard error using the standard deviation divided by the square root of the number of samples (i.e. profiles or models) and using the results to inform the appropriate minimum sample size for a particular analysis. As a conservative reference, using at least 1,000 samples  will maintain 15% or lower sampling discrepancy for many common quantities of interest, as described in the <a href="https://docs.nrel.gov/docs/fy22osti/80889.pdf">End-Use Load Profiles methodology report section 5.1.3</a>.
-
-    See <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.html">this explanation</a>  this explanation which has more details and also points to other ResStock references about how to increase the number of samples and calculate the uncertainty.
-    </p>
-</details>
-
-<details>
-    <summary>What emissions scenarios are modeled?</summary>
-    <p>Depending on the ResStock dataset, different emission scenarios are used. The technical documentation for each dataset usually contains information about the emission scenarios modeled. Recent datasets used Cambuium data, and have multiple emission scenarios modeled. Links to the technical documentation can be found <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">here</a> For more information, see section 5.4 of the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock technical reference documentation</a>.</p>
-</details>
-
-<details>
-    <summary>How are leap years modeled?</summary>
-    <p>ResStock models every day of the year, including for leap years. The results for leap years (ie AMY2012 weather) therefore span 8784 hours, and are generated using weather files that contain 8784 hours. Here is the relevant <a href="https://openstudio-hpxml.readthedocs.io/en/latest/workflow_inputs.html#id4">OS-HPXML documentation</a>.</p>
-</details>
-
 <details>
     <summary>Are the EnergyPlus model input files (.idf) or OpenStudio (.osm) files available?</summary>
     <p>Most ResStock datasets include the input files, though the file format provided varies. More recent datasets have xml and osm files, like the 2024 release 2. Older releases, have the following files:  2024 release 1 does not have either,  2022 release 1 has xml files, and 2021 release 1 has osm files.</p>
-</details>
-
-<details>
-    <summary>Are costs modeled?</summary>
-    <p>ResStock models the cost of running the equipment, or the cost impact on the utility bill. None of the ResStock datasets include the first costs (also called upgrade or measure costs).
-    
-    See the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock technical reference documentation</a> for more information on utility bill calculation. </p>
 </details>
 
 <details>
@@ -189,33 +133,18 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     <p>Yes, ResStock includes California Climate zone as a characteristic.</p>
 </details>
 
-<details>
-    <summary>Does ResStock only model water heaters in one location, or can the location vary?</summary>
-    <p>The location can vary. They could be located in the attic, mechanical room, crawlspace, garage, basement, living area, outside, or in an unheated basement. More information can be found in section 4.5 of the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">Resstock technical reference documentation</a>. Before the 2024 Release 2, we generally used this logic: in cold climates, the water heater was in the basement if there was one, living space otherwise. For hot climates, it'd be the garage if there was one, living space otherwise.</p>
-</details>
-
-<details>
-    <summary>I want to analyze only part of a package, not the whole package. Can I compare samples that did not get this part of the upgrade, with samples that got the full upgrade to analyze the impact?</summary>
-    <p>Yes you can, but there are a few caveats to be aware of. For example, if looking at one envelope package that includes air sealing, insulation, and duct sealing, downselecting to models without the wall insulation measure applied is creating a biased sample, since the package applies wall insulation only to uninsulated wood stud walls. Using this method, you are removing some of the poorest performing buildings. Take a look at the samples to see how many samples you would be removing with this approach, and then consider if it is reasonable.</p>
-</details>
-
-<details>
-    <summary>Does ResStock consider duct sizing impacts with any HVAC upgrades?</summary>
-    <p>When retrofitting a home with a heat pump, sometimes duct size needs to change because of a higher flow rate and a lower supply temperature. ResStock assumes that the duct size increases in all datasets up to and including the 2024 Release 2 dataset. However, this may not be done in practice.</p>
-</details>
-
-<details>
-    <summary>Partial air conditioning is being referenced from RECS 2009. Why has this not been updated?</summary>
-    <p>We have not found a more recent dataset with the necessary data resolution. This includes RECS 2015 and RECS 2020. The dependencies of this characteristic’s distribution, such as cooling type, use more recent data, so the final distributions of partial air conditioning does not match RECS 2009 even though this is the data source.
-    </p>
-</details>
-
-<details>
-    <summary>The lighting options available are 100% CFL or 100% of one lighting type. This is unlikely to be the case in buildings. How can I explain this to our clients?</summary>
-    <p>This is a limitation of ResStock, we are not able to do a mixed lighting scenario because there are data limitations in RECS 2015. In reality, some homes may not have 100% of a certain type of lighting. If you are looking at this data, consider our other guidance on the number of samples recommended in order to draw conclusions.</p>
-</details>
-
 ## Data Viewer
+
+<details>
+    <summary>What is the Data Viewer?</summary>
+    <p>
+    The Data Viewer is a web-based visualization platform that takes data directly from our hosting platform, the OEDI data lake.
+    
+    The Data Viewer can show users timeseries data or data aggregations in a web browser. More information can be found in section 6.2 Web-Based Visualization Platform of the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock technical reference documentation</a>.
+    
+    The link to the Data Viewer depends on the dataset, and other factors. View the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> for links to the Data Viewer specific to each dataset release.
+
+    </p>
 
 <details>
     <summary>In the Data Viewer, what does "sum" or "average" mean?</summary>
@@ -271,4 +200,90 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     
     Once the data is downloaded and open, apply the same filters that were used in the Data Viewer.
     </p>
+</details>
+
+## Analysis
+
+<details>
+    <summary>Can I run ComStock and ResStock myself?</summary>
+    <p>The code required to run ComStock and ResStock is available on our public GitHub repositories: <a href="https://github.com/NREL/ComStock">https://github.com/NREL/ComStock</a> ; <a href="https://github.com/NREL/ResStock">https://github.com/NREL/ResStock</a>. Other related code repositories are provided on the For Developers page for <a href="https://nrel.github.io/ComStock.github.io/docs/for_developers/for_developers.html">ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/developers.html">ResStock</a>.
+    
+    While these resources are available, ComStock and ResStock are complex modeling tools and there is no documentation for running the model other than what exists in the codebase, and we are not able to support running the models at this time. We generally do not recommend running the model unless you have a deep understanding of the methodology and objectives. Please email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a> or <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a>  if you have suggestions for improvements or specific needs.
+    </p>
+</details>
+
+<details>
+    <summary>I am interested in an upgrade measure combination that is not currently available as an upgrade package in the public datasets. Can I combine results from the individual measures?</summary>
+    <p>Our general guidance is to NOT combine measure results. There are interactions between most upgrade measures that affect the amount of savings and make results of multiple measures together misleading.
+    
+    See an explanation and examples on this topic, for <a href="https://nrel.github.io/ComStock.github.io/docs/resources/explanations/combining_measure_results.html">ComStock</a> and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Individual_Measures_Not_Combined.html">ResStock</a>.
+    
+    Please email us at <a href="mailto:ComStock@nrel.gov">ComStock@nrel.gov</a> or <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a> if you have questions about combining specific measures.
+    </p>
+</details>
+
+<details>
+    <summary>I want to analyze only part of a package, not the whole package. Can I compare samples that did not get this part of the upgrade, with samples that got the full upgrade to analyze the impact?</summary>
+    <p>Yes you can, but there are a few caveats to be aware of. For example, if looking at one envelope package that includes air sealing, insulation, and duct sealing, downselecting to models without the wall insulation measure applied is creating a biased sample, since the package applies wall insulation only to uninsulated wood stud walls. Using this method, you are removing some of the poorest performing buildings. Take a look at the samples to see how many samples you would be removing with this approach, and then consider if it is reasonable.</p>
+</details>
+
+
+## Modeling Methods, Assumptions, and Documentation
+
+<details>
+    <summary>Where can I find information about input data sources, modeling methodology, and assumptions?</summary>
+    <p>ResStock reference documentation is available in the Published Datasets section of the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a>. This includes baseline and upgrade measure information. We generally publish an updated version with every dataset release.</p>
+</details>
+
+<details>
+    <summary>Where is there documentation on what technologies are available in the upgrade measures?</summary>
+    <p>The <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> links to each dataset and the dataset technical documentation which covers the technologies and upgrades that are available. </p>
+</details>
+
+<details>
+    <summary>Does ResStock model rooftop solar PV?</summary>
+    <p>Yes, ResStock does model rooftop solar PV. See more details on rooftop PV, assumptions, and limitations on <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/PV_System_Assignment_and_Distributions.html">this explanation</a>.We recommend using <a href="https://pvwatts.nrel.gov/">PVWatts</a> or <a href="https://reopt.nrel.gov/tool">ReOPT</a> to evaluate PV for a more comprehensive analysis. </p>
+</details>
+
+<details>
+    <summary>Are there electric vehicle (EV) charging profiles in the dataset?</summary>
+    <p>No, ResStock does not currently model EV charging in the dataset, however this feature is in development. For modeling aggregate EV load profiles for a city or state, we suggest using <a href="https://afdc.energy.gov/evi-pro-lite/load-profile">EVI-Pro Lite</a>. Measured charging profile data for individual homes can be found in the <a href="https://neea.org/data/nw-end-use-load-research-project/energy-metering-study-data">NEEA HEMS Data</a>  NEEA HEMS data and <a href="https://www.pecanstreet.org/dataport/">Pecan Street Dataport</a>. Email us at <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a> if you have suggestions for other EV charging data sources.</p>
+</details>
+
+<details>
+    <summary>What emissions scenarios are modeled?</summary>
+    <p>Depending on the ResStock dataset, different emission scenarios are used. The technical documentation for each dataset usually contains information about the emission scenarios modeled. Recent datasets used Cambuium data, and have multiple emission scenarios modeled. Links to the technical documentation can be found <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">here</a> For more information, see section 5.4 of the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock technical reference documentation</a>.</p>
+</details>
+
+<details>
+    <summary>How are leap years modeled?</summary>
+    <p>ResStock models every day of the year, including for leap years. The results for leap years (ie AMY2012 weather) therefore span 8784 hours, and are generated using weather files that contain 8784 hours. Here is the relevant <a href="https://openstudio-hpxml.readthedocs.io/en/latest/workflow_inputs.html#id4">OS-HPXML documentation</a>.</p>
+</details>
+
+<details>
+    <summary>Are costs modeled?</summary>
+    <p>ResStock models the cost of running the equipment, or the cost impact on the utility bill. None of the ResStock datasets include the first costs (also called upgrade or measure costs).
+    
+    See the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock technical reference documentation</a> for more information on utility bill calculation. </p>
+</details>
+
+<details>
+    <summary>Does ResStock only model water heaters in one location, or can the location vary?</summary>
+    <p>The location can vary. They could be located in the attic, mechanical room, crawlspace, garage, basement, living area, outside, or in an unheated basement. More information can be found in section 4.5 of the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">Resstock technical reference documentation</a>. Before the 2024 Release 2, we generally used this logic: in cold climates, the water heater was in the basement if there was one, living space otherwise. For hot climates, it'd be the garage if there was one, living space otherwise.</p>
+</details>
+
+<details>
+    <summary>Does ResStock consider duct sizing impacts with any HVAC upgrades?</summary>
+    <p>When retrofitting a home with a heat pump, sometimes duct size needs to change because of a higher flow rate and a lower supply temperature. ResStock assumes that the duct size increases in all datasets up to and including the 2024 Release 2 dataset. However, this may not be done in practice.</p>
+</details>
+
+<details>
+    <summary>Partial air conditioning is being referenced from RECS 2009. Why has this not been updated?</summary>
+    <p>We have not found a more recent dataset with the necessary data resolution. This includes RECS 2015 and RECS 2020. The dependencies of this characteristic’s distribution, such as cooling type, use more recent data, so the final distributions of partial air conditioning does not match RECS 2009 even though this is the data source.
+    </p>
+</details>
+
+<details>
+    <summary>The lighting options available are 100% CFL or 100% of one lighting type. This is unlikely to be the case in buildings. How can I explain this to our clients?</summary>
+    <p>This is a limitation of ResStock, we are not able to do a mixed lighting scenario because there are data limitations in RECS 2015. In reality, some homes may not have 100% of a certain type of lighting. If you are looking at this data, consider our other guidance on the number of samples recommended in order to draw conclusions.</p>
 </details>
