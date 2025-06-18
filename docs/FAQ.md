@@ -142,9 +142,9 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     
     The Data Viewer can show users timeseries data or data aggregations in a web browser. More information can be found in section 6.2 Web-Based Visualization Platform of the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock technical reference documentation</a>.
     
-    The link to the Data Viewer depends on the dataset, and other factors. View the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> for links to the Data Viewer specific to each dataset release.
-
+    The link to the Data Viewer depends on the dataset, and other factors. View the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> for links to the Data Viewer specific to each dataset release. 
     </p>
+</details>
 
 <details>
     <summary>In the Data Viewer, what does "sum" or "average" mean?</summary>
