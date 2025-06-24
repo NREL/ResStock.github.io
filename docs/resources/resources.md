@@ -37,6 +37,7 @@ These documents provide explanations focusing on how and why of the ResStock dat
 - [Why Individual ResStock Measures Should Not Be Combined]({{ site.baseurl }}{% link docs/resources/explanations/Individual_Measures_Not_Combined.md %})
 - [Building Types Not Represented in ResStock]({{ site.baseurl }}{% link docs/resources/explanations/Building_Types.md %})
 - [PV System Assignment and Distributions]({{ site.baseurl }}{% link docs/resources/explanations/PV_System_Assignment_and_Distributions.md %})
+- [Unmet load hours]({{ site.baseurl }}{% link docs/resources/explanations/Unmet_load_hours.md %})
 <!-- - Combining Data from Different Datasets - Limitations and Known Issues -->
 
 ### ResStock Limitations and Known Issues
