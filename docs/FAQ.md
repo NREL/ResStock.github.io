@@ -42,6 +42,13 @@ Below are some frequently asked questions (FAQ) about ResStock. The questions ar
     </p>
 </details>
 
+<details>
+    <summary>Are these load profiles measured or simulated?</summary>
+    <p>The profiles are simulated using the ResStock and ComStock modeling tools, which have been validated and informed by the best available data against an array of empirical datasets. ResStock and ComStock use the EnergyPlus simulation engine. The validation results and uncertainty for quantities of interest are presented in the <a href="https://docs.nrel.gov/docs/fy22osti/80889.pdf">End-Use Load Profiles final report</a>.
+    
+    ResStock generally simulates 550,000 individual building energy models, and ComStock simulates 150,000 building energy models.
+</p>
+
 ## Datasets and Data Access
 
 <details>
