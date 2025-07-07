@@ -15,7 +15,7 @@ The U.S. residential building sector stock energy model, ResStock™, is a highl
 
 ResStock asks and answers two main types of questions: 1) How is energy used in the U.S. housing stock? and 2) What are the impacts of modifying the housing stock with different technologies?
 
-ResStock, along with our partner model ComStock™, make up BuildStock. BuildStock allows for full modeling of the U.S. building stock.
+ResStock, along with our partner model ComStock™, make up BuildStock. BuildStock allows for modeling of the U.S. residential and commercial building stock circa 2018.
 
 This document serves as a guide and resource for the methodology and assumptions behind ResStock.
 
@@ -24,12 +24,12 @@ This document serves as a guide and resource for the methodology and assumptions
 ### Access the Dataset
 Visit the [Datsets page](https://resstock.nrel.gov/datasets) for access to the published datasets and details about the ways to access them.
 
-Read our [technical reference documentation](https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf) for model inputs and assumptions.
+Read our [technical reference documentation](https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf) for the baseline model inputs and assumptions.
 
 ## What Does ResStock Do?
-ResStock enables a new approach to large-scale residential energy analysis across the United States. by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Renewable Energy Laboratory (NREL).
+ResStock enables a new approach to large-scale residential energy analysis across the United States by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing to create public datasets. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Renewable Energy Laboratory (NREL).
 
-ResStock is more than just a basic modeling tool for analyzing energy efficiency and consumption in residential buildings. It integreates a variety of features and capabilities that make it a comprehensive analytical platform. Here's a broader description of it's functionalities:
+ResStock is more than just a basic modeling tool for analyzing energy efficiency and consumption in residential buildings. It integreates a variety of features and capabilities that make it a comprehensive analytical platform. ResStock generates public datasets and downstream products like factsheets and dashboards. Here's a broader description of it's functionalities:
 
 1. **Simulation Tool**: ResStock performs detailed simulations that can project the impact of various energy efficiency measures acros millions of building prototypes, tailored to different climates, construction types, and demographics. This allows for a granular analysis of potential energy savings and efficiency improvements.
 
@@ -43,7 +43,7 @@ ResStock is more than just a basic modeling tool for analyzing energy efficiency
 
 In summary, ResStock could be aptly described as an **advanced energy analysis platform** that combines elements of simulation, policy analysis, decision support, research facilitation, and educational outreach. These elements are all focused on enhancing residential energy efficiency and understanding energy consumption patterns.
 
-ResStock helps states, municipalities, utilities, and manufacturers understand the make-up of their area's housing stock; identifying the energy, emissions, or economic impacts of energy efficiency or electrification measures; and exploring the impact of new technologies such as cold-climate heat pumps for both customers and the grid.
+ResStock helps states, municipalities, utilities, and manufacturers understand the make up of their area's housing stock; identifying the energy, emissions, or economic impacts of energy efficiency or electrification measures; and exploring the impact of new technologies such as cold-climate heat pumps for both customers and the grid.
 
 In the pursuit of understanding when and where energy consumption occurs, ResStock can be tailored to answer the core questions many people have (explained in the next section). The results are available in multiple formats and resolutions:
 
@@ -59,7 +59,7 @@ To achieve clean energy objectives and enhance the alignment of building stock w
 These are the type of questions that can be answered via data processing, distillation, and visualization of this dataset. This is not a complete list.
 
 _Questions that can be answered with ResStock:_
-1. Housing makeup and current snapshot of energy consumption
+1. Housing make up and current snapshot of energy consumption
 
     - How many homes are heated by electricity versus gas? How leaky or well insulated are these homes?
 
@@ -73,7 +73,7 @@ _Questions that can be answered with ResStock:_
 
     - What are the energy consumption and utility bill impacts of a home envelope upgrade versus an HVAC equipment upgrade?
 
-3. Addressable questions with timeseries and customization?
+3. Questions that can be addressed with timeseries and customization
 
     - What types of retrofits would shift a given region from summer peaking to winter peaking?
 
@@ -89,6 +89,6 @@ _Questions that cannot be answered by ResStock alone:_
 5. What is the energy savings potential for a specific home address?
 
 ## How To Use ResStock
-ResStock provides access to results through many different forms, including a web data viewer, dashboards, and raw data available for download. Explanations, how-to guides, and tutorials are available in teh Resources section of the ResStock website to assist using the data for common use cases
+ResStock provides access to results through many different forms, including a web data viewer, dashboards, and raw data available for download. Explanations, how-to guides, and tutorials are available in the [Resources section](https://nrel.github.io/ResStock.github.io/docs/resources/resources.html) to assist using the data for common use cases.
 
 ResStock leverages and is deeply indebted to DOE's open source building energy modeling ecosystem of [Open Studio®](https://openstudio.net/) and [Energy Plus®](https://energyplus.net/). 
