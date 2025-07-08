@@ -60,27 +60,27 @@ There are different ways to open a .tsv file, and for this example we will use E
 
 For more information on the data dictionary and how things are labeled in ResStock, see Data and the section Field Naming Convention to get a better idea.
 
-Reading through the data_dictionary.tsv Column B, field_name, row 63 has in.geometry_building_type_recs with a field description of PUMS 2019 building type, and allowable_baseline_enumerations of Mobile Home, Multi-Family with 2–4 Units, Multifamily with 5+ Units, Single-Family Attached, and Single-Family Detached. This is the column we need to filter the baseline and upgrade files to only see results for Single-Family Detached homes.
+Reading through the data_dictionary.tsv Column B, **field_name**, row 63 has in.geometry_building_type_recs with a field description of "PUMS 2019 building type", and allowable_baseline_enumerations of "Mobile Home", "Multi-Family with 2–4 Units"," Multifamily with 5+ Units", "Single-Family Attached", and "Single-Family Detached". This is the column we need to filter the baseline and upgrade files to only see results for Single-Family Detached homes.
 
-Going back to the CO_baseline_metadata_and_annual_results.csv file, and click “Format as Table” so we can perform our filter.
+Going back to the CO_baseline_metadata_and_annual_results.csv file, and click <ins>Format as Table</ins> so we can perform our filter.
 
 ![](../../../assets/images/formatastable.png)
 
-Then, search for the column name we need to filter: in.geometry_building_type_recs. Turns out it is column BK. Click the down arrow in the column, and make sure Single-Family Detached is the only housing option selected. Click OK to apply the filter.
+Then, search for the column name we need to filter: **in.geometry_building_type_recs**. Turns out it is column BK. Click the down arrow in the column, and make sure Single-Family Detached is the only housing option selected. Click <ins>OK</ins> to apply the filter.
 
 ![](../../../assets/images/sfd.png)
 
 Repeat this process to filter to Single-Family Detached homes in the CO_upgrade02_metadata_and_annual_results file too. With the CO_upgrade02_metadata_and_annual_results file, we need to filter to only the samples that have had this upgrade applied, because not every home has this upgrade applied. Some homes may not have the right home configuration or may have an out-of-scope heating fuel: therefore, only some of the homes are actually modeled with this upgrade. To determine the column that describes whether the home received the upgrade or not, go back to the data_dictionary_tsv.
 
-The second row shows a field_name called applicability with a field_description of: The measure was or was not applied to bldg_id. This is what we are looking for. Going back to the CO_upgrade02_metadata_and_annual_results file, search for the "applicability" column, and make sure only TRUE is chosen as an option. That means only the samples that were actually upgraded with our package of interest, high-efficiency cold-climate air-to-air heat pump with electric backup, will be shown. If the value is FALSE, that means the building sample was not upgraded with this package.
+The second row shows a field_name called applicability with a field_description of: The measure was or was not applied to bldg_id. This is what we are looking for. Going back to the CO_upgrade02_metadata_and_annual_results file, search for the **applicability** column, and make sure only TRUE is chosen as an option. That means only the samples that were actually upgraded with our package of interest, high-efficiency cold-climate air-to-air heat pump with electric backup, will be shown. If the value is FALSE, that means the building sample was not upgraded with this package.
 
 Next, check to make sure there are the right number of samples or at least 1,000 samples. For a detailed explanation on why our team recommends this, review the [Why At Least 1,000 Samples is Recommended]({{ site.baseurl }}{% link docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.md %}) webpage.
 
-To do this, highlight the first column of each of the two files, and look at the Count value at the bottom right of the screen. For the baseline file, it shows Count: 5901.
+To do this, highlight the first column of each of the two files, and look at the <ins>Count</ins> value at the bottom right of the screen. For the baseline file, it shows Count: "5901".
 
 ![](../../../assets/images/count.png)
 
-Doing the same on the upgrade file, the Count value is showing Count: 5701. We expect the count of the upgrade file to be less because not all samples or bldg_id had the upgrade applied.
+Doing the same on the upgrade file, the <ins>Count</ins> value is showing Count: "5701". We expect the count of the upgrade file to be less because not all samples or bldg_id had the upgrade applied.
 
 Luckily for us, each file has over 1,000 samples so we are good to begin the analysis. If the sample count was is than 1,000, our team recommends expanding your geographic search area or changing other filters to increase sample count. See more reasoning for this [here]({{ site.baseurl }}{% link docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.md %}).
 
@@ -94,27 +94,27 @@ To analyze this key information, we first need to know where to look. Back to th
 
 ## Baseline Housing Information
 
-The first two questions deal with the baseline housing, or the housing information without the upgrade applied. For the first question, home size, start by reviewing all of the column names in Column B and their description in Column E. After reading through the list, there are a few options that describe the home size. Lines 64, 65, and 156 all look like they could meet our needs. Let’s work with line 156, in.sqft, to look at floor area. Then, let’s determine which value we can use to evaluate energy consumption. Energy consumption for this ResStock dataset is measured in site energy usage. Energy consumption is actually an output on line 292 of the data_dictionary.tsv file, and the field is called out.site_energy.total.energy_consumption.kwh. 
+The first two questions deal with the baseline housing, or the housing information without the upgrade applied. For the first question, home size, start by reviewing all of the column names in Column B and their description in Column E. After reading through the list, there are a few options that describe the home size. Lines 64, 65, and 156 all look like they could meet our needs. Let’s work with line 156, **in.sqft**, to look at floor area. Then, let’s determine which value we can use to evaluate energy consumption. Energy consumption for this ResStock dataset is measured in site energy usage. Energy consumption is actually an output on line 292 of the data_dictionary.tsv file, and the field is called **out.site_energy.total.energy_consumption.kwh**. 
 
 Heading back to the CO_baseline_metadata_and_annual_results.csv file, we can start the analysis.
 
-To easily answer these questions, we can use Excel’s built-in PivotTable. You can also do this with coding or other means, but for this example we will use Excel. First, go to the Insert tab of Excel, and then choose the down arrow under PivotTable and choose From Table/Range. When a pop-up appears, choose New Worksheet, and then click OK.
+To easily answer these questions, we can use Excel’s built-in <ins>PivotTable</ins>. You can also do this with coding or other means, but for this example we will use Excel. First, go to the <ins>Insert</ins> tab of Excel, and then choose the down arrow under PivotTable and choose From <ins>Table/Range</ins>. When a pop-up appears, choose <ins>New Worksheet</ins>, and then click OK.
 
 ![](../../../assets/images/pivottablesetup.png)
 
-The blank PivotTable will look like this.
+The blank <ins>PivotTable</ins> will look like this.
 
 ![](../../../assets/images/blankpivot.png)
 
 The ResStock columns are on the right, and we will start to pull the fields into the four boxes on the bottom to begin the analysis.
 
-We want to look at the questions by Single-Family Detached homes only, so let’s start with that first filter. In the fields table, click and drag in.geometry_building_type_recs into the Filters box. Then, where it says (All), we need to only select Single-Family Detached.
+We want to look at the questions by Single-Family Detached homes only, so let’s start with that first filter. In the fields table, click and drag **in.geometry_building_type_recs** into the Filters box. Then, where it says (All), we need to only select Single-Family Detached.
 
 ![](../../../assets/images/onlysfd.png)
 
 Within Single-Family Detached, we want to look at the analysis by vintage so we will apply that to Rows. Drag in.vintage to the Rows box.
 
-To answer our first question, the column or the field we need to add to the PivotTable is in.sqft . In the list of fields, choose in.sqft and drag it to the Values box. Choose the down arrow next to the box, and choose Value Field Settings. When the pop-up window appears, choose Average instead of Sum so we can understand the average size of home per vintage.
+To answer our first question, the column or the field we need to add to the PivotTable is **in.sqft** . In the list of fields, choose **in.sqft** and drag it to the <ins>Values</ins> box. Choose the down arrow next to the box, and choose <ins>Value Field Settings</ins>. When the pop-up window appears, choose <ins>Average</ins> instead of Sum so we can understand the average size of home per vintage.
 
 ![](../../../assets/images/average.png)
 
@@ -124,7 +124,7 @@ The resulting table looks like the following.
 
 Over time, the average home size has grown over 1,000 sqft.
 
-The next task is to determine the average energy consumption of homes through different vintages. In the fields list, choose out.site_energy.total.energy_consumption.kwh and drag it to the Values. Click the down arrow and choose Value Field Settings like we did in the previous step. Choose Average instead of Count and click OK. The table now shows the average size and energy consumption of the homes over time.
+The next task is to determine the average energy consumption of homes through different vintages. In the fields list, choose **out.site_energy.total.energy_consumption.kwh** and drag it to the <ins>Values</ins>. Click the down arrow and choose <ins>Value Field Settings</ins> like we did in the previous step. Choose <ins>Average</ins> instead of Count and click OK. The table now shows the average size and energy consumption of the homes over time.
 
 ![](../../../assets/images/averageenergy.png)
 
@@ -139,35 +139,35 @@ As a reminder, these are the three questions we are looking to answer using the 
 2.	How does site energy change before and after the upgrade has been applied by housing vintage?
 3.	Do natural gas energy bills change before and after the upgrade has been applied by housing vintage?
 
-For the emissions impact, ResStock runs a number of different emissions scenarios.In this example, we want to look at all of the energy fuels together, and are interested in a mid renewable energy cost over 15 years. These qualifications point us to out.emissions.all_fuels.lrmer_mid_re_cost_15.co2e_kg, but this is the total emissions. We want to know what the difference is between the baseline housing and the upgraded housing. Looking back at the CO_upgrade02_metadata_and_annual_results file, search for “emissions” in the column titles until you find out.emissions_reduction.all_fuels.lrmer_mid_re_cost_15.co2e_kg which is specifically the difference between the baseline housing and the upgraded housing. This is the column we’ll use.
+For the emissions impact, ResStock runs a number of different emissions scenarios.In this example, we want to look at all of the energy fuels together, and are interested in a mid renewable energy cost over 15 years. These qualifications point us to **out.emissions.all_fuels.lrmer_mid_re_cost_15.co2e_kg**, but this is the total emissions. We want to know what the difference is between the baseline housing and the upgraded housing. Looking back at the CO_upgrade02_metadata_and_annual_results file, search for emissions in the column titles until you find **out.emissions_reduction.all_fuels.lrmer_mid_re_cost_15**.co2e_kg which is specifically the difference between the baseline housing and the upgraded housing. This is the column we’ll use.
 
-For the site energy question, looking through the data dictionary shows two options, one that subtracts power produced by PV or generators, and one that is just total site energy. Let’s look at the total site energy, which would be out.site_energy.total.energy_consumption.kwh. Again, this is just the total amount, not the impact from the upgrade. Going back to the results file and searching for “out.site_energy” you eventually find a column titled out.site_energy_net.energy_consumption.kwh.savings, which is what we want for this example.
+For the site energy question, looking through the data dictionary shows two options, one that subtracts power produced by PV or generators, and one that is just total site energy. Let’s look at the total site energy, which would be **out.site_energy.total.energy_consumption.kwh**. Again, this is just the total amount, not the impact from the upgrade. Going back to the results file and searching for “out.site_energy” you eventually find a column titled **out.site_energy_net.energy_consumption.kwh.savings**, which is what we want for this example.
 
-Then, for the natural gas bills on the data dictionary, we have one option out.bills.nautral_gas.usd, but we want to know the savings, not just the total bills. Look back at the CO_upgrade02_metadata_and_annual_results file, and search for “out.bills.natural_gas”. There are actually two listings, one is out.bills.natural_gas, and the other is out.bills.natural_gas.usd.savings, which is what we actually want. Therefore, let’s use the out.bills.natural_gas.usd.savings. We’ll use Excel and PivotTable to answer the questions about the upgrade information too. As a first step, insert a new PivotTable following the same steps as the baseline housing.
+Then, for the natural gas bills on the data dictionary, we have one option **out.bills.nautral_gas.usd**, but we want to know the savings, not just the total bills. Look back at the CO_upgrade02_metadata_and_annual_results file, and search for “out.bills.natural_gas”. There are actually two listings, one is **out.bills.natural_gas**, and the other is **out.bills.natural_gas.usd.savings**, which is what we actually want. Therefore, let’s use the **out.bills.natural_gas.usd.savings**. We’ll use Excel and PivotTable to answer the questions about the upgrade information too. As a first step, insert a new <ins>PivotTable</ins> following the same steps as the baseline housing.
 
 ![](../../../assets/images/newpivot.png)
 
-The blank PivotTable will look like this.
+The blank <ins>PivotTable</ins> will look like this.
 
 ![](../../../assets/images/blankpivot.png)
 
 The ResStock columns are on the right, and we will start to pull the fields into the four boxes on the bottom to begin the analysis.
 
-We want to look at the three questions by Single-Family Detached homes only, so let’s start with that first filter. In the fields table, click and drag in.geometry_building_type_recs into the Filters box. Then, where it says (All), we need to only select Single-Family Detached.
+We want to look at the three questions by Single-Family Detached homes only, so let’s start with that first filter. In the fields table, click and drag **in.geometry_building_type_recs** into the <ins>Filters</ins> box. Then, where it says (All), we need to only select Single-Family Detached.
 
 ![](../../../assets/images/onlysfd.png)
 
-The models that have been upgraded, or homes that were eligible to receive the cold-climate heat pump with the electric backup, can be identified by the “applicability” column. Drag applicability from the list of fields to the Filters box, like we did with in.geometry_building_type_recs, and from the down arrow next to the it, choose True. The table now looks like this.
+The models that have been upgraded, or homes that were eligible to receive the cold-climate heat pump with the electric backup, can be identified by the **applicability** column. Drag applicability from the list of fields to the <ins>Filters</ins> box, like we did with **in.geometry_building_type_recs**, and from the down arrow next to the it, choose True. The table now looks like this.
 
 ![](../../../assets/images/applicability.png)
 
-When describing the housing segment, it may be useful to exclude vacant units, or separate them into their own subsegment, as they have very low energy usage and may skew the average values. Vacant homes only have energy consumption from baseloads, like refrigerators and freezers, and some heating loads to prevent frozen pipes. For this example, we will exclude vacant homes. Looking back at the data_dictionary.tsv, we see that line 173 has a field called in.vacancy_status that describes if there are occupants in the home or not. Go back to the PivotTable, and drag in.vacancy_status to the Filters box just like we did for the other two filters, and choose Occupied. All three filters together now look like this.
+When describing the housing segment, it may be useful to exclude vacant units, or separate them into their own subsegment, as they have very low energy usage and may skew the average values. Vacant homes only have energy consumption from baseloads, like refrigerators and freezers, and some heating loads to prevent frozen pipes. For this example, we will exclude vacant homes. Looking back at the data_dictionary.tsv, we see that line 173 has a field called **in.vacancy_status** that describes if there are occupants in the home or not. Go back to the <ins>PivotTable</ins>, and drag **in.vacancy_status** to the Filters box just like we did for the other two filters, and choose Occupied. All three filters together now look like this.
 
 ![](../../../assets/images/occupied.png)
 
-Now that all of our filters have been applied, we can start looking at the emissions, site energy, and natural gas bills by vintage. Drag in.vintage to the Rows box to get started.
+Now that all of our filters have been applied, we can start looking at the emissions, site energy, and natural gas bills by vintage. Drag **in.vintage** to the Rows box to get started.
 
-Now, for emissions. Drag out.emissions_reduction.all_fuels.lrmer_mid_re_cost_15.co2e_kg to the Values box. Initially the value shows a count, but we want to know the sum. Choose the down arrow next to the column name and click Value Field Settings. Choose Sum instead of Count.
+Now, for emissions. Drag **out.emissions_reduction.all_fuels.lrmer_mid_re_cost_15.co2e_kg** to the Values box. Initially the value shows a count, but we want to know the sum. Choose the down arrow next to the column name and click <ins>Value Field Settings</ins>. Choose <ins>Sum</ins> instead of Count.
 
 ![](../../../assets/images/sumnotcount.png)
 
@@ -175,18 +175,18 @@ The PivotTable will now look like this.
 
 ![](../../../assets/images/sumemissions.png)
 
-Now we have our answer, the total emissions impact from this upgrade is 5,899,425 kg CO2e, and we have even more information on the impact by housing vintage as well.
+Now we have our answer, the total emissions impact from this upgrade is "5,899,425" kg CO2e, and we have even more information on the impact by housing vintage as well.
 
-Let’s head to our second question: How does site energy change before and after the upgrade has been applied by housing vintage? Choose out.site_energy.total.energy_consumption.kwh.savings and drag it into the Values box. Similar to the previous steps, change the value from Count to Sum. The PivotTable now looks like this.
+Let’s head to our second question: How does site energy change before and after the upgrade has been applied by housing vintage? Choose **out.site_energy.total.energy_consumption.kwh.savings** and drag it into the <ins>Values</ins> box. Similar to the previous steps, change the value from <ins>Count</ins> to <ins>Sum</ins>. The PivotTable now looks like this.
 
 ![](../../../assets/images/sumsite.png)
 
-The total amount of kWh saved through this upgrade package applied to applicable houses is 3,865,594 kWh.
+The total amount of kWh saved through this upgrade package applied to applicable houses is "3,865,594" kWh.
 
-Finally, to answer our last question about the savings from natural gas bills. Similar to the first two columns, we drag the column name out.bills.natural_gas.usd.savings to the values box and change the field value to Sum, not Count. Your table will now look like this.
+Finally, to answer our last question about the savings from natural gas bills. Similar to the first two columns, we drag the column name **out.bills.natural_gas.usd.savings** to the values box and change the field value to <ins>Sum</ins>, not <ins>Count</ins>. Your table will now look like this.
 
 ![](../../../assets/images/finalupgrade.png)
 
-The annual natural gas bill savings for all of the single-family homes that were upgraded was modeled to be $1,483,849.
+The annual natural gas bill savings for all of the single-family homes that were upgraded was modeled to be "$1,483,849".
 
 Now you have seen examples of how to use PivotTable and answer potential questions about how an upgrade would impact a portion of the housing stock. In general, these are just a few questions that can be answered using the baseline housing results and the upgrade results. If you have more questions about how ResStock could be used for your residential building stock analysis, check out the [Contact]({{ site.baseurl }}{% link docs/contact.md %}) page.

@@ -8,7 +8,7 @@ nav_order: 4
 # Geographic Fields and Codes
 ResStock provides many geographic fields to allow for a variety of analysis. Many of the geographic codes are self-explanatory, such as the name of the county, but there are some codes that are not as user friendly. Sometimes these codes can represent counties, census tracts, and PUMAs. **ResStock uses the National Historical GIS (NHGIS) GISJOIN standard codes for 2010 counties, 2010 PUMAs, and 2010 Census Tracts. 2020 geographic codes are not available at this time.** That means that all 2020 geographic codes must be converted to 2010 codes before using ResStock.
 
-These are based on Federal Information Processing Standard (FIPS) codes. Example names of columns that include these geographic codes include *in.county* or *in.county_and_puma*. They can even be seen in the [Data Viewer](https://resstock.nrel.gov) when trying to filter by PUMA. It starts with a G followed by several numbers. Below is an example.
+These are based on Federal Information Processing Standard (FIPS) codes. Example names of columns that include these geographic codes include **in.county** or **in.county_and_puma**. They can even be seen in the [Data Viewer](https://resstock.nrel.gov) when trying to filter by PUMA. It starts with a G followed by several numbers. Below is an example.
 
 ![](../../../assets/images/gis-join.png)
 
@@ -110,4 +110,4 @@ Background: The community says they want to analyze Jefferson County, the county
 **Step 6:** Turn this information into a PUMA fit for ResStock. Combine the **State FIP**, <ins>an additional 0</ins>, and then the *2010 PUMA value*. The codes turn into 08000801, 08000804, 08000805, 08000817, 08000818, 08000819, 08000820, and 08000821.
 
 ##  Additional Note
-Additionally, some published datasets have a spatial lookup table: [spatial_tract_lookup_table.csv](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2021%2Fresstock_amy2018_release_1%2Fgeographic_information%2F) is one example. County and PUMA codes can be looked up using the "nhgis_county_gisjoin" and "nhgis_puma_gisjoin" columns, respectively. To find the pre-aggregated timeseries file for a county or PUMA, use this lookup to find the code for the county or PUMA of interest.
+Additionally, some published datasets have a spatial lookup table: [spatial_tract_lookup_table.csv](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2021%2Fresstock_amy2018_release_1%2Fgeographic_information%2F) is one example. County and PUMA codes can be looked up using the **nhgis_county_gisjoin** and **nhgis_puma_gisjoin** columns, respectively. To find the pre-aggregated timeseries file for a county or PUMA, use this lookup to find the code for the county or PUMA of interest.

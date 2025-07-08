@@ -6,10 +6,10 @@ has_children: false
 has_toc: false
 ---
 # GitHub Repositories Related to ResStock
-These repositories are publicly available to use, but we are not able to provide technical support or documentation for running ResStock at this time. We strongly suggest and support using the public datasets. The data outputs from the initial ResStock release can be found by visiting the Data page.
+These repositories are publicly available to use, but we are not able to provide technical support or documentation for running ResStock at this time. We strongly suggest and support using the public datasets. The data outputs from the initial ResStock release can be found by visiting the [Data](https://nrel.github.io/ResStock.github.io/docs/data.html) page.
 
 ## ResStock Repository
-The [ResStock repository](https://github.com/NREL/resstock) contains the source code for building and executing ResStock models, including upgrade scenarios.
+The [ResStock repository](https://github.com/NREL/resstock) contains the source code for building and executing ResStock models, including upgrade scenarios. It also links to a [Technical Development Guide](https://resstock.readthedocs.io/en/latest/index.html) which has basic and advanced tutorials.
 
 ## OpenStudio-HPXML Repository
 ResStock relies heavily on [OpenStudio-HPXML](https://github.com/NREL/OpenStudio-HPXML), which provides a method for simulating residential buildings with OpenStudio and EnergyPlus. OpenStudio-HPXML uses a series of OpenStudio measures to generate an EnergyPlus model for each sample based on the building and occupant characteristics defined by ResStock. In many cases, ResStock relies upon the OpenStudio-HPXML default arguments and calculations.
