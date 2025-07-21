@@ -146,9 +146,9 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
 <details>
     <summary>What is the Data Viewer?</summary>
     <p>
-    The Data Viewer is a web-based visualization platform that takes data directly from our hosting platform, the OEDI data lake.
+    The Data Viewer is a web-based visualization platform that takes data directly from our data hosting platform, the OEDI data lake.
     
-    The Data Viewer can show users timeseries data or data aggregations in a web browser. More information can be found in section 6.2 Web-Based Visualization Platform of the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock technical reference documentation</a>.
+    The Data Viewer can show timeseries data or data aggregations in a web browser. More information can be found in section 6.2 Web-Based Visualization Platform of the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock technical reference documentation</a>.
     
     The link to the Data Viewer depends on the dataset, and other factors. View the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> for links to the Data Viewer specific to each dataset release. 
     </p>
@@ -272,11 +272,11 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     <summary>Are costs modeled?</summary>
     <p>ResStock models the cost of running the equipment, or the cost impact on the utility bill. None of the ResStock datasets include the first costs (also called upgrade or measure costs).
     
-    See the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock technical reference documentation</a> for more information on utility bill calculation. </p>
+    See the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock technical reference documentation</a> for more information on how utility bills are calculated. </p>
 </details>
 
 <details>
-    <summary>Does ResStock only model water heaters in one location, or can the location vary?</summary>
+    <summary>Does ResStock model water heaters in one location, or can the location vary?</summary>
     <p>The location can vary. They could be located in the attic, mechanical room, crawlspace, garage, basement, living area, outside, or in an unheated basement. More information can be found in section 4.5 of the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">Resstock technical reference documentation</a>. Before the 2024 Release 2, we generally used this logic: in cold climates, the water heater was in the basement if there was one, living space otherwise. For hot climates, it'd be the garage if there was one, living space otherwise.</p>
 </details>
 
