@@ -148,7 +148,7 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     <p>
     The Data Viewer is a web-based visualization platform that takes data directly from our hosting platform, the OEDI data lake.
     
-    The Data Viewer can show users timeseries data or data aggregations in a web browser. More information can be found in section 6.2 Web-Based Visualization Platform of the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock technical reference documentation</a>.
+    The Data Viewer can show users timeseries data or data aggregations in a web browser. More information can be found in section 6.2 Web-Based Visualization Platform of the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock technical reference documentation</a>.
     
     The link to the Data Viewer depends on the dataset, and other factors. View the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> for links to the Data Viewer specific to each dataset release. 
     </p>
@@ -260,7 +260,7 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
 
 <details>
     <summary>What emissions scenarios are modeled?</summary>
-    <p>Depending on the ResStock dataset, different emission scenarios are used. The technical documentation for each dataset usually contains information about the emission scenarios modeled. Recent datasets used Cambuium data, and have multiple emission scenarios modeled. Links to the technical documentation can be found <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">here</a> For more information, see section 5.4 of the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock technical reference documentation</a>.</p>
+    <p>Depending on the ResStock dataset, different emission scenarios are used. The technical documentation for each dataset usually contains information about the emission scenarios modeled. Recent datasets used Cambuium data, and have multiple emission scenarios modeled. Links to the technical documentation can be found <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">here</a> For more information, see section 5.4 of the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock technical reference documentation</a>.</p>
 </details>
 
 <details>
@@ -272,12 +272,12 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     <summary>Are costs modeled?</summary>
     <p>ResStock models the cost of running the equipment, or the cost impact on the utility bill. None of the ResStock datasets include the first costs (also called upgrade or measure costs).
     
-    See the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">ResStock technical reference documentation</a> for more information on utility bill calculation. </p>
+    See the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock technical reference documentation</a> for more information on utility bill calculation. </p>
 </details>
 
 <details>
     <summary>Does ResStock only model water heaters in one location, or can the location vary?</summary>
-    <p>The location can vary. They could be located in the attic, mechanical room, crawlspace, garage, basement, living area, outside, or in an unheated basement. More information can be found in section 4.5 of the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf">Resstock technical reference documentation</a>. Before the 2024 Release 2, we generally used this logic: in cold climates, the water heater was in the basement if there was one, living space otherwise. For hot climates, it'd be the garage if there was one, living space otherwise.</p>
+    <p>The location can vary. They could be located in the attic, mechanical room, crawlspace, garage, basement, living area, outside, or in an unheated basement. More information can be found in section 4.5 of the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">Resstock technical reference documentation</a>. Before the 2024 Release 2, we generally used this logic: in cold climates, the water heater was in the basement if there was one, living space otherwise. For hot climates, it'd be the garage if there was one, living space otherwise.</p>
 </details>
 
 <details>

@@ -8,12 +8,12 @@ has_toc: false
 # Data
 Given the complexity and computational intensity of ResStock, the best pathway for professionals and researchers to use ResStock successfully is to use pre-created results, rather than running ResStock themselves. This section provides information about accessing ResStock results and links to published datasets.
 
-The most up to date technical reference documentation for ResStock is available [here](https://nrel.github.io/ResStock.github.io/assets/trd/ResStock_Technical_Reference_Document_Final.pdf). Below is technical documentation for each dataset, but the previous link more fully explains current assumptions and methodologies, and should be used in junction with the documentaiton for each dataset release.
+The most up to date technical reference documentation for ResStock is available [here](https://docs.nrel.gov/docs/fy25osti/91621.pdf). Below is technical documentation for each dataset, but the previous link more fully explains current assumptions and methodologies, and should be used in junction with the documentaiton for each dataset release.
 
 ## Published Datasets
 These datasets explore the annual and timeseries energy consumption of the U.S. residential building stock at the end-use level.
 Access the webinar recording, webinar slides, and the technical documentation for each dataset as they are available:
- - 2024.2 [webinar recording](https://youtube/tk1Uoq5_a38?si=gjhOnzb4-AcbdwZt), [webinar slides](https://www.nrel.gov/docs/fy24osti/89600.pdf), and the [technical documentation](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2024/resstock_tmy3_release_2/resstock_documentation_2024_release_2.pdf)
+ - 2024.2 [webinar recording](https://youtube/tk1Uoq5_a38?si=gjhOnzb4-AcbdwZt), [webinar slides](https://www.nrel.gov/docs/fy24osti/89600.pdf), and the [technical documentation](https://docs.nrel.gov/docs/fy25osti/91621.pdf)
  - 2024.1 [technical documentation](https://www.nrel.gov/docs/fy24osti/88109.pdf)
  - 2022.1 [webinar recording](https://youtu.be/fd1ofceDaH4), [webinar slides](https://www.nrel.gov/buildings/assets/pdfs/euss-resround1-webinar.pdf), and the [technical documentation](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2022/EUSS_ResRound1_Technical_Documentation.pdf)
  - 2021.1 [webinar recording](https://www.youtube.com/watch?v=PlGPDyiQ6n8&list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS&index=18), and the [technical documentation](https://www.osti.gov/biblio/1854582)
