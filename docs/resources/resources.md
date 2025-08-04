@@ -10,6 +10,16 @@ has_toc: false
 {: .fw-500 }
 Tutorials, how-to guides, explanations, and reference material are available to aid users in answering questions about the ResStock dataset. New topics will be added as they are completed.
 
+## References
+These documents describe various aspects of ResStock, including the baseline and upgrade model documentation.
+
+### ResStock Reference Documentation
+This document serves as a guide to and resource for the methodology and assumptions behind ResStock. The Reference Documentation will be updated as major changes to the baseline models are incorporated.
+
+| **Reference Documentation Version** | **Release Date** | **Corresponding Dataset Release** |
+| [ResStock Technical Reference <br> Documentation v3.3.0](https://docs.nrel.gov/docs/fy25osti/91621.pdf) | July 2025 | 2024.2 |
+| [End-Use Load Profiles for the U.S. Building Stock](https://docs.nrel.gov/docs/fy22osti/80889.pdf) | March 2022 | 2022.1 |
+
 ## Tutorials
 Tutorials provide lessons for understanding certain capabilities and functions of ResStock, as well as learning a specific analysis skill. Available tutorials include:
 - [Check That You Have Enough Samples or Dwelling Units with the Data Viewer]({{ site.baseurl }}{% link docs/resources/tutorials/Enough_Samples_Data_Viewer.md %})
@@ -38,7 +48,6 @@ These documents provide explanations focusing on how and why of the ResStock dat
 - [Building Types Not Represented in ResStock]({{ site.baseurl }}{% link docs/resources/explanations/Building_Types.md %})
 - [PV System Assignment and Distributions]({{ site.baseurl }}{% link docs/resources/explanations/PV_System_Assignment_and_Distributions.md %})
 - [Unmet load hours]({{ site.baseurl }}{% link docs/resources/explanations/Unmet_load_hours.md %})
-<!-- - Combining Data from Different Datasets - Limitations and Known Issues -->
 
 ### ResStock Limitations and Known Issues
 - [ResStock 2024 Release 2 Electricity and Energy Bills]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%})
