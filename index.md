@@ -28,6 +28,8 @@ Visit the [Datsets page](https://resstock.nrel.gov/datasets) for access to the p
 
 Read the [technical reference documentation](https://docs.nrel.gov/docs/fy25osti/91621.pdf) for the baseline model inputs and assumptions.
 
+Learn who is using the data and how with the [user summary snapshot](https://nrel.app.box.com/file/1959292924485?s=2pw91ax0q3e10qiet7q5r4raqi0cxi8n&sb=/activity).
+
 ## What Does ResStock Do?
 ResStock enables a new approach to large-scale residential energy analysis across the United States by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing to create public datasets. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Renewable Energy Laboratory (NREL).
 
