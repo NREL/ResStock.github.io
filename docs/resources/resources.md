@@ -67,3 +67,7 @@ The [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.b
 -   [US Building Typology Segmentation Residential](https://public.tableau.com/app/profile/nrel.buildingstock/viz/USBuildingTypologyResidential/Segments) (2021)
 
 For ComStock Tableau dashboards, please visit the [ComStock Tableau Public page](https://public.tableau.com/app/profile/comstock.nrel/vizzes).
+
+## User Engagement Material
+
+- [BuildStock Listening Session]({{  site.baseurl  }}{% link assets/pdfs/20250924_BuildStock Listening Session.pdf %})
