@@ -13,18 +13,17 @@ A typical analysis starts with defining the goal and scope (e.g., retrofits to c
 
 The following steps are a starting point for using ResStock data in a residential building stock analysis. If you use ResStock for your residential building stock analysis, spend more time planning out specific questions and goals that you have for your analysis.
 
-We will do a simple analysis to understand some of the characteristics of single-family detached homes in Colorado and identify the energy, emissions, and utility bill impacts of deploying high-efficiency cold-climate heat pumps with electric back up to all eligible single-family detached homes in the state.
+We will do a simple analysis to understand some of the characteristics of single-family detached homes in Colorado and identify the energy and utility bill impacts of deploying high-efficiency cold-climate heat pumps with electric back up to all eligible single-family detached homes in the state.
 
-ResStock publishes national level datasets containing the energy baseline and a set of energy efficiency measures on the [Open Energy Data Initiative (OEDI) website](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock). The documentation for each release is on our website, and near each release you will see a Technical Documentation button. We recommend browsing the documentations so that you can choose the dataset that can best answer your questions. The datasets can vary in the type of housing upgrades, weather years, carbon emissions scenarios, model assumptions, reporting metrics, and more. Below is a screenshot showing an example of where our documentation is located for our 2024.2 dataset.
+ResStock publishes national level datasets containing the energy baseline and a set of energy efficiency measures on the [Open Energy Data Initiative (OEDI) website](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock). The documentation for each release is on our website, and near each release you will see a Technical Documentation button. We recommend browsing the documentations so that you can choose the dataset that can best answer your questions. The datasets can vary in the type of housing upgrades, weather years, model assumptions, reporting metrics, and more. Below is a screenshot showing an example of where our documentation is located for our 2024.2 dataset.
 
 ![](../../../assets/images/documentation.png)
 
 For this example, we will look at the single-family detached homes in Colorado and try to answer the following questions:
 1.	What is the median home size by vintage?
 2.	How does the average energy consumption differ by vintage?
-3.	What is the emissions impact before and after the upgrade has been applied by housing vintage?
-4.	How does site energy consumption before and after the upgrade has been applied vary by housing vintage?
-5.	Do natural gas energy bills change before and after the upgrade has been applied by housing vintage?
+3.	How does site energy consumption before and after the upgrade has been applied vary by housing vintage?
+4.	Do natural gas energy bills change before and after the upgrade has been applied by housing vintage?
 
 We will use the AMY2018 dataset from the [2024.2 data release](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2024/resstock_amy2018_release_2/resstock_documentation_2024_release_2.pdf), which contains 16 upgrade packages. According to the [dataset documentation](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2024/resstock_amy2018_release_2/resstock_documentation_2024_release_2.pdf), Measure Package 2 is a high-efficiency cold-climate air-to-air heat pump paired with electric backup, which we wll examine in the analysis.
 
@@ -87,9 +86,8 @@ Luckily for us, each file has over 1,000 samples so we are good to begin the ana
 We can analyze the data and extract key baseline and upgrade information now that we have confirmed we have enough samples. Let’s revisit the questions for our analysis:
 1.	What is the median home size by vintage?
 2.	How does the average energy consumption differ by vintage?
-3.	What is the emissions impact before and after the upgrade has been applied by housing vintage?
-4.	How does site energy change before and after the upgrade has been applied by housing vintage?
-5.	Do natural gas energy bills change before and after the upgrade has been applied by housing vintage?
+3.	How does site energy change before and after the upgrade has been applied by housing vintage?
+4.	Do natural gas energy bills change before and after the upgrade has been applied by housing vintage?
 To analyze this key information, we first need to know where to look. Back to the data_dictionary.tsv to find out which columns we should analyze!
 
 ## Baseline Housing Information
@@ -134,12 +132,9 @@ These are just two examples of questions about housing that can be answered usin
 
 ## Upgrade Information
 
-As a reminder, these are the three questions we are looking to answer using the upgrade information.
-1.	What is the emissions impact before and after the upgrade has been applied by housing vintage?
-2.	How does site energy change before and after the upgrade has been applied by housing vintage?
-3.	Do natural gas energy bills change before and after the upgrade has been applied by housing vintage?
-
-For the emissions impact, ResStock runs a number of different emissions scenarios.In this example, we want to look at all of the energy fuels together, and are interested in a mid renewable energy cost over 15 years. These qualifications point us to **out.emissions.all_fuels.lrmer_mid_re_cost_15.co2e_kg**, but this is the total emissions. We want to know what the difference is between the baseline housing and the upgraded housing. Looking back at the CO_upgrade02_metadata_and_annual_results file, search for emissions in the column titles until you find **out.emissions_reduction.all_fuels.lrmer_mid_re_cost_15**.co2e_kg which is specifically the difference between the baseline housing and the upgraded housing. This is the column we’ll use.
+As a reminder, these are the two questions we are looking to answer using the upgrade information.
+1.	How does site energy change before and after the upgrade has been applied by housing vintage?
+2.	Do natural gas energy bills change before and after the upgrade has been applied by housing vintage?
 
 For the site energy question, looking through the data dictionary shows two options, one that subtracts power produced by PV or generators, and one that is just total site energy. Let’s look at the total site energy, which would be **out.site_energy.total.energy_consumption.kwh**. Again, this is just the total amount, not the impact from the upgrade. Going back to the results file and searching for “out.site_energy” you eventually find a column titled **out.site_energy_net.energy_consumption.kwh.savings**, which is what we want for this example.
 
@@ -165,19 +160,9 @@ When describing the housing segment, it may be useful to exclude vacant units, o
 
 ![](../../../assets/images/occupied.png)
 
-Now that all of our filters have been applied, we can start looking at the emissions, site energy, and natural gas bills by vintage. Drag **in.vintage** to the Rows box to get started.
+Now that all of our filters have been applied, we can start looking at the site energy and natural gas bills by vintage. Drag **in.vintage** to the Rows box to get started.
 
-Now, for emissions. Drag **out.emissions_reduction.all_fuels.lrmer_mid_re_cost_15.co2e_kg** to the Values box. Initially the value shows a count, but we want to know the sum. Choose the down arrow next to the column name and click <ins>Value Field Settings</ins>. Choose <ins>Sum</ins> instead of Count.
-
-![](../../../assets/images/sumnotcount.png)
-
-The PivotTable will now look like this.
-
-![](../../../assets/images/sumemissions.png)
-
-Now we have our answer, the total emissions impact from this upgrade is "5,899,425" kg CO2e, and we have even more information on the impact by housing vintage as well.
-
-Let’s head to our second question: How does site energy change before and after the upgrade has been applied by housing vintage? Choose **out.site_energy.total.energy_consumption.kwh.savings** and drag it into the <ins>Values</ins> box. Similar to the previous steps, change the value from <ins>Count</ins> to <ins>Sum</ins>. The PivotTable now looks like this.
+Let’s head to the question: How does site energy change before and after the upgrade has been applied by housing vintage? Choose **out.site_energy.total.energy_consumption.kwh.savings** and drag it into the <ins>Values</ins> box. Similar to the previous steps, change the value from <ins>Count</ins> to <ins>Sum</ins>. The PivotTable now looks like this.
 
 ![](../../../assets/images/sumsite.png)
 
