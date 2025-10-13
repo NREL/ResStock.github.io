@@ -17,10 +17,10 @@ These documents describe various aspects of ResStock, including the baseline and
 This document serves as a guide to and resource for the methodology and assumptions behind ResStock. The Reference Documentation will be updated as major changes to the baseline models are incorporated.
 
 | **Reference Documentation Version** | **Release Date** | **Corresponding Dataset Release** |
-| [[DRAFT] ResStock Technical Reference <br> Documentation vX.X.X ()] | October 2025 | ResStock 2025 Release 1 |
+| [ResStock Technical Reference <br> Documentation v4.0.0]() | October 2025 | ResStock 2025 Release 1 |
+| [Integration of Electric Vehicle <br> Charging Loads in Residential Building <br> Stock Energy Modeling](https://docs.nrel.gov/docs/fy25osti/93766.pdf) | August 2025 | ResStock 2025 Release 1 |
 | [ResStock Technical Reference <br> Documentation v3.3.0](https://docs.nrel.gov/docs/fy25osti/91621.pdf) | July 2025 | ResStock 2024 Release 2 |
 | [End-Use Load Profiles for the U.S. Building Stock](https://docs.nrel.gov/docs/fy22osti/80889.pdf) | March 2022 | ResStock 2022 Release 1 |
-| [Integration of Electric Vehicle <br> Charging Loads in Residential Building <br> Stock Energy Modeling](https://docs.nrel.gov/docs/fy25osti/93766.pdf) | August 2025 | ResStock 2025 Release 1 |
 
 ## Tutorials
 Tutorials provide lessons for understanding certain capabilities and functions of ResStock, as well as learning a specific analysis skill. Available tutorials include:
@@ -62,7 +62,7 @@ Webinars, presentations, and guidance on the ComStock and ResStock datasets—in
 ## Tableau Dashboards<span class="label label-blue">NEW</span>
 The [ResStock Tableau Public page](https://public.tableau.com/app/profile/nrel.buildingstock/vizzes) offers interactive visualizations based on ResStock datasets. These visualizations provide insights into building characteristics, energy consumption patterns, and the potential impacts of energy efficiency measures across various building types and geographic regions. See below for a sample of available dashboards. Additional dashboards will be posted to the ResStock Tableau Public page as they become available.
 
-- [Evaluating Geothermal Performance for the U.S. Building Stock]() (2025)  
+- [Evaluating Geothermal Performance for the U.S. Building Stock](https://public.tableau.com/app/profile/comstock.nrel/viz/EvaluatingGeothermalPerformancefortheU_S_BuildingStock/Home) (2025)
 - [Utility Bill Impact Dashboard](https://public.tableau.com/app/profile/nrel.buildingstock/viz/UtilityBillImpactDashboard/Home) (2024)
 -   Heat Pumps for All: [Best Packages](https://public.tableau.com/app/profile/nrel.buildingstock/viz/Heatpumpsforall-Bestpackages/FigS5_DistributionsofhighestunsubsidizedNPV) (2024), [Economic Data](https://public.tableau.com/app/profile/nrel.buildingstock/viz/Heatpumpsforall-Economicdata/Coverpage) (2023), [GHG Emissions](https://public.tableau.com/app/profile/nrel.buildingstock/viz/Heatpumpsforall-GHGemissions/Statemaps) (2023)
 -   [State Level Residential Building Stock and Energy Efficiency & Electrification Packages Analysis](https://public.tableau.com/app/profile/nrel.buildingstock/viz/StateLevelResidentialBuildingStockandEnergyEfficiencyElectrificationPackagesAnalysis/Introduction) (2023)

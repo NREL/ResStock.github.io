@@ -14,25 +14,24 @@ New datasets include new measures as well as updates to the ResStock baseline mo
 
 ## Measure Documentation and Details Starting with ResStock 2025 Release 1
 | **Measure Number** | **Measure Name and Documentation Link** | **Initial Dataset Release** |
-| 0 | Baseline | Included in each release |
-| 1 | 95% AFUE Gas Furnace* | ResStock 2025 Release 1 |
-| 2 | Propane and Fuel Oil Furnaces* | ResStock 2025 Release 1 |
-| 3 | Reference Space Heating and Air<br> Conditioning Upgrade (Circa 2025)* | ResStock 2025 Release 1 |
-| 4 | Typical Cold Climate Air-Source Heat Pump* | ResStock 2025 Release 1 |
-| 5 | Dual Fuel Heat Pump System* | ResStock 2025 Release 1 |
+| 1 | Natural Gas Furnace 95% AFUE* | ResStock 2025 Release 1 |
+| 2 | Propane Furnace 95% AFUE and<br> Fuel Oil Furnace 88% AFUE* | ResStock 2025 Release 1 |
+| 3 | Reference Space Heating and Air Conditioning Upgrade Circa 2025* | ResStock 2025 Release 1 |
+| 4 | Cold Climate Air-Source Heat Pump* | ResStock 2025 Release 1 |
+| 5 | Dual Fuel Heat Pump* | ResStock 2025 Release 1 |
 | 6 | Single-stage Geothermal Heat Pump* | ResStock 2025 Release 1 |
 | 7 | Two-stage Geothermal Heat Pump* | ResStock 2025 Release 1 |
 | 8 | Variable-speed Geothermal Heat Pump* | ResStock 2025 Release 1 |
 | 9 | Heat Pump Water Heater* | ResStock 2025 Release 1 |
-| 10 | High Efficiency Natural Gas Water Heater* | ResStock 2025 Release 1 |
+| 10 | Natural Gas Water Heater* | ResStock 2025 Release 1 |
 | 11 | Air Sealing* | ResStock 2025 Release 1 |
-| 12 | Attic Floor Insulation for Unfinished<br> Attics* | ResStock 2025 Release 1 |
+| 12 | Attic Floor Insulation* | ResStock 2025 Release 1 |
 | 13 | Duct Sealing and Insulation* | ResStock 2025 Release 1 |
 | 14 | Air Sealing with Drill-and-Fill<br> Wall Insulation* | ResStock 2025 Release 1 |
-| 15 | Air Sealing + Attic Floor Insulation<br> + Duct Sealing* | ResStock 2025 Release 1 |
-| 16 | Air Sealing + Drill-and-Fill Wall Insulation <br>+ Attic Floor Insulation + Duct Sealing* | ResStock 2025 Release 1 |
+| 15 | Air Sealing, Attic Floor Insulation<br>, and Duct Sealing and Insulation* | ResStock 2025 Release 1 |
+| 16 | Air Sealing, Drill-and-Fill Wall Insulation <br>, Attic Floor Insulation, and Duct Sealing and Insulation* | ResStock 2025 Release 1 |
 | 17 | EnergyStar Windows* | ResStock 2025 Release 1 |
-| 18 | Two-Stage Geothermal Heat Pump <br> + Air Sealing + Attic Floor Insulation<br> + Duct Sealing* | ResStock 2025 Release 1 |
+| 18 | Two-Stage Geothermal Heat Pump, Air Sealing,<br> Attic Floor Insulation, and Duct Sealing and Insulation* | ResStock 2025 Release 1 |
 | 19 | Electric Vehicle Adoption<br> with Level 1 Charging* | ResStock 2025 Release 1 |
 | 20 | Electric Vehicle Adoption<br> with Level 2 Charging* | ResStock 2025 Release 1 |
 | 21 | Efficient Electric Vehicle<br> Adoption with Level 2 Charging* | ResStock 2025 Release 1 |
@@ -44,4 +43,4 @@ New datasets include new measures as well as updates to the ResStock baseline mo
 | 27 | HVAC Demand Flexibility<br> with 4 hour Pre-peak Load Shifting of 4F offset* | ResStock 2025 Release 1 |
 | 28 | HVAC Demand Flexibility<br> with 1 hour Pre-peak Load Shifting of 2F offset* | ResStock 2025 Release 1 |
 
-*Draft measure documentation. Official technical measure documentation will be available in the future.
+*Measure documentation will be available in the future.
