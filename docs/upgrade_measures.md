@@ -14,6 +14,7 @@ New datasets include new measures as well as updates to the ResStock baseline mo
 
 ## Measure Documentation and Details Starting with ResStock 2025 Release 1
 | **Measure Number** | **Measure Name and Documentation Link** | **Initial Dataset Release** |
+| --- | --- | --- |
 | 1 | Natural Gas Furnace 95% AFUE* | ResStock 2025 Release 1 |
 | 2 | Propane Furnace 95% AFUE and Fuel Oil Furnace 88% AFUE* | ResStock 2025 Release 1 |
 | 3 | Reference Space Heating and Air Conditioning Upgrade Circa 2025* | ResStock 2025 Release 1 |
