@@ -20,7 +20,7 @@ Below are some frequently asked questions (FAQ) about ResStock. The questions ar
 </details>
 
 <details>
-    <summary>Which dataset release should I use?</summary>
+    <summary>Which dataset release should I use? And can I compare upgrades from different dataset releases?</summary>
     <p>We recommend using the latest data release whenever possible. However, older datasets still provide valuable information and can be used if newer datasets are not appropriate for a specific use. We do not recommend a comparison of upgrade measures across different dataset releases due to the changes and improvements made in each dataset release. Each new dataset release includes its own set of upgrade measures, some of which are repeats, and improvements made to the baseline model and modeling methodology. See the <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">Data page</a> for a list of available datasets and access links, as well as technical documentation for the ResStock tool.</p>
 </details>
 
@@ -141,6 +141,13 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     <p>Yes, ResStock includes California Climate zone as a characteristic.</p>
 </details>
 
+<details>
+    <summary>How do I access the timeseries data for a specific building model?</summary>
+    <p>To download a few results by IDs, you can use a manual approach. First use the metadata_and_annual_results to find the IDs you want to access. Then, note the download URL for any easy-to-access ID and edit it to reflect the ID you want. 
+    
+    For example, right clicking on the first ID under ResStock dataset 2022.1.1, AMY 2018, upgrade 02, and choosing “copy link” provides this URL <a href="https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2022/resstock_amy2018_release_1.1/timeseries_individual_buildings/by_state/upgrade=2/state=WA/100025-2.parquet">https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2022/resstock_amy2018_release_1.1/timeseries_individual_buildings/by_state/upgrade=2/state=WA/100025-2.parquet</a>. To access ID 813 instead of 100025, change the “100025-2” to “813-2” in the URL, and paste it into a web browser. That will download the data for ID 813.</p>
+</details>
+
 ## Data Viewer
 
 <details>
@@ -235,6 +242,17 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     <p>Yes you can, but there are a few caveats to be aware of. For example, if looking at one envelope package that includes air sealing, insulation, and duct sealing, downselecting to models without the wall insulation measure applied is creating a biased sample, since the package applies wall insulation only to uninsulated wood stud walls. Using this method, you are removing some of the poorest performing buildings. Take a look at the samples to see how many samples you would be removing with this approach, and then consider if it is reasonable.</p>
 </details>
 
+<details>
+    <summary>How do I calculate COP?</summary>
+    <p>The as-simulated heating COP can be determined by calculating the heating delivered divided by the energy consumed for heating. Because ResStock outputs these values with different units, a unit conversion is also required.
+    
+    For example, the COP of an all-electric heating system can be calculated as (out.load.heating.energy_delivered.kbtu * (293.07 / 1000)) / (out.electricity.heating.energy_consumption.kwh + out.electricity.heating_fans_pumps.energy_consumption.kwh + out.electricity.heating_hp_bkup.energy_consumption.kwh + out.electricity.heating_hp_bkup_fa.energy_consumption.kwh)
+
+    This can be calculated using the timeseries results to get the COP at an individual timestep, or using totals for the year from the metadata_and_annual files to get an annual average value.
+
+    Heating systems that use additional fuels in addition to electricity will require additional fields to be included in the denominator. E.g. out.natural_gas.heating.energy_consumption.kwh </p>
+</details>
+
 
 ## Modeling Methods, Assumptions, and Documentation
 
@@ -255,7 +273,7 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
 
 <details>
     <summary>Are there electric vehicle (EV) charging profiles in the dataset?</summary>
-    <p>No, ResStock does not currently model EV charging in the dataset, however this feature is in development. For modeling aggregate EV load profiles for a city or state, we suggest using <a href="https://afdc.energy.gov/evi-pro-lite/load-profile">EVI-Pro Lite</a>. Measured charging profile data for individual homes can be found in the <a href="https://neea.org/data/nw-end-use-load-research-project/energy-metering-study-data">NEEA HEMS Data</a>  NEEA HEMS data and <a href="https://www.pecanstreet.org/dataport/">Pecan Street Dataport</a>. Email us at <a href="mailto:ResStock@nrel.gov">ResStock@nrel.gov</a> if you have suggestions for other EV charging data sources.</p>
+    <p>Yes, there are EV profiles starting in the ResStock 2025 Release 1 dataset. See the <a href="https://docs.nrel.gov/docs/fy25osti/93766.pdf">report</a> for more information.</p>
 </details>
 
 <details>
@@ -294,4 +312,20 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
 <details>
     <summary>The lighting options available are 100% CFL or 100% of one lighting type. This is unlikely to be the case in buildings. How can I explain this to our clients?</summary>
     <p>This is a limitation of ResStock, we are not able to do a mixed lighting scenario because there are data limitations in RECS 2015. In reality, some homes may not have 100% of a certain type of lighting. If you are looking at this data, consider our other guidance on the number of samples recommended in order to draw conclusions.</p>
+</details>
+
+<details>
+    <summary> How are multifamily common areas modeled?</summary>
+    <p>The residential housing units in multifamily buildings are modeled in ResStock and are not in ComStock.  All energy consumption specific to the housing unit is included in the modeled results, such as lighting, appliances, window air conditioners, and HVAC and water heaters that serve a single housing unit. 
+    
+    HVAC and water heating that serves multiple housing units are also included, with energy consumption allocated to the unit served and with adjustment factors applied to account for the energy consumption differences of shared equipment. These adjustment factors are set by OpenStudio-HPXML and from ANSI/RESNET 301. 
+    
+    Electric vehicle charging energy consumption from common areas is also included in ResStock results, allocated directly to the unit that is associated with each electric vehicle. 
+    
+    All other energy that provides services to common areas in multifamily buildings is not included in either ResStock or ComStock. Examples of this would include common area lighting, common laundry facilities, pools, and hot tubs, and elevators. </p>
+</details>
+
+<details>
+    <summary>How are wall cavity R-values determined?</summary>
+    <p>Wall cavity R-values are determined through one-dimensional heat transfer within OS-HPXML. See <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Wood_Stud_Depth.html">this explanation</a> for more information.</p>
 </details>

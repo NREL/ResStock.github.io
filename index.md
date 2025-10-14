@@ -37,7 +37,7 @@ ResStock enables a new approach to large-scale residential energy analysis acros
 
 ResStock is more than just a basic modeling tool for analyzing energy efficiency and consumption in residential buildings. It integreates a variety of features and capabilities that make it a comprehensive analytical platform. ResStock generates public datasets and downstream products like factsheets and dashboards. Here's a broader description of it's functionalities:
 
-1. **Simulation Tool**: ResStock performs detailed simulations that can project the impact of various energy efficiency measures acros millions of building prototypes, tailored to different climates, construction types, and demographics. This allows for a granular analysis of potential energy savings and efficiency improvements.
+1. **Simulation Tool**: ResStock performs detailed simulations that can project the impact of various energy efficiency measures across millions of building prototypes, tailored to different climates, construction types, and demographics. This allows for a granular analysis of potential energy savings and efficiency improvements.
 
 2. **Policy Analysis Instrument**: ResStock provides data and insights that can help inform state and local energy policies by illustrating the potential impacts of building code modifications, energy efficiency programs, and retrofit incentives.
 
@@ -49,7 +49,7 @@ ResStock is more than just a basic modeling tool for analyzing energy efficiency
 
 In summary, ResStock could be aptly described as an **advanced energy analysis platform** that combines elements of simulation, policy analysis, decision support, research facilitation, and educational outreach. These elements are all focused on enhancing residential energy efficiency and understanding energy consumption patterns.
 
-ResStock helps states, municipalities, utilities, and manufacturers understand the make up of their area's housing stock; identifying the energy, emissions, or economic impacts of energy efficiency or electrification measures; and exploring the impact of new technologies such as cold-climate heat pumps for both customers and the grid.
+ResStock helps states, municipalities, utilities, and manufacturers understand the make up of their area's housing stock; identifying the energy or economic impacts of energy efficiency or retrofit measures; and exploring the impact of new technologies such as cold-climate heat pumps for both customers and the grid.
 
 In the pursuit of understanding when and where energy consumption occurs, ResStock can be tailored to answer the core questions many people have (explained in the next section). The results are available in multiple formats and resolutions:
 
@@ -59,7 +59,7 @@ In the pursuit of understanding when and where energy consumption occurs, ResSto
 | Temporal | 15 minutes to annual aggregations |
 | Sectoral | All U.S. housing by Census and Residential Energy Consumption Survey (RECS) classifications |
 
-To achieve clean energy objectives and enhance the alignment of building stock with the evolving power grid, a detailed analysis method is essential. This method must be able to evaluate the location, timing, and methods through which clusters of buildings use energy and identify potential energy savings. This tool is designed to aid professoinals and researchers engaged in advancing these initiatives.
+To achieve energy objectives and enhance the alignment of building stock with the evolving power grid, a detailed analysis method is essential. This method must be able to evaluate the location, timing, and methods through which clusters of buildings use energy and identify potential energy savings. This tool is designed to aid professoinals and researchers engaged in advancing these initiatives.
 
 ## What Questions Can and Cannot Be Answered With ResStock?
 These are the type of questions that can be answered via data processing, distillation, and visualization of this dataset. This is not a complete list.
