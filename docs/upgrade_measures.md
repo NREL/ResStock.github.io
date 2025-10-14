@@ -13,6 +13,7 @@ The measure documentation describes the modeling methodology, assumptions, and o
 New datasets include new measures as well as updates to the ResStock baseline model.
 
 ## Measure Documentation and Details Starting with ResStock 2025 Release 1
+
 | **Measure Number** | **Measure Name and Documentation Link** | **Initial Dataset Release** |
 | --- | --- | --- |
 | 1 | Natural Gas Furnace 95% AFUE* | ResStock 2025 Release 1 |
