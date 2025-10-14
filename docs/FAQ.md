@@ -277,11 +277,6 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
 </details>
 
 <details>
-    <summary>What emissions scenarios are modeled?</summary>
-    <p>Depending on the ResStock dataset, different emission scenarios are used. The technical documentation for each dataset usually contains information about the emission scenarios modeled. Recent datasets used Cambuium data, and have multiple emission scenarios modeled. Links to the technical documentation can be found <a href="https://nrel.github.io/ResStock.github.io/docs/data.html">here</a> For more information, see section 5.4 of the <a href="https://docs.nrel.gov/docs/fy25osti/91621.pdf">ResStock technical reference documentation</a>.</p>
-</details>
-
-<details>
     <summary>How are leap years modeled?</summary>
     <p>ResStock models every day of the year, including for leap years. The results for leap years (ie AMY2012 weather) therefore span 8784 hours, and are generated using weather files that contain 8784 hours. Here is the relevant <a href="https://openstudio-hpxml.readthedocs.io/en/latest/workflow_inputs.html#id4">OS-HPXML documentation</a>.</p>
 </details>
