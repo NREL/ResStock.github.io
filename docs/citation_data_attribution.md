@@ -6,9 +6,14 @@ has_children: false
 has_toc: false
 ---
 # Citation and Data Attribution
+When citing a ResStock dataset, please cite both the specific dataset and the technical reference guide, as shown below. Users are also welcomed to cite the measure documents directly as they become available.
 
-## Suggested Citation
-NREL. 2024. ResStock General Reference Documentation. Golden, CO. National Renewable Energy Laboratory. [https://nrel.github.io/ResStock.github.io/](https://nrel.github.io/ResStock.github.io/)
+## Suggested Citations
+### ResStock 2025 Release 1 Dataset in APA format
+Parker, A., Adhikari, R., Brossman, J., Liu, L., Lou, Y., Maguire, J., Phoung, S., Robertson, J., Speake, A., Stenger, K., White, P., Clark, K., Fontanini, A., Horowitz, S., Present, E., Reyna, J., Swindler, A., Wilson, E., Bianchi, C., Chintala, R., Harris, C., Merket, N., Moore N., Munankarmi, P., & Sandoval, N. (2025). _ResStock 2025 Release 1_ [Dataset] Open Energy Data Initiative (OEDI). National Renewable Energy Lab (NREL). [https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2025%2Fresstock_amy2018_release_1%2F](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2Fend-use-load-profiles-for-us-building-stock%2F2025%2Fresstock_amy2018_release_1%2F)
+
+### ResStock 2025 Release 1 Technical Reference Guide in APA format
+Reyna, J., Fontanini, A., Parker, A., Present, E., Liu, L., Adhikari, R., Bianchi, C., Brossman, J., Chintala, R., Clark, K., Harris, C., Horowitz, S., Lou, Y., Maguire, J., Merket, N., Moore, N., Munankarmi, P., Phoung, S., Robertson, J., Sandoval, N., Speake, A., Stenger, K., White, P., Wilson, E. (2025). _ResStock Technical Reference Documentation, Active Development Version_ [Technical report] National Renewable Energy Laboratory (NREL). Retrieved from [https://nrel.github.io/ResStock.github.io/assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf](https://nrel.github.io/ResStock.github.io/assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf)
 
 ## Data Attribution
 When using ResStock data in products or reports, kindly use the suggested citation above or “Data includes information from the ResStock™ dataset developed by the National Renewable Energy Laboratory (NREL) with funding from the U.S. Department of Energy (DOE).”
