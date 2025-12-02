@@ -324,3 +324,9 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
     <summary>How are wall cavity R-values determined?</summary>
     <p>Wall cavity R-values are determined through one-dimensional heat transfer within OS-HPXML. See <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Wood_Stud_Depth.html">this explanation</a> for more information.</p>
 </details>
+
+<details>
+    <summary>What year of U.S. Census geography (e.g., counties, PUMAs) do ComStock and ResStock use?</summary>
+    <p>ComStock and ResStock datasets reflect the 2010 National Historical GIS (NHGIS) GISJOIN standard codes for counties, PUMAs, and Census Tracts. Some model input data sources use 2020 Census geographies, and these are translated to 2010 before being integrated into the ComStock and ResStock workflows. However, 2020 geographic codes are not currently available in the ComStock and ResStock datasets.</p>
+    <p>For more information about geographic fields and codes used in the models, please refer to the <a href="https://nrel.github.io/ComStock.github.io/docs/resources/explanations/reference_geographic_codes.html">ComStock</a> and <a href="{{site.baseurl}}{% link docs/resources/explanations/Geographic_Fields_and_Codes.md %}">ResStock</a> user resources.</p>
+</details>
