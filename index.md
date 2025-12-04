@@ -33,7 +33,7 @@ Learn who is using the data and how with the in-depth [user summary snapshot]({{
 ![](/assets/images/BuildStock_Engagement_Highlight_Slide_1.svg)
 
 ## What Does ResStock Do?
-ResStock enables a new approach to large-scale residential energy analysis across the United States by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing to create public datasets. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Renewable Energy Laboratory (NREL).
+ResStock enables a new approach to large-scale residential energy analysis across the United States by combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing to create public datasets. ResStock is funded by the U.S. Department of Energy (DOE), and built by the National Laboratory of the Rockies (NLR).
 
 ResStock is more than just a basic modeling tool for analyzing energy efficiency and consumption in residential buildings. It integrates a variety of features and capabilities that make it a comprehensive analytical platform. ResStock generates public datasets and downstream products like factsheets and dashboards. Here's a broader description of it's functionalities:
 
