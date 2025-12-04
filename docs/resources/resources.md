@@ -52,9 +52,9 @@ These documents provide explanations focusing on how and why of the ResStock dat
 -   [ResStock 2024 Release 2 Measure Applicability]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Measure_Applicability.md%})
 
 ## Training Videos<span class="label label-blue">NEW</span>
-Webinars, presentations, and guidance on the ComStock and ResStock datasets—including training videos on accessing the datasets, using the Data Viewer, and more—are available on [NREL’s Building Stock Analysis YouTube channel](https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS). See below for a sample of available videos. For the full collection, visit the YouTube channel.
+Webinars, presentations, and guidance on the ComStock and ResStock datasets—including training videos on accessing the datasets, using the Data Viewer, and more—are available on [NLR’s Building Stock Analysis YouTube channel](https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS). See below for a sample of available videos. For the full collection, visit the YouTube channel.
 
--   [NREL Data on Home Energy Savings Potential for States and Communities](https://www.youtube.com/watch?v=2J5yESxR-qM)
+-   [NLR Data on Home Energy Savings Potential for States and Communities](https://www.youtube.com/watch?v=2J5yESxR-qM)
 -   [ResStock End Use Saving Shapes State Dashboard Training – State level housing details & results](https://www.youtube.com/watch?v=vtYMO0782Rc)
 -   [End-Use Load Profiles Dataset Access Demonstration](https://www.youtube.com/watch?v=iS7KeVQ0Bvs)
 -   [Loading End-Use Saving Shapes Data into AWS Athena](https://www.youtube.com/watch?v=qSR1MFpSiro)

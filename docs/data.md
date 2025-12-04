@@ -82,7 +82,7 @@ Aggregate ResStock datasets can be accessed via the [Open Energy Initiative (Ope
 Note that there are separate public datasets available for residential and commercial building stocks. If you are interested in commercial buildings, please check out our sibling tool [ComStock](https://comstock.nrel.gov/).
 
 ### Open Energy Data Initiative (OEDI) Data Lake
-OpenEI, or OEDI, is an energy information portal developed and maintained by NREL with funding and support from the U.S. Department of Energy and a network of international partners and sponsors. The OpenEI data lake contains comprehensive aggregate data for ResStock releases. This includes metadata and timeseries energy consumption results (baseline and upgrades, if applicable), individual building energy models, weather files, geographic information, and data dictionaries.
+OpenEI, or OEDI, is an energy information portal developed and maintained by NLR with funding and support from the U.S. Department of Energy and a network of international partners and sponsors. The OpenEI data lake contains comprehensive aggregate data for ResStock releases. This includes metadata and timeseries energy consumption results (baseline and upgrades, if applicable), individual building energy models, weather files, geographic information, and data dictionaries.
 
 The ResStock release directory structure of the data lake is summarized in the table below.
 
