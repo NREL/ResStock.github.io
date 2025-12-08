@@ -1,6 +1,5 @@
 ---
 layout: default
-math: true
 title: How Many Samples are Required for this Analysis?
 parent: Resources
 nav_order: 12
