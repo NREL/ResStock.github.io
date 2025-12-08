@@ -1,12 +1,13 @@
 ---
 layout: default
+math: true
 title: How Many Samples are Required for this Analysis?
 parent: Resources
 nav_order: 12
 ---
 
 ## Introduction
-ResStock, like most other datasets, has uncertainty. As stated in [this paper]() in section 5.1.3, the two significant areas of uncertainty are 1) stock-level model input parameters, and 2) an insufficient number of ResStock samples. This explanation will focus on understanding whether an analysis is using a sufficient number of ResStock samples for its purposes, in order to get the most it can out of the ResStock dataset.
+ResStock, like most other datasets, has uncertainty. As stated in [this paper](https://www.nrel.gov/docs/fy22osti/80889.pdf) in section 5.1.3, the two significant areas of uncertainty are 1) stock-level model input parameters, and 2) an insufficient number of ResStock samples. This explanation will focus on understanding whether an analysis is using a sufficient number of ResStock samples for its purposes, in order to get the most it can out of the ResStock dataset.
 
 **The ResStock team recommends estimating the standard error using the standard deviation divided by the square root of the number of samples (i.e. profiles or models) and using the results to inform the appropriate minimum sample size for a particular analysis.** As a conservative reference, using at least 1,000 samples will maintain 15% or lower sampling discrepancy for many common quantities of interest. Continue reading for multiple examples of calculating uncertainty, and situations where less than 1,000 samples can make sense.
 
@@ -33,7 +34,17 @@ To calculate the standard error[^1] for each of these results of interest, first
 # TODO - fix the following equation
 For the categorical variable, whether the house has propane heating, the standard error is calculated as[^2]: $\sqrt{((portion of feature of interest)*(1 - portion of feature with interest))/number of samples}$
 
-The other results are continuous so the standard error is calculated as: $stdev(result)/\sqrt{number of samples}$
+$$
+\text{SE} = \sqrt{\frac{portion of feature of interest(1 - portion of feature of interest)}{number of samples}}
+$$
+
+The other results are continuous so the standard error is calculated as:
+
+$$
+$\text{stdev}(\text{result})/\sqrt{\text{number of samples}}$
+$$
+
+ $stdev(result)/\sqrt{number of samples}$
 
 Optionally, the 95% confidence interval can also be calculated as: ±(standard error * 1.96)
 
