@@ -4,9 +4,6 @@ description: ResStock Documentation
 remote_theme: pmarsceill/just-the-docs
 url: https://github.com/NREL/ResStock.github.io
 logo: "/assets/images/logo.svg"
-markdown: kramdown
-kramdown:
-  math_engine: mathjax
 favicon_ico: "/assets/images/favicon.ico"
 search_enabled: true
 aux_links:
