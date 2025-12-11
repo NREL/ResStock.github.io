@@ -2,7 +2,7 @@
 layout: default
 title: Wood Stud Depth and Wall R-Value Calculations
 parent: Resources
-nav_order: 10
+nav_order: 9
 ---
 
 ## Wood Stud Depth and Wall R-Value Calculations

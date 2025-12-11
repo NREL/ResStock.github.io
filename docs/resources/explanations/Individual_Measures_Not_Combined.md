@@ -2,7 +2,7 @@
 layout: default
 title: Why Individual ResStock Measures Should Not Be Combined
 parent: Resources
-nav_order: 6
+nav_order: 5
 ---
 
 # Why Individual ResStock Measures Should Not Be Combined

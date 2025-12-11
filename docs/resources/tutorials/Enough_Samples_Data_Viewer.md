@@ -7,7 +7,7 @@ nav_order: 1
 
 # How To Use The Data Viewer With Enough Samples
 
-The Data Viewer is a tool that can show annual and timeseries data with premade visuals that can be downloaded. This tutorial will show you how to get 1,000 samples in the Data Viewer using the End Use Savings Shapes 2022.1 Release, representing 242,000 dwelling units.
+The Data Viewer is a tool that can show annual and timeseries data with premade visuals that can be downloaded. This tutorial will show you how to get 1,000 samples in the Data Viewer using the End Use Savings Shapes 2022.1 Release, representing 242,000 dwelling units. For more information on the number of samples that should be used in an analysis, see the *How Many Samples are Required for this Analysis* explanation on the Resources page.
 
 <!-- 
 Want more information on the Data Viewer, what it is, and how to access it? See [this section on Data] for more information.

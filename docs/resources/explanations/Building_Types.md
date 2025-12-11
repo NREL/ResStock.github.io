@@ -2,7 +2,7 @@
 layout: default
 title: Building Types Not Included In ResStock
 parent: Resources
-nav_order: 7
+nav_order: 6
 ---
 
 # Building Types Not Represented in ResStock
