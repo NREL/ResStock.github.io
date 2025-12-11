@@ -2,7 +2,7 @@
 layout: default
 title: How Many Samples are Required for this Analysis?
 parent: Resources
-nav_order: 12
+nav_order: 13
 ---
 
 ## Introduction
@@ -30,22 +30,14 @@ In this example analysis, there are four results of interest:
 
 To calculate the standard error[^1] for each of these results of interest, first determine if the result is categorical or continuous. The only categorical value is whether the house has propane heating. The results of interest are all continuous.
 
-# TODO - fix the following equation
-For the categorical variable, whether the house has propane heating, the standard error is calculated as[^2]: $\sqrt{((portion of feature of interest)*(1 - portion of feature with interest))/number of samples}$
-
-$$
-\text{SE} = \sqrt{\frac{portion of feature of interest(1 - portion of feature of interest)}{number of samples}}
-$$
+For the categorical variable, whether the house has propane heating, the standard error is calculated as[^2]:
+![](../../../assets/images/standard_error_categorical.png)
 
 The other results are continuous so the standard error is calculated as:
+![](../../../assets/images/standard_error_continuous.png)
 
-$$
-$\text{stdev}(\text{result})/\sqrt{\text{number of samples}}$
-$$
-
- $stdev(result)/\sqrt{number of samples}$
-
-Optionally, the 95% confidence interval can also be calculated as: ±(standard error * 1.96)
+Optionally, the 95% confidence interval can also be calculated as:
+![](../../../assets/images/confidence_interval_95.png)
 
 With just five samples, the standard error on total electricity consumption is 11% of the mean. This is just one example, and the 11% is likely lower than it would have been if one or more of the samples happened to use electricity for heating, but higher than it would have been if all of the samples had the same type of cooling. The standard error on the electricity for cooling is 48% of the mean. The standard error for the propane heating prevalence or propane usage could not be calculated because none of the samples use propane.
 
@@ -84,7 +76,6 @@ At what point the sample no longer sufficiently represents the study area of the
 ### Accuracy versus Precision
 The approach to address uncertainty depends on the particulars of the housing stock being studied and the needs of the analysis. Many analyses will encounter a tradeoff between accuracy and precision. Some analyses may want a more specific estimate with lower precision as represented by a larger relative standard error and therefore wider 95% confidence interval. Others may want a less specific estimate that uses a broader sample but has higher precision as represented by a smaller relative standard error and 95% confidence interval.
 
-# TODO - center the table and title of the table
 Table of results from example: Site electricity consumption
 | --- | Sample Set A | Sample Set B |Sample Set C |Sample Set D |Sample Set E |Sample Set F |Sample Set G |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -122,7 +113,7 @@ Table of results from example: Propane site energy consumption
 | **Heating Fuel** | All (though all were natural gas) | All | All | All | All | Propane | Propane |
 | **Cooling Type** | All | All | All | All | Central AC, Ducted Heat Pump | All | All |
 | **Number of samples** | 5 | 40 | 81 | 965 | 48 | 14 | 422 |
-| **Mean [kWh]** | 0 | 26 | 13 | 269 | NA | 18,490 | 23, 955 |
+| **Mean [kWh]** | 0 | 26 | 13 | 269 | NA | 18,490 | 23,955 |
 | **Standard Error [kWh]** | NA | 26 | 13 | 77 | NA | 2,548 | 731 |
 | **Standard Error Percentage of Mean** | NA | 100% | 100% | 29% | NA | 14% | 3% |
 | **95% Confidence Interval [kWh]** | NA | ±51 | ±25 | ±151 | NA | ±4,315 | ±1,433 |
@@ -148,8 +139,6 @@ This example is provided for illustrative purposes only. The results for every s
 
 ## Concluding Thoughts
 All data has uncertainty, but trying to understand and limit the uncertainty or amount of error is part of data analysis. If there are not enough samples within the housing stock of interest, the analyst must make tradeoffs between accuracy, precision, and the effort of supplementing with other information. If the analyst chooses to group their housing stock of interest together with other samples to increase the sample size, relying on knowledge of the local housing stock and topography can inform which samples to add.
-
-
 
 [^1]: An alternative approach would be to use bootstrapping.
 [^2]: [https://dept.stat.lsa.umich.edu/~kshedden/introds/topics/standard_errors/](https://dept.stat.lsa.umich.edu/~kshedden/introds/topics/standard_errors/)
