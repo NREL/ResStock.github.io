@@ -77,6 +77,7 @@ At what point the sample no longer sufficiently represents the study area of the
 The approach to address uncertainty depends on the particulars of the housing stock being studied and the needs of the analysis. Many analyses will encounter a tradeoff between accuracy and precision. Some analyses may want a more specific estimate with lower precision as represented by a larger relative standard error and therefore wider 95% confidence interval. Others may want a less specific estimate that uses a broader sample but has higher precision as represented by a smaller relative standard error and 95% confidence interval.
 
 Table of results from example: Site electricity consumption
+
 | --- | Sample Set A | Sample Set B |Sample Set C |Sample Set D |Sample Set E |Sample Set F |Sample Set G |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Counties** | Jefferson | Jefferson | Jefferson, Boulder, Teller, Gilpin, Park, Clear Creek | Jefferson | Jefferson, Boulder, Teller, Gilpin, Park, Clear Creek | Jefferson | All of Colorado |
@@ -91,6 +92,7 @@ Table of results from example: Site electricity consumption
 | **95% Confidence Interval** | ±1,428 | ±1,318 | ±994 | ±469 | ±1,235 | ±2,053 | ±403 |
 
 Table of results from example: Cooling electricity consumption
+
 | --- | Sample Set A | Sample Set B |Sample Set C |Sample Set D |Sample Set E |Sample Set F |Sample Set G |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Counties** | Jefferson | Jefferson | Jefferson, Boulder, Teller, Gilpin, Park, Clear Creek | Jefferson | Jefferson, Boulder, Teller, Gilpin, Park, Clear Creek | Jefferson | All of Colorado |
@@ -105,6 +107,7 @@ Table of results from example: Cooling electricity consumption
 | **95% Confidence Interval [kWh]** | ±641 | ±178 | ±140 | ±68 | ±130 | ±505 | ±115 |
 
 Table of results from example: Propane site energy consumption
+
 | --- | Sample Set A | Sample Set B |Sample Set C |Sample Set D |Sample Set E |Sample Set F |Sample Set G |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Counties** | Jefferson | Jefferson | Jefferson, Boulder, Teller, Gilpin, Park, Clear Creek | Jefferson | Jefferson, Boulder, Teller, Gilpin, Park, Clear Creek | Jefferson | All of Colorado |
