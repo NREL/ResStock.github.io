@@ -15,7 +15,7 @@ These are based on Federal Information Processing Standard (FIPS) codes. Example
 Want to learn how to convert your geography into the right ResStock format? Examples are provided below on how to find the 2010 PUMA. After converting your geography into the right format, use the [Check That You Have Enough Samples or Dwelling Units with the Data Viewer]({{ site.baseurl }}{% link docs/resources/tutorials/Enough_Samples_Data_Viewer.md %}) tutorial with the Data Viewer example to make sure your region is broad enough to draw conclusions from; otherwise your sample size is too low and you could have a large margin of error in your results.
 
 ## Neighborhood Into 2010 PUMA
-Background: Your community wants to analyze the neighborhoods around NREL’s campus in Golden, Colorado. The neighborhoods are located to the southeast of Applewood Golf Course and west of Maple Grove Reservoir in Golden.
+Background: Your community wants to analyze the neighborhoods around NLR’s campus in Golden, Colorado. The neighborhoods are located to the southeast of Applewood Golf Course and west of Maple Grove Reservoir in Golden.
 
 **Step 1:** Open [this website](https://usa.ipums.org/usa/volii/pumas20.shtml#web-map) and scroll down to the Web Map of 2010 and 2020 PUMAs.
 
@@ -30,7 +30,7 @@ Background: Your community wants to analyze the neighborhoods around NREL’s ca
 The 2010 PUMA and the 2010 County name are great starting points for the Data Viewer and other ResStock resources.
 
 ## 2020 PUMA into 2010 PUMA
-Background: Your community has given you the 2020 PUMA code for Research Road, an area right outside of NREL’s campus in Golden, Colorado. They give you 00702 as the 2020 PUMA code. We have to convert that to a 2010 PUMA code for many ResStock resources.
+Background: Your community has given you the 2020 PUMA code for Research Road, an area right outside of NLR’s campus in Golden, Colorado. They give you 00702 as the 2020 PUMA code. We have to convert that to a 2010 PUMA code for many ResStock resources.
 
 **Step 1:** Open [this website](https://usa.ipums.org/usa/volii/pumas20.shtml#web-map) and scroll down to the Web Map of 2010 and 2020 PUMAs.
 
@@ -43,7 +43,7 @@ Background: Your community has given you the 2020 PUMA code for Research Road, a
 **Step 5:** Turn this information into a PUMA fit for ResStock. Combine the **State FIP**, <ins>an additional 0</ins>, and then the *2010 PUMA value*. For this example, it would be **08**<ins>0</ins>*00818*. Now you have the 2010 PUMA value! And luckily, the small box also has the 2010 County name, Jefferson County.
 
 ## 2020 Census Tract to 2010 PUMA
-Background: Your community has given you the 2020 Census Tract for Research Road, an area right outside of NREL’s campus in Golden, Colorado. They have given you 08059010100. We have to convert that to a 2010 PUMA code for many ResStock resources.
+Background: Your community has given you the 2020 Census Tract for Research Road, an area right outside of NLR’s campus in Golden, Colorado. They have given you 08059010100. We have to convert that to a 2010 PUMA code for many ResStock resources.
 
 ### Example 1: Approximation
 **Step 1:** Open [this website](https://www.census.gov/library/visualizations/2021/geo/demographicmapviewer.html). Click "Colorado" and zoom into the area for Research Road in Golden, CO.
@@ -86,7 +86,7 @@ Background: Your community has given you the 2020 Census Tract for Research Road
 **Step 12:** Turn this information into a PUMA fit for ResStock. Combine the **State FIP**, <ins>an additional 0</ins>, and then the *2010 PUMA value*. For this example, it would be **08**<ins>0</ins>*00818*. Now you have the 2010 PUMA value!
 
 ## 2010 Census Tract to 2010 PUMA
-Background: The community gives you the 2010 census tract value for Research Road, right outside of NREL’s Golden, Colorado campus. They give you 08059010100.
+Background: The community gives you the 2010 census tract value for Research Road, right outside of NLR’s Golden, Colorado campus. They give you 08059010100.
 
 **Step 1:** Go to the [Census Tract to PUMA Relationship Files](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/pumas.html#:~:text=Census%20Tract%20to%20PUMA%20Relationship,building%20block%20of%20PUMA%20geography), and choose the 2010 Census Tract to 2010 PUMA Relationship File and open it.
 
@@ -95,7 +95,7 @@ Background: The community gives you the 2010 census tract value for Research Roa
 **Step 3:** Turn this information into a PUMA fit for ResStock. Combine the **State FIP**, <ins>an additional 0</ins>, and then the *2010 PUMA value*. For this example, it would be **08**<ins>0</ins>*00818*. Now you have the 2010 PUMA value!
 
 ## County to 2010 PUMA
-Background: The community says they want to analyze Jefferson County, the county where NREL’s Golden, Colorado, campus is located.
+Background: The community says they want to analyze Jefferson County, the county where NLR’s Golden, Colorado, campus is located.
 
 **Step 1:** Make sure that county name has not undergone any changes by pulling up the [Changes to Counties](https://www.census.gov/programs-surveys/geography/technical-documentation/county-changes.2000.html#list-tab-957819518) website. Best to go from present day, 2020s, back to 2000, to make sure the county name has not changed in recent history. We see that Jefferson County is one that underwent changes back in 2001.
 

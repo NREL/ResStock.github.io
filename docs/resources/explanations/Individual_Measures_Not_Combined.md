@@ -11,7 +11,7 @@ Some users of ResStock data might have questions about the combined effects of m
 
 For example, in the 2024.1 ResStock dataset, there are two individual packages:
 - 2.03: Envelope, Light Touch, package
-- 6.01: ASHP, ENERY STAR Ducted, Existing NG Backup
+- 6.01: ASHP, ENERGY STAR Ducted, Existing NG Backup
 
 Then these two packages modeled together in package 10.01: ASHP, ENERGY STAR Ducted, Existing NG Backup with Envelope, Light Touch.
 

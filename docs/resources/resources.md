@@ -31,7 +31,7 @@ These guides provide step-by-step instructions for using a ResStock dataset to a
 - [Analyze Your Housing Stock and Different What if Scenarios Using Excel]({{ site.baseurl }}{% link docs/resources/how-to-guides/Housing_Stock_Excel_Questions.md %})
 
 ## Explanations
-These documents provide explanations focusing on how and why of the ResStock datasets. This section does not provide explicit advice on how to achieve a specific outcome, but rather focuses on helping users understand specific and important aspects of the datasets. Additional questions or ideas for documentation can be [emailed to us](mailto:resstock@nrel.gov). Explanations are available on the following topis:
+These documents provide explanations focusing on how and why of the ResStock datasets. This section does not provide explicit advice on how to achieve a specific outcome, but rather focuses on helping users understand specific and important aspects of the datasets. Additional questions or ideas for documentation can be [emailed to us](mailto:resstock@nrel.gov). Explanations are available on the following topics:
 
 ### General
 - [Considerations for ResStock Calibration and Validation]({{ site.baseurl }}{% link docs/resources/explanations/Considerations_for_ResStock_Calibration_and_Validation.md %})
@@ -52,9 +52,9 @@ These documents provide explanations focusing on how and why of the ResStock dat
 -   [ResStock 2024 Release 2 Measure Applicability]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Measure_Applicability.md%})
 
 ## Training Videos<span class="label label-blue">NEW</span>
-Webinars, presentations, and guidance on the ComStock and ResStock datasets—including training videos on accessing the datasets, using the Data Viewer, and more—are available on [NREL’s Building Stock Analysis YouTube channel](https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS). See below for a sample of available videos. For the full collection, visit the YouTube channel.
+Webinars, presentations, and guidance on the ComStock and ResStock datasets—including training videos on accessing the datasets, using the Data Viewer, and more—are available on [NLR’s Building Stock Analysis YouTube channel](https://www.youtube.com/playlist?list=PLmIn8Hncs7bEYCZiHaoPSovoBrRGR-tRS). See below for a sample of available videos. For the full collection, visit the YouTube channel.
 
--   [NREL Data on Home Energy Savings Potential for States and Communities](https://www.youtube.com/watch?v=2J5yESxR-qM)
+-   [NLR Data on Home Energy Savings Potential for States and Communities](https://www.youtube.com/watch?v=2J5yESxR-qM)
 -   [ResStock End Use Saving Shapes State Dashboard Training – State level housing details & results](https://www.youtube.com/watch?v=vtYMO0782Rc)
 -   [End-Use Load Profiles Dataset Access Demonstration](https://www.youtube.com/watch?v=iS7KeVQ0Bvs)
 -   [Loading End-Use Saving Shapes Data into AWS Athena](https://www.youtube.com/watch?v=qSR1MFpSiro)

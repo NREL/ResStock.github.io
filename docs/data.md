@@ -8,7 +8,7 @@ has_toc: false
 # Data
 Given the complexity and computational intensity of ResStock, the best pathway for professionals and researchers to use ResStock successfully is to use pre-created results, rather than running ResStock themselves. This section provides information about accessing ResStock results and links to published datasets.
 
-The most up to date technical reference documentation for ResStock is available [here](XXXX). Below is technical documentation for each dataset, but the previous link more fully explains current assumptions and methodologies, and should be used in junction with the documentaiton for each dataset release.
+The most up to date technical reference documentation for ResStock is available [here](XXXX). Below is technical documentation for each dataset, but the previous link more fully explains current assumptions and methodologies, and should be used in junction with the documentation for each dataset release.
 
 ## Published Datasets
 These datasets explore the annual and timeseries energy consumption of the U.S. residential building stock at the end-use level.
@@ -59,7 +59,7 @@ Dealing with the raw output data from a national ResStock dataset requires skill
 ### Data Access Platforms
 The following table summarizes the various ways to access and use ResStock data. Scroll right to see all of the options.
 
-|   | **Metdata** | **Individual Load Profiles** | **Aggregate Load<br> Profiles** | **Data Viewer** | **Dashboards** | **Full Database** |
+|   | **Metadata** | **Individual Load Profiles** | **Aggregate Load<br> Profiles** | **Data Viewer** | **Dashboards** | **Full Database** |
 | **Data Format** | .csv and<br> parquet files | .csv and<br> parquet files | .csv and<br> parquet files | Interactive dashboard<br> with .csv exports | Interactive dashboards<br> with image, .xlsx, .csv, .pdf<br>, .pptx, and tableau workbook<br> exports | Amazon S3 bucket|
 | **Time Scale** | Annual | 15-minute intervals | 15-minute intervals | Customizable | Annual | Annual or 15-minute<br> intervals |
 | **Grouped By** | Individual<br> Building ID | Individual<br> Building ID | ASHRAE IECC<br> Climate Zone 2004,<br> Building America Climate<br> Zone, ISO RTO region,<br> State | Customizable | Customizable | Customizable |
@@ -82,7 +82,7 @@ Aggregate ResStock datasets can be accessed via the [Open Energy Initiative (Ope
 Note that there are separate public datasets available for residential and commercial building stocks. If you are interested in commercial buildings, please check out our sibling tool [ComStock](https://comstock.nrel.gov/).
 
 ### Open Energy Data Initiative (OEDI) Data Lake
-OpenEI, or OEDI, is an energy information portal developed and maintained by NREL with funding and support from the U.S. Department of Energy and a network of international partners and sponsors. The OpenEI data lake contains comprehensive aggregate data for ResStock releases. This includes metadata and timeseries energy consumption results (baseline and upgrades, if applicable), individual building energy models, weather files, geographic information, and data dictionaries.
+OpenEI, or OEDI, is an energy information portal developed and maintained by NLR with funding and support from the U.S. Department of Energy and a network of international partners and sponsors. The OpenEI data lake contains comprehensive aggregate data for ResStock releases. This includes metadata and timeseries energy consumption results (baseline and upgrades, if applicable), individual building energy models, weather files, geographic information, and data dictionaries.
 
 The ResStock release directory structure of the data lake is summarized in the table below.
 

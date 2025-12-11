@@ -59,7 +59,7 @@ Below are some frequently asked questions (FAQ) about ResStock. The questions ar
 
 <details>
     <summary>What do the codes used to describe "county_id" and other geographic fields mean?</summary>
-    <p>ComStock and ResStock use the National Historical GIS (NHGIS) GISJOIN standard codes for county, census PUMA, and census tract, which are based on Federal Information Processing System (FIPS) codes. The datasets use the 2010 version of the GISJOIN codes--2020 are not available at this time. For more information about the geospatial fields available in the datasets, see <a href="https://nrel.github.io/ComStock.github.io/docs/resources/explanations/reference_geographic_codes.html">this explanation</a> for ComStock, and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">this explanatation</a> for ResStock.
+    <p>ComStock and ResStock use the National Historical GIS (NHGIS) GISJOIN standard codes for county, census PUMA, and census tract, which are based on Federal Information Processing System (FIPS) codes. The datasets use the 2010 version of the GISJOIN codes--2020 are not available at this time. For more information about the geospatial fields available in the datasets, see <a href="https://nrel.github.io/ComStock.github.io/docs/resources/explanations/reference_geographic_codes.html">this explanation</a> for ComStock, and <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Geographic_Fields_and_Codes.html">this explanation</a> for ResStock.
     
     In most ComStock and ResStock datasets, county name is available in addition to the GISJOIN county code. For both tools, the column in the metadata_and_annual_results files on OEDI is called "in.county_name". 
     </p>
@@ -100,7 +100,7 @@ Below are some frequently asked questions (FAQ) about ResStock. The questions ar
 
 <details>
     <summary>Are weather data files available in EPW format?</summary>
-    <p>Weather data used for the modeling have been provided in .csv format for regression modeling, forecasting, or other analyses. The TMY3 weather files in EnergyPlus input format (EPW) can be downloaded from the NREL Data Catalog (https://data.nrel.gov/submissions/156), with filenames that correspond to county IDs in the ResStock and ComStock metadata. EPW format weather files for 2018 or other actual meteorological years (AMY) have not been publicly released. These files can be purchased from private sector vendors. See <a href="https://energyplus.net/weather/simulation">here</a> for a list of providers.</p>
+    <p>Weather data used for the modeling have been provided in .csv format for regression modeling, forecasting, or other analyses. The TMY3 weather files in EnergyPlus input format (EPW) can be downloaded from the NLR Data Catalog (https://data.nrel.gov/submissions/156), with filenames that correspond to county IDs in the ResStock and ComStock metadata. EPW format weather files for 2018 or other actual meteorological years (AMY) have not been publicly released. These files can be purchased from private sector vendors. See <a href="https://energyplus.net/weather/simulation">here</a> for a list of providers.</p>
 </details>
 
 <details>
@@ -290,7 +290,7 @@ file.to_csv(os.path.join(folder_path, file_name+new_suffix), index = False)
 
 <details>
     <summary>Does ResStock model water heaters in one location, or can the location vary?</summary>
-    <p>The location can vary. They could be located in the attic, mechanical room, crawlspace, garage, basement, living area, outside, or in an unheated basement. More information can be found in the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf">Resstock technical reference documentation</a>. Before the 2024 Release 2, we generally used this logic: in cold climates, the water heater was in the basement if there was one, living space otherwise. For hot climates, it'd be the garage if there was one, living space otherwise.</p>
+    <p>The location can vary. They could be located in the attic, mechanical room, crawlspace, garage, basement, living area, outside, or in an unheated basement. More information can be found in the <a href="https://nrel.github.io/ResStock.github.io/assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf">ResStock technical reference documentation</a>. Before the 2024 Release 2, we generally used this logic: in cold climates, the water heater was in the basement if there was one, living space otherwise. For hot climates, it'd be the garage if there was one, living space otherwise.</p>
 </details>
 
 <details>
