@@ -2,7 +2,7 @@
 layout: default
 title: How Many Samples are Required for this Analysis?
 parent: Resources
-nav_order: 13
+nav_order: 12
 ---
 
 ## Introduction

@@ -73,7 +73,7 @@ Repeat this process to filter to Single-Family Detached homes in the CO_upgrade0
 
 The second row shows a field_name called applicability with a field_description of: The measure was or was not applied to bldg_id. This is what we are looking for. Going back to the CO_upgrade02_metadata_and_annual_results file, search for the **applicability** column, and make sure only TRUE is chosen as an option. That means only the samples that were actually upgraded with our package of interest, high-efficiency cold-climate air-to-air heat pump with electric backup, will be shown. If the value is FALSE, that means the building sample was not upgraded with this package.
 
-Next, check to make sure there are the right number of samples or at least 1,000 samples. For a detailed explanation on why our team recommends this, review the [Why At Least 1,000 Samples is Recommended]({{ site.baseurl }}{% link docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.md %}) webpage.
+Next, check to make sure there are the right number of samples or at least 1,000 samples. For more information on the number of samples that should be used in an analysis, see the *How Many Samples are Required for this Analysis* explanation on the Resources page.
 
 To do this, highlight the first column of each of the two files, and look at the <ins>Count</ins> value at the bottom right of the screen. For the baseline file, it shows Count: "5901".
 
@@ -81,7 +81,7 @@ To do this, highlight the first column of each of the two files, and look at the
 
 Doing the same on the upgrade file, the <ins>Count</ins> value is showing Count: "5701". We expect the count of the upgrade file to be less because not all samples or bldg_id had the upgrade applied.
 
-Luckily for us, each file has over 1,000 samples so we are good to begin the analysis. If the sample count was is than 1,000, our team recommends expanding your geographic search area or changing other filters to increase sample count. See more reasoning for this [here]({{ site.baseurl }}{% link docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.md %}).
+Luckily for us, each file has over 1,000 samples so we are good to begin the analysis. For more information on the number of samples that should be used in an analysis, see the *How Many Samples are Required for this Analysis* explanation on the Resources page.
 
 We can analyze the data and extract key baseline and upgrade information now that we have confirmed we have enough samples. Let’s revisit the questions for our analysis:
 1.	What is the median home size by vintage?
@@ -138,7 +138,7 @@ As a reminder, these are the two questions we are looking to answer using the up
 
 For the site energy question, looking through the data dictionary shows two options, one that subtracts power produced by PV or generators, and one that is just total site energy. Let’s look at the total site energy, which would be **out.site_energy.total.energy_consumption.kwh**. Again, this is just the total amount, not the impact from the upgrade. Going back to the results file and searching for “out.site_energy” you eventually find a column titled **out.site_energy_net.energy_consumption.kwh.savings**, which is what we want for this example.
 
-Then, for the natural gas bills on the data dictionary, we have one option **out.bills.nautral_gas.usd**, but we want to know the savings, not just the total bills. Look back at the CO_upgrade02_metadata_and_annual_results file, and search for “out.bills.natural_gas”. There are actually two listings, one is **out.bills.natural_gas**, and the other is **out.bills.natural_gas.usd.savings**, which is what we actually want. Therefore, let’s use the **out.bills.natural_gas.usd.savings**. We’ll use Excel and PivotTable to answer the questions about the upgrade information too. As a first step, insert a new <ins>PivotTable</ins> following the same steps as the baseline housing.
+Then, for the natural gas bills on the data dictionary, we have one option **out.bills.natural_gas.usd**, but we want to know the savings, not just the total bills. Look back at the CO_upgrade02_metadata_and_annual_results file, and search for “out.bills.natural_gas”. There are actually two listings, one is **out.bills.natural_gas**, and the other is **out.bills.natural_gas.usd.savings**, which is what we actually want. Therefore, let’s use the **out.bills.natural_gas.usd.savings**. We’ll use Excel and PivotTable to answer the questions about the upgrade information too. As a first step, insert a new <ins>PivotTable</ins> following the same steps as the baseline housing.
 
 ![](../../../assets/images/newpivot.png)
 

@@ -38,13 +38,13 @@ These documents provide explanations focusing on how and why of the ResStock dat
 - [Quota-Based Sampling and Implications]({{ site.baseurl }}{% link docs/resources/explanations/Quota_Based_Sampling.md %})
 - [One Row of Data Is Not One Real House]({{ site.baseurl }}{% link docs/resources/explanations/One_Row_Data_House.md %})
 - [Geographic Fields and Codes]({{ site.baseurl }}{% link docs/resources/explanations/Geographic_Fields_and_Codes.md %})
-- [Why At Least 1,000 Samples is Recommended]({{ site.baseurl }}{% link docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.md %})
 - [Why Individual ResStock Measures Should Not Be Combined]({{ site.baseurl }}{% link docs/resources/explanations/Individual_Measures_Not_Combined.md %})
 - [Building Types Not Represented in ResStock]({{ site.baseurl }}{% link docs/resources/explanations/Building_Types.md %})
 - [PV System Assignment and Distributions]({{ site.baseurl }}{% link docs/resources/explanations/PV_System_Assignment_and_Distributions.md %})
 - [Unmet load hours]({{ site.baseurl }}{% link docs/resources/explanations/Unmet_load_hours.md %})
 - [Wood Stud Depth and Wall R-Value Calculations]({{ site.baseurl }}{% link docs/resources/explanations/Wood_Stud_Depth.md %})
 - [Monthly Electricity Comparisons to EIA 861M data]({{ site.baseurl }}{% link docs/resources/explanations/Monthly_Net_Electricity_Comparisons.md %})
+- [How Many Samples are Required for this Analysis?]{{ site.baseurl }}{% link docs/resources/explanations/Number_of_samples.md %})
 
 ### ResStock Limitations and Known Issues
 - [ResStock 2024 Release 2 Electricity and Energy Bills]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%})

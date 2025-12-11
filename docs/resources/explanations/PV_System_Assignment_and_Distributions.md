@@ -2,7 +2,7 @@
 layout: default
 title: PV System Assignment and Distributions
 parent: Resources
-nav_order: 8
+nav_order: 7
 ---
 
 # PV System Assignment and Distributions
