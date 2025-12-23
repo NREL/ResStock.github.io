@@ -38,7 +38,7 @@ Below are some frequently asked questions (FAQ) about ResStock. The questions ar
     <summary>How many profiles or models should be used, and how does the number used affect uncertainty of results?</summary>
     <p>We recommend estimating the standard error using the standard deviation divided by the square root of the number of samples (i.e. profiles or models) and using the results to inform the appropriate minimum sample size for a particular analysis. As a conservative reference, using at least 1,000 samples  will maintain 15% or lower sampling discrepancy for many common quantities of interest, as described in the <a href="https://docs.nrel.gov/docs/fy22osti/80889.pdf">End-Use Load Profiles methodology report section 5.1.3</a>.
 
-    See <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Why_at_Least_1000_Samples_is_Recommended.html">this explanation</a>  this explanation which has more details and also points to other ResStock references about how to increase the number of samples and calculate the uncertainty.
+    See <a href="https://nrel.github.io/ResStock.github.io/docs/resources/explanations/Number_of_samples.html">this explanation</a> which has more details and also points to other ResStock references about how to increase the number of samples and calculate the uncertainty.
     </p>
 </details>
 
