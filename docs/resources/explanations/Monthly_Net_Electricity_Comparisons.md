@@ -2,7 +2,7 @@
 layout: default
 title: Monthly Net Electricity Comparisons between ResStock 2024 Release 2 data and 2018 861M data
 parent: Resources
-nav_order: 11
+nav_order: 10
 ---
 
 The Sales to Ultimate Consumers dataset within the 2018 EIA-861M form was used as a comparison against monthly net electricity for the ResStock 2024 Release 2 AMY 2018 data.

@@ -2,7 +2,7 @@
 layout: default
 title: ResStock 2024 Release 2 Measure Applicability
 parent: Resources
-nav_order: 10
+nav_order: 14
 ---
 
 # Issue Report: ResStock 2024 Release 2 Measure Applicability
