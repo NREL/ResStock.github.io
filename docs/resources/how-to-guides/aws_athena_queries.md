@@ -26,13 +26,13 @@ ORDER BY
 <b>Results<b>
 ![](../../../assets/images/Colorado_building_type_size.png)
 
-## Prompt 2: How much additional electricity would be consumed by electric vehicles charging if each applicable dwelling unit in Alaska got one electric vehicle and one Level 1 charger? (Excel says 1.97, query is giving 1.98, is this too much of a difference? cannot get the below query to run, it worked when there was no applicability statement)
+## Prompt 2: How much additional electricity would be consumed by electric vehicles charging if each applicable dwelling unit in Alaska got one electric vehicle and one Level 1 charger?
 <b>Query<b>
 ```
 SELECT SUM("calc.weighted.electricity.ev_charging.energy_consumption..tbtu") AS total_electricity_consumption
 FROM "resstock_amy2018_r1_2025_md_by_state_parquet"
 WHERE
-"in.state" = 'AK' AND "upgrade" = 19 AND 'applicability' = true;
+"in.state" = 'AK' AND "upgrade" = 19 AND "applicability" = true;
 ```
 <b>Results<b>
 ![](../../../assets/images/Alaska_ev_charging_consumption.png)
