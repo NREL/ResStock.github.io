@@ -23,10 +23,10 @@ ResStock dataset releases are summarized in the following table with links for a
 
 **<span style="color:red">Dataset Alerts:</span>**
 
-<b>2025 Release <1>
-- A few columns are only correctly documented for one upgrade, and incorrect for the rest of the upgrades in the 2025 Release 1 datasets. This issue can be circumvented by using other columns. Please see the [known issue report] ({{ site.baseurl }}{% link docs/resources/explanations/Issue_2025_1_Column_Applicability.md%}) for additional information.
+**2025 Release 1**
+- A few columns are only correctly documented for one upgrade, and incorrect for the rest of the upgrades in the 2025 Release 1 datasets. This issue can be circumvented by using other columns. Please see the [known issue report]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2025_1_Column_Applicability.md%}) for additional information.
 
-<b>2024 Release 2<b>
+**2024 Release 2**
 -   The electricity bills and energy bills are incorrectly calculated in 2024 Release 2 datasets. This especially impacts electricity bill and energy bill savings results. Please see the [known issue report]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%}) for additional information.
 -   Certain models in the ResStock 2024 Release 2 dataset do not have the dual-fuel measures applied despite the documentation stating that they do. Please see the [known issue report]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Measure_Applicability.md%}) for more details.
 
