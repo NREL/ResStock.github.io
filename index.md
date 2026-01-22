@@ -95,6 +95,6 @@ _Questions that cannot be answered by ResStock alone:_
 5. What is the energy savings potential for a specific home address?
 
 ## How To Use ResStock
-ResStock provides access to results through many different forms, including a web data viewer, dashboards, and raw data available for download. Explanations, how-to guides, and tutorials are available in the [Resources section]({{  site.baseurl  }}{% link docs/resources/resources.html %}) to assist using the data for common use cases.
+ResStock provides access to results through many different forms, including a web data viewer, dashboards, and raw data available for download. Explanations, how-to guides, and tutorials are available in the [Resources section]({{  site.baseurl  }}{% link docs/resources/resources.md %}) to assist using the data for common use cases.
 
 ResStock leverages and is deeply indebted to DOE's open source building energy modeling ecosystem of [Open Studio®](https://openstudio.net/) and [Energy Plus®](https://energyplus.net/). 
