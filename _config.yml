@@ -2,13 +2,13 @@ title: ResStock
 description: ResStock Documentation
 # theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
-url: https://github.com/NREL/ResStock.github.io
+url: https://github.com/NatLabRockies/ResStock.github.io
 logo: "/assets/images/logo.svg"
 favicon_ico: "/assets/images/favicon.ico"
 search_enabled: true
 aux_links:
   "ResStock on GitHub":
-    - "https://github.com/NREL/resstock"
+    - "https://github.com/NatLabRockies/resstock"
 aux_links_new_tab: true
 footer_content: >
   The National Laboratory of the Rockies is a national laboratory of the

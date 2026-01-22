@@ -24,7 +24,7 @@ This document serves as a guide to and resource for the methodology and assumpti
 
 ## Tutorials
 Tutorials provide lessons for understanding certain capabilities and functions of ResStock, as well as learning a specific analysis skill. Available tutorials include:
-- [Check That You Have Enough Samples or Dwelling Units with the Data Viewer]({{ site.baseurl }}{% link docs/resources/tutorials/Enough_Samples_Data_Viewer.md %})
+- [Check That You Have Enough Samples or Dwelling Units with the Data Viewer]({{  site.baseurl  }}{% link assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf %})
 
 ## How-To Guides
 These guides provide step-by-step instructions for using a ResStock dataset to answer a given question. Available guides include:

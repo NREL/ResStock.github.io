@@ -26,7 +26,7 @@ ResStock, along with our partner model ComStock™, make up BuildStock. BuildSto
 ### Access the Dataset
 Visit the [Datsets page](https://resstock.nrel.gov/datasets) for access to the published datasets and details about the ways to access them.
 
-Read the [technical reference documentation](https://nrel.github.io/ResStock.github.io/assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf) for the most recent baseline model inputs and assumptions.
+Read the [technical reference documentation]({{  site.baseurl  }}{% link assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf %}) for the most recent baseline model inputs and assumptions.
 
 Learn who is using the data and how with the in-depth [user summary snapshot]({{  site.baseurl  }}{% link assets/pdfs/NREL-Bldgs-BuildStock_infographic-FY25.pdf %}). A shorter version of this information is seen below.
 
@@ -95,6 +95,6 @@ _Questions that cannot be answered by ResStock alone:_
 5. What is the energy savings potential for a specific home address?
 
 ## How To Use ResStock
-ResStock provides access to results through many different forms, including a web data viewer, dashboards, and raw data available for download. Explanations, how-to guides, and tutorials are available in the [Resources section](https://nrel.github.io/ResStock.github.io/docs/resources/resources.html) to assist using the data for common use cases.
+ResStock provides access to results through many different forms, including a web data viewer, dashboards, and raw data available for download. Explanations, how-to guides, and tutorials are available in the [Resources section]({{  site.baseurl  }}{% link docs/resources/resources.html %}) to assist using the data for common use cases.
 
 ResStock leverages and is deeply indebted to DOE's open source building energy modeling ecosystem of [Open Studio®](https://openstudio.net/) and [Energy Plus®](https://energyplus.net/). 

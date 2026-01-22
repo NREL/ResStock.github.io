@@ -6,7 +6,7 @@ nav_order: 1
 ---
 # How To: Analyze Housing Stock Programmatically
 
-These example notebooks and scripts demonstrate how users can access the ResStock datasets programmatically using the ResStock 2025 Release 1 dataset.Some dataset attributes, like column names or weighting factor applications, may change in the future. Check out the [Data page](https://nrel.github.io/ResStock.github.io/docs/data.html) for the most up to date information on ResStock datasets.
+These example notebooks and scripts demonstrate how users can access the ResStock datasets programmatically using the ResStock 2025 Release 1 dataset.Some dataset attributes, like column names or weighting factor applications, may change in the future. Check out the [Data page]({{ site.baseurl }}{% link docs/data.html %}) for the most up to date information on ResStock datasets.
 
 ## AWS Athena and SQL Queries
 
