@@ -8,11 +8,11 @@ has_toc: false
 # Data
 Given the complexity and computational intensity of ResStock, the best pathway for professionals and researchers to use ResStock successfully is to use pre-created results, rather than running ResStock themselves. This section provides information about accessing ResStock results and links to published datasets.
 
-The most up to date technical reference documentation for ResStock is available [here](https://nrel.github.io/ResStock.github.io/assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf). Below is technical documentation for each dataset, but the previous link more fully explains current assumptions and methodologies, and should be used in junction with the documentation for each dataset release.
+The most up to date technical reference documentation for ResStock is available [here]({{  site.baseurl  }}{% link assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf %}). Below is technical documentation for each dataset, but the previous link more fully explains current assumptions and methodologies, and should be used in junction with the documentation for each dataset release.
 
 ## Published Datasets
 These datasets explore the annual and timeseries energy consumption of the U.S. residential building stock at the end-use level.
- - ResStock 2025 Release 1 [technical reference documentation](https://nrel.github.io/ResStock.github.io/assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf) and [short description of each package and important dataset changes](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2025/resstock_amy2018_release_1/README_resstock_20251.pdf)
+ - ResStock 2025 Release 1 [technical reference documentation]({{  site.baseurl  }}{% link assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf %}) and [short description of each package and important dataset changes](https://oedi-data-lake.s3.amazonaws.com/nrel-pds-building-stock/end-use-load-profiles-for-us-building-stock/2025/resstock_amy2018_release_1/README_resstock_20251.pdf)
     - This dataset includes the addition of two states, Alaska and Hawaii. In addition, electric vehicles, load shifting, and load shedding have all been added, while geothermal heat pumps were expanded upon. Electric panel capacity and breaker information was also added. Finally, the utility rate methodology was updated.
  - ResStock 2024 Release 2 [webinar recording](https://youtube/tk1Uoq5_a38?si=gjhOnzb4-AcbdwZt), [webinar slides](https://www.nrel.gov/docs/fy24osti/89600.pdf), and the [technical reference documentation](https://docs.nrel.gov/docs/fy25osti/91621.pdf)
  - ResStock 2024 Release 1 [technical documentation](https://www.nrel.gov/docs/fy24osti/88109.pdf)

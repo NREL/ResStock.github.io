@@ -9,10 +9,6 @@ nav_order: 1
 
 The Data Viewer is a tool that can show annual and timeseries data with premade visuals that can be downloaded. This tutorial will show you how to get 1,000 samples in the Data Viewer using the End Use Savings Shapes 2022.1 Release, representing 242,000 dwelling units. For more information on the number of samples that should be used in an analysis, see the *How Many Samples are Required for this Analysis* explanation on the Resources page.
 
-<!-- 
-Want more information on the Data Viewer, what it is, and how to access it? See [this section on Data] for more information.
--->
-
 **To illustrate the capabilities of the Data Viewer, the question we want to answer is: How much annual energy could be saved if all dwelling units in Littleton, Colorado, had the basic enclosure package applied?**
 
 For this example, we are doing a city-based filter, but the same procedure applies for any down selection in the Data Viewer. This includes other geographies, building characteristics, or demographics.
