@@ -24,7 +24,7 @@ This document serves as a guide to and resource for the methodology and assumpti
 
 ## Tutorials
 Tutorials provide lessons for understanding certain capabilities and functions of ResStock, as well as learning a specific analysis skill. Available tutorials include:
-- [Check That You Have Enough Samples or Dwelling Units with the Data Viewer]({{  site.baseurl  }}{% link assets/trd/ResStockTechnicalReferenceGuide_2025_1.pdf %})
+- [Check That You Have Enough Samples or Dwelling Units with the Data Viewer]({{  site.baseurl  }}{% link docs/resources/tutorials/Enough_Samples_Data_Viewer.md %})
 
 ## How-To Guides
 These guides provide step-by-step instructions for using a ResStock dataset to answer a given question. Available guides include:
@@ -48,6 +48,7 @@ These documents provide explanations focusing on how and why of the ResStock dat
 - [How Many Samples are Required for this Analysis?]({{ site.baseurl }}{% link docs/resources/explanations/Number_of_samples.md %})
 
 ### ResStock Limitations and Known Issues
+- [ResStock 2025 Release 1 Column Applicability]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2025_1_Column_Applicability.md%})
 - [ResStock 2024 Release 2 Electricity and Energy Bills]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Electricity_and_Energy_Bills.md%})
 - [Wall Type Issue, Especially in Maine]({{ site.baseurl }}{% link docs/resources/explanations/Issue_Wall_Type_Especially_Maine.md%})
 -   [ResStock 2024 Release 2 Measure Applicability]({{ site.baseurl }}{% link docs/resources/explanations/Issue_2024_2_Measure_Applicability.md%})
